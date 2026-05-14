@@ -1,0 +1,1154 @@
+{
+  "0.2.100": {
+    "en": "Fixed a crash caused by a stack overflow error",
+    "zh": "修复了堆栈溢出错误导致的崩溃"
+  },
+  "0.2.102": {
+    "en": "Improved thinking triggering reliability",
+    "zh": "提高思维触发可靠性"
+  },
+  "0.2.105": {
+    "en": "Claude can now search the web",
+    "zh": "Claude现在可以在网上搜索"
+  },
+  "0.2.106": {
+    "en": "MCP SSE server configs can now specify custom headers",
+    "zh": "MCP SSE服务器配置现在可以指定自定义标头"
+  },
+  "0.2.107": {
+    "en": "CLAUDE.md files can now import other files. Add @path/to/file.md to ./CLAUDE.md to load additional files on launch",
+    "zh": "CLAUDE.md文件现在可以导入其他文件。将@ path/添加到/file.md。/CLAUDE.md以在启动时加载其他文件"
+  },
+  "0.2.108": {
+    "en": "You can now send messages to Claude while it works to steer Claude in real-time",
+    "zh": "现在，您可以向Claude发送消息，同时它可以实时引导Claude"
+  },
+  "0.2.117": {
+    "en": "Breaking change: —print JSON output now returns nested message objects, for forwards-compatibility as we introduce new metadata fields",
+    "zh": "突破性更改： —print JSON输出现在返回嵌套消息对象，以便在引入新的元数据字段时向前兼容"
+  },
+  "0.2.125": {
+    "en": "Breaking change: Bedrock ARN passed to ANTHROPIC_MODEL or ANTHROPIC_SMALL_FAST_MODEL should no longer contain an escaped slash (specify / in",
+    "zh": "突破性变化：传递给ANTHROPIC_MODEL或ANTHROPIC_SMALL_FAST_MODEL的基岩ARN不应再包含转义斜杠（指定/在"
+  },
+  "0.2.21": {
+    "en": "Fuzzy matching for /commands",
+    "zh": "/commands的模糊匹配"
+  },
+  "0.2.26": {
+    "en": "New /approved-tools command for managing tool permissions",
+    "zh": "用于管理工具权限的新/已批准工具命令"
+  },
+  "0.2.30": {
+    "en": "Added ANSI color theme for better terminal compatibility",
+    "zh": "添加了ANSI颜色主题，以更好地兼容终端"
+  },
+  "0.2.31": {
+    "en": "Custom slash commands: Markdown files in .claude/commands/ directories now appear as custom slash commands to insert prompts into your conve",
+    "zh": "自定义斜杠命令： .claude/commands/目录中的Markdown文件现在显示为自定义斜杠命令，以将提示插入到您的conve中"
+  },
+  "0.2.32": {
+    "en": "Interactive MCP setup wizard: Run “claude mcp add” to add MCP servers with a step-by-step interface",
+    "zh": "交互式MCP设置向导：运行“claude mcp add”以添加具有分步界面的MCP服务器"
+  },
+  "0.2.34": {
+    "en": "Vim bindings for text input - enable with /vim or /config",
+    "zh": "文本输入的Vim绑定-使用/vim或/config启用"
+  },
+  "0.2.36": {
+    "en": "Import MCP servers from Claude Desktop with claude mcp add-from-claude-desktop",
+    "zh": "使用claude mcp add-from-claude-desktop从Claude Desktop导入MCP服务器"
+  },
+  "0.2.37": {
+    "en": "New /release-notes command lets you view release notes at any time",
+    "zh": "新建/发行说明命令可让您随时查看发行说明"
+  },
+  "0.2.41": {
+    "en": "MCP server startup timeout can now be configured via MCP_TIMEOUT environment variable",
+    "zh": "MCP服务器启动超时现在可以通过MCP_TIMEOUT环境变量配置"
+  },
+  "0.2.44": {
+    "en": "Ask Claude to make a plan with thinking mode: just say ‘think’ or ‘think harder’ or even ‘ultrathink’",
+    "zh": "让Claude用思维模式制定计划：只需说“Think”或“Think harder” ，甚至是“ultrathink”"
+  },
+  "0.2.47": {
+    "en": "Press Tab to auto-complete file and folder names",
+    "zh": "按Tab键自动完成文件和文件夹名称"
+  },
+  "0.2.49": {
+    "en": "Previous MCP server scopes have been renamed: previous “project” scope is now “local” and “global” scope is now “user”",
+    "zh": "以前的MCP服务器作用域已重命名：以前的“项目”作用域现在是“本地” ， “全局”作用域现在是“用户”"
+  },
+  "0.2.50": {
+    "en": "New MCP “project” scope now allows you to add MCP servers to .mcp.json files and commit them to your repository",
+    "zh": "新的MCP “项目”范围现在允许您将MCP服务器添加到.mcp.json文件并将其提交到您的存储库"
+  },
+  "0.2.53": {
+    "en": "New web fetch tool lets Claude view URLs that you paste in",
+    "zh": "新的网页提取工具可让Claude查看您粘贴的网址"
+  },
+  "0.2.54": {
+    "en": "Quickly add to Memory by starting your message with ’#’",
+    "zh": "通过以“#”开头的消息快速添加到内存中"
+  },
+  "0.2.59": {
+    "en": "Copy+paste images directly into your prompt",
+    "zh": "将图像直接复制并粘贴到提示中"
+  },
+  "0.2.61": {
+    "en": "Navigate menus with vim-style keys (j/k) or bash/emacs shortcuts (Ctrl+n/p) for faster interaction",
+    "zh": "使用vim样式键(j/k)或bash/emacs快捷方式(Ctrl + n/p)导航菜单，以加快交互速度"
+  },
+  "0.2.63": {
+    "en": "Fixed an issue where MCP tools were loaded twice, which caused tool call errors",
+    "zh": "修复了MCP工具加载两次导致工具调用错误的问题"
+  },
+  "0.2.66": {
+    "en": "Print mode (-p) now supports streaming output via —output-format=stream-json",
+    "zh": "打印模式(-p)现在支持通过-output-format = stream-json进行流式输出"
+  },
+  "0.2.67": {
+    "en": "Shared project permission rules can be saved in .claude/settings.json",
+    "zh": "共享项目权限规则可以保存在.claude/settings.json中"
+  },
+  "0.2.69": {
+    "en": "Fixed UI glitches with improved Select component behavior",
+    "zh": "修复了用户界面故障，改进了选择组件的行为"
+  },
+  "0.2.70": {
+    "en": "Network commands like curl are now available for Claude to use",
+    "zh": "Claude现在可以使用curl等网络命令"
+  },
+  "0.2.72": {
+    "en": "Updated spinner to indicate tokens loaded and tool usage",
+    "zh": "更新了微调器，以指示已加载的令牌和工具使用情况"
+  },
+  "0.2.74": {
+    "en": "Added support for refreshing dynamically generated API keys (via apiKeyHelper), with a 5 minute TTL",
+    "zh": "新增支持刷新动态生成的API密钥（通过apiKeyHelper ） ， TTL为5分钟"
+  },
+  "0.2.75": {
+    "en": "Hit Enter to queue up additional messages while Claude is working",
+    "zh": "按Enter键，在Claude工作时排队等待其他消息"
+  },
+  "0.2.82": {
+    "en": "Added support for —disallowedTools",
+    "zh": "添加了对-disallowedTools的支持"
+  },
+  "0.2.93": {
+    "en": "Resume conversations from where you left off from with “claude —continue” and “claude —resume”",
+    "zh": "使用“claude -continue”和“claude —resume”从中断的地方恢复对话"
+  },
+  "0.2.96": {
+    "en": "Claude Code can now also be used with a Claude Max subscription (https://claude.ai/upgrade)",
+    "zh": "Claude Code现在也可以用于Claude Max订阅（ https://claude.ai/upgrade ）"
+  },
+  "0.2.98": {
+    "en": "Fixed an issue where auto-compact was running twice",
+    "zh": "修复了自动压缩运行两次的问题"
+  },
+  "1.0.0": {
+    "en": "Claude Code is now generally available",
+    "zh": "Claude Code现已全面推出"
+  },
+  "1.0.1": {
+    "en": "Added DISABLE_INTERLEAVED_THINKING to give users the option to opt out of interleaved thinking.",
+    "zh": "添加了DISABLE_INTERLEAVED_THINKING ，让用户可以选择退出交错思维。"
+  },
+  "1.0.10": {
+    "en": "Added markdown table support",
+    "zh": "新增Markdown表格支援"
+  },
+  "1.0.106": {
+    "en": "Windows: Fixed path permission matching to consistently use POSIX format (e.g., Read(//c/Users/...))",
+    "zh": "Windows ：修复了路径权限匹配，以始终如一地使用POSIX格式（例如，读取（//c/Users/... ） ）"
+  },
+  "1.0.109": {
+    "en": "SDK: Added partial message streaming support via --include-partial-messages CLI flag",
+    "zh": "SDK ：通过--include-partial-messages CLI标志添加了部分消息流支持"
+  },
+  "1.0.11": {
+    "en": "Claude Code can now also be used with a Claude Pro subscription",
+    "zh": "Claude Code现在也可以与Claude Pro订阅一起使用"
+  },
+  "1.0.110": {
+    "en": "/terminal-setup command now supports WezTerm",
+    "zh": "/terminal-setup命令现在支持WezTerm"
+  },
+  "1.0.111": {
+    "en": "/model now validates provided model names",
+    "zh": "/model现在验证提供的模型名称"
+  },
+  "1.0.112": {
+    "en": "Transcript mode (Ctrl+R): Added the model used to generate each assistant message",
+    "zh": "成绩单模式（ Ctrl + R ） ：添加了用于生成每个助理消息的模型"
+  },
+  "1.0.113": {
+    "en": "Deprecated piped input in interactive mode",
+    "zh": "交互模式下已弃用的管道输入"
+  },
+  "1.0.115": {
+    "en": "Improve thinking mode display with enhanced visual effects",
+    "zh": "通过增强的视觉效果改善思维模式显示"
+  },
+  "1.0.117": {
+    "en": "Add Ctrl-R history search to recall previous commands like bash/zsh",
+    "zh": "添加Ctrl-R历史搜索，调用之前的命令，如bash/zsh"
+  },
+  "1.0.119": {
+    "en": "Fix Windows issue where process visually freezes on entering interactive mode",
+    "zh": "修复了Windows问题，其中进程在进入交互模式时直观地冻结"
+  },
+  "1.0.120": {
+    "en": "Fix input lag during typing, especially noticeable with large prompts",
+    "zh": "修复打字过程中的输入延迟，尤其是大提示时更明显"
+  },
+  "1.0.123": {
+    "en": "Bash permission rules now support output redirections when matching (e.g., Bash(python:*) matches python script.py > output.txt)",
+    "zh": "Bash权限规则现在支持匹配时的输出重定向（例如， Bash (python: *)匹配python script.py > output.txt ）"
+  },
+  "1.0.124": {
+    "en": "Set CLAUDE_BASH_NO_LOGIN environment variable to 1 or true to to skip login shell for BashTool",
+    "zh": "将CLAUDE_BASH_NO_LOGIN环境变量设置为1或为true以跳过BashTool的登录shell"
+  },
+  "1.0.126": {
+    "en": "Enable /context command for Bedrock and Vertex",
+    "zh": "为基岩和顶点启用/context命令"
+  },
+  "1.0.17": {
+    "en": "We now emit messages from sub-tasks in -p mode (look for the parent_tool_use_id property)",
+    "zh": "我们现在以-p模式从子任务发出消息（查找parent_tool_use_id属性）"
+  },
+  "1.0.18": {
+    "en": "Added —add-dir CLI argument for specifying additional working directories",
+    "zh": "添加了用于指定其他工作目录的-add-dir CLI参数"
+  },
+  "1.0.21": {
+    "en": "Improved editing of files with tab-based indentation",
+    "zh": "使用基于选项卡的缩进改进了文件编辑"
+  },
+  "1.0.22": {
+    "en": "SDK: Renamed total_cost to total_cost_usd",
+    "zh": "SDK ：将TOTAL_COST重命名为TOTAL_COST_USD"
+  },
+  "1.0.23": {
+    "en": "Released TypeScript SDK: import @anthropic-ai/claude-code to get started",
+    "zh": "发布TypeScript SDK ： import @ anthropic-ai/claude-code以开始使用"
+  },
+  "1.0.24": {
+    "en": "Improved /mcp output",
+    "zh": "改善/mcp输出"
+  },
+  "1.0.25": {
+    "en": "Slash commands: moved “project” and “user” prefixes to descriptions",
+    "zh": "斜杠命令：将“project”和“user”前缀移动到描述中"
+  },
+  "1.0.27": {
+    "en": "Streamable HTTP MCP servers are now supported",
+    "zh": "现在支持可流式HTTP MCP服务器"
+  },
+  "1.0.28": {
+    "en": "Slash commands: Fix selector display during history navigation",
+    "zh": "斜杠命令：修复历史导航期间的选择器显示"
+  },
+  "1.0.29": {
+    "en": "Improved CJK character support in cursor navigation and rendering",
+    "zh": "改进了光标导航和渲染中的中日韩字符支持"
+  },
+  "1.0.30": {
+    "en": "Custom slash commands: Run bash output, @-mention files, enable thinking with thinking keywords",
+    "zh": "自定义斜杠命令：运行bash输出， @ -mention文件，通过思考关键词实现思考"
+  },
+  "1.0.31": {
+    "en": "Fixed a bug where ~/.claude.json would get reset when file contained invalid JSON",
+    "zh": "修复了当文件包含无效JSON时~/.claude.json将被重置的错误"
+  },
+  "1.0.32": {
+    "en": "Updated loopback config for litellm",
+    "zh": "更新了litellm的环回配置"
+  },
+  "1.0.33": {
+    "en": "Improved logging functionality with session ID support",
+    "zh": "通过会话ID支持改进日志记录功能"
+  },
+  "1.0.34": {
+    "en": "Fixed a memory leak causing a MaxListenersExceededWarning message to appear",
+    "zh": "修复了导致MaxListenersExceededWarning消息出现的内存泄漏问题"
+  },
+  "1.0.35": {
+    "en": "Added support for MCP OAuth Authorization Server discovery",
+    "zh": "添加了对MCP OAuth授权服务器发现的支持"
+  },
+  "1.0.36": {
+    "en": "Web search now takes today’s date into context",
+    "zh": "网络搜索现在将今天的日期纳入上下文"
+  },
+  "1.0.37": {
+    "en": "Remove ability to set Proxy-Authorization header via ANTHROPIC_AUTH_TOKEN or apiKeyHelper",
+    "zh": "删除通过ANTHROPIC_AUTH_TOKEN或apiKeyHelper设置Proxy-Authorization标头的功能"
+  },
+  "1.0.38": {
+    "en": "Released hooks. Special thanks to community input in https://github.com/anthropics/claude-code/issues/712. Docs: https://code.claude.com/doc",
+    "zh": "发布钩子。特别感谢https://github.com/anthropics/claude-code/issues/712中的社区意见。文档： https://code.claude.com/doc"
+  },
+  "1.0.39": {
+    "en": "New Active Time metric in OpenTelemetry logging",
+    "zh": "OpenTelemetry日志记录中的新活动时间指标"
+  },
+  "1.0.4": {
+    "en": "Fixed a bug where MCP tool errors weren’t being parsed correctly",
+    "zh": "修复了MCP工具错误未正确解析的错误"
+  },
+  "1.0.40": {
+    "en": "Fixed a bug causing API connection errors with UNABLE_TO_GET_ISSUER_CERT_LOCALLY if NODE_EXTRA_CA_CERTS was set",
+    "zh": "修复了如果设置了NODE_EXTRA_CA_CERTS ，则导致UNABLE_TO_GET_ISSUER_CERT_LOCALLY出现API连接错误的错误"
+  },
+  "1.0.41": {
+    "en": "Hooks: Split Stop hook triggering into Stop and SubagentStop",
+    "zh": "挂钩： Split Stop挂钩触发进入Stop和SubagentStop"
+  },
+  "1.0.42": {
+    "en": "Added tilde (~) expansion support to /add-dir command",
+    "zh": "向/add-dir命令添加了颚化符(~)扩展支持"
+  },
+  "1.0.43": {
+    "en": "Fixed a bug where the theme selector was saving excessively",
+    "zh": "修复了主题选择器过度保存的错误"
+  },
+  "1.0.44": {
+    "en": "New /export command lets you quickly export a conversation for sharing",
+    "zh": "新建/导出命令可让您快速导出对话以进行共享"
+  },
+  "1.0.45": {
+    "en": "Redesigned Search (Grep) tool with new tool input parameters and features",
+    "zh": "重新设计的搜索（ Grep ）工具，具有新的工具输入参数和功能"
+  },
+  "1.0.48": {
+    "en": "Fixed a bug in v1.0.45 where the app would sometimes freeze on launch",
+    "zh": "修复了v1.0.45中的错误，其中应用程序有时会在启动时冻结"
+  },
+  "1.0.51": {
+    "en": "Added support for native Windows (requires Git for Windows)",
+    "zh": "添加了对本机Windows的支持（需要Git for Windows ）"
+  },
+  "1.0.52": {
+    "en": "Added support for MCP server instructions",
+    "zh": "添加了对MCP服务器说明的支持"
+  },
+  "1.0.53": {
+    "en": "Updated @-mention file truncation from 100 lines to 2000 lines",
+    "zh": "将@ -mention文件截断从100行更新为2000行"
+  },
+  "1.0.54": {
+    "en": "Hooks: Added UserPromptSubmit hook and the current working directory to hook inputs",
+    "zh": "Hooks ：添加UserPromptSubmit钩子和当前工作目录到钩子输入"
+  },
+  "1.0.55": {
+    "en": "Clarified knowledge cutoff for Opus 4 and Sonnet 4 models",
+    "zh": "澄清了Opus 4和Sonnet 4型号的知识截止点"
+  },
+  "1.0.56": {
+    "en": "Windows: Enabled shift+tab for mode switching on versions of Node.js that support terminal VT mode",
+    "zh": "Windows ：已启用SHIFT + TAB ，用于在支持终端VT模式的Node.js版本上切换模式"
+  },
+  "1.0.57": {
+    "en": "Added support for specifying a model in slash commands",
+    "zh": "添加了对斜杠命令中指定模型的支持"
+  },
+  "1.0.58": {
+    "en": "Added support for reading PDFs",
+    "zh": "添加了对阅读PDF的支持"
+  },
+  "1.0.59": {
+    "en": "SDK: Added tool confirmation support with canUseTool callback",
+    "zh": "SDK ：添加了对canUseTool回调的工具确认支持"
+  },
+  "1.0.6": {
+    "en": "Improved edit reliability for tab-indented files",
+    "zh": "改进了制表符缩进文件的编辑可靠性"
+  },
+  "1.0.60": {
+    "en": "You can now create custom subagents for specialized tasks! Run /agents to get started",
+    "zh": "您现在可以为特殊任务创建自定义子代理了！运行/代理以开始"
+  },
+  "1.0.61": {
+    "en": "Transcript mode (Ctrl+R): Changed Esc to exit transcript mode rather than interrupt",
+    "zh": "转录模式（ Ctrl + R ） ：将Esc更改为退出转录模式而不是中断"
+  },
+  "1.0.62": {
+    "en": "Added @-mention support with typeahead for custom agents. @<your-custom-agent> to invoke it",
+    "zh": "为自定义代理添加了带有typeahead的@ -mention支持。@<your-custom-agent>以调用它"
+  },
+  "1.0.63": {
+    "en": "Windows: Fixed file search, @agent mentions, and custom slash commands functionality",
+    "zh": "Windows ：修复了文件搜索、@ agent提及和自定义斜杠命令功能"
+  },
+  "1.0.64": {
+    "en": "Agents: Added model customization support - you can now specify which model an agent should use",
+    "zh": "代理：添加了模型自定义支持-您现在可以指定代理应使用的模型"
+  },
+  "1.0.65": {
+    "en": "IDE: Fixed connection stability issues and error handling for diagnostics",
+    "zh": "IDE ：修复了诊断的连接稳定性问题和错误处理"
+  },
+  "1.0.68": {
+    "en": "Fix incorrect model names being used for certain commands like /pr-comments",
+    "zh": "修复某些命令（如/pr-comments ）使用不正确的型号名称"
+  },
+  "1.0.69": {
+    "en": "Upgraded Opus to version 4.1",
+    "zh": "将Opus升级到4.1版"
+  },
+  "1.0.7": {
+    "en": "Renamed /allowed-tools -> /permissions",
+    "zh": "已重命名/allowed-tools - >/permissions"
+  },
+  "1.0.70": {
+    "en": "Performance: Optimized message rendering for better performance with large contexts",
+    "zh": "性能：优化消息渲染，提高大型上下文的性能"
+  },
+  "1.0.71": {
+    "en": "Background commands: (Ctrl-b) to run any Bash command in the background so Claude can keep working (great for dev servers, tailing logs, etc",
+    "zh": "后台命令： （ Ctrl-b ）在后台运行任何Bash命令，以便Claude可以继续工作（非常适合开发服务器、尾随日志等）"
+  },
+  "1.0.72": {
+    "en": "Ask permissions: have Claude Code always ask for confirmation to use specific tools with /permissions",
+    "zh": "询问权限：让Claude Code始终要求确认使用具有/权限的特定工具"
+  },
+  "1.0.73": {
+    "en": "MCP: Support multiple config files with --mcp-config file1.json file2.json",
+    "zh": "MCP ：使用--mcp-config file1.json file2.json支持多个配置文件"
+  },
+  "1.0.77": {
+    "en": "Bash tool: Fix heredoc and multiline string escaping, improve stderr redirection handling",
+    "zh": "Bash工具：修复heredoc和多行字符串转义，改进stderr重定向处理"
+  },
+  "1.0.8": {
+    "en": "Fixed Vertex AI region fallback when using CLOUD_ML_REGION",
+    "zh": "修复了使用CLOUD_ML_REGION时的顶点AI区域回退"
+  },
+  "1.0.80": {
+    "en": "UI improvements: Fix text contrast for custom subagent colors and spinner rendering issues",
+    "zh": "用户界面改进：修复了自定义子代理颜色和微调器渲染问题的文本对比度"
+  },
+  "1.0.81": {
+    "en": "Released output styles, including new built-in educational output styles “Explanatory” and “Learning”. Docs: https://code.claude.com/docs/en",
+    "zh": "发布输出样式，包括新的内置教育输出样式“Explanatory”和“Learning”。文档： https://code.claude.com/docs/en"
+  },
+  "1.0.82": {
+    "en": "SDK: Add request cancellation support",
+    "zh": "SDK ：添加请求取消支持"
+  },
+  "1.0.83": {
+    "en": "@-mention: Support files with spaces in path",
+    "zh": "@ -mention ：支持路径中包含空格的文件"
+  },
+  "1.0.84": {
+    "en": "Fix tool_use/tool_result id mismatch error when network is unstable",
+    "zh": "修复网络不稳定时tool_use/tool_result id不匹配错误"
+  },
+  "1.0.85": {
+    "en": "Status line input now includes session cost info",
+    "zh": "状态行输入现在包括会话成本信息"
+  },
+  "1.0.86": {
+    "en": "Added /context to help users self-serve debug context issues",
+    "zh": "添加了/context以帮助用户自助调试上下文问题"
+  },
+  "1.0.88": {
+    "en": "Fixed issue causing “OAuth authentication is currently not supported”",
+    "zh": "修复了导致“当前不支持OAuth身份验证”的问题"
+  },
+  "1.0.90": {
+    "en": "Settings file changes take effect immediately - no restart required",
+    "zh": "设置文件更改立即生效-无需重新启动"
+  },
+  "1.0.93": {
+    "en": "Windows: Add alt + v shortcut for pasting images from clipboard",
+    "zh": "Windows ：添加用于从剪贴板粘贴图像的alt + v快捷方式"
+  },
+  "1.0.94": {
+    "en": "Vertex: add support for global endpoints for supported models",
+    "zh": "顶点：为支持的模型添加对全局端点的支持"
+  },
+  "1.0.97": {
+    "en": "Settings: /doctor now validates permission rule syntax and suggests corrections",
+    "zh": "设置：/doctor现在验证权限规则语法并提出更正建议"
+  },
+  "2.0.0": {
+    "en": "New native VS Code extension",
+    "zh": "新的本机VS代码扩展"
+  },
+  "2.0.1": {
+    "en": "Skip Sonnet 4.5 default model setting change for Bedrock and Vertex",
+    "zh": "跳过基岩和顶点的Sonnet 4.5默认模型设置更改"
+  },
+  "2.0.10": {
+    "en": "Rewrote terminal renderer for buttery smooth UI",
+    "zh": "重写黄油平滑UI的终端渲染器"
+  },
+  "2.0.11": {
+    "en": "Reduced system prompt size by 1.4k tokens",
+    "zh": "将系统提示大小减少1.4k个代币"
+  },
+  "2.0.12": {
+    "en": "Plugin System Released: Extend Claude Code with custom commands, agents, hooks, and MCP servers from marketplaces",
+    "zh": "插件系统发布：使用来自市场的自定义命令、代理、挂钩和MCP服务器扩展Claude代码"
+  },
+  "2.0.13": {
+    "en": "Fixed /plugin not working on native build",
+    "zh": "已修复/插件在原生构建上无法正常工作的问题"
+  },
+  "2.0.14": {
+    "en": "Fix @-mentioning MCP servers to toggle them on/off",
+    "zh": "修复@提及MCP服务器以将其切换为打开/关闭"
+  },
+  "2.0.15": {
+    "en": "Fixed bug with resuming where previously created files needed to be read again before writing",
+    "zh": "修复了先前创建的文件需要在写入前重新读取的问题"
+  },
+  "2.0.17": {
+    "en": "Added Haiku 4.5 to model selector!",
+    "zh": "已将Haiku 4.5添加到型号选择器！"
+  },
+  "2.0.19": {
+    "en": "Auto-background long-running bash commands instead of killing them. Customize with BASH_DEFAULT_TIMEOUT_MS",
+    "zh": "自动后台长时间运行的bash命令，而不是杀死它们。使用BASH_DEFAULT_TIMEOUT_MS自定义"
+  },
+  "2.0.20": {
+    "en": "Added support for Claude Skills",
+    "zh": "新增了对Claude Skills的支持"
+  },
+  "2.0.21": {
+    "en": "Support MCP structuredContent field in tool responses",
+    "zh": "支持工具响应中的MCP structuredContent字段"
+  },
+  "2.0.22": {
+    "en": "Fixed content layout shift when scrolling through slash commands",
+    "zh": "修复了滚动斜杠命令时的内容布局偏移"
+  },
+  "2.0.24": {
+    "en": "Fixed a bug where project-level skills were not loading when —setting-sources ‘project’ was specified",
+    "zh": "修复了指定-setting-sources “项目”时未加载项目级技能的错误"
+  },
+  "2.0.25": {
+    "en": "Removed legacy SDK entrypoint. Please migrate to @anthropic-ai/claude-agent-sdk for future SDK updates: https://platform.claude.com/docs/en/",
+    "zh": "已删除旧版SDK入口点。请迁移到@ anthropic-ai/claude-agent-sdk以获取未来的SDK更新： https://platform.claude.com/docs/en/"
+  },
+  "2.0.27": {
+    "en": "New UI for permission prompts",
+    "zh": "权限提示的新用户界面"
+  },
+  "2.0.28": {
+    "en": "Plan mode: introduced new Plan subagent",
+    "zh": "计划模式：引入新的计划子代理"
+  },
+  "2.0.30": {
+    "en": "Added helpful hint to run security unlock-keychain when encountering API key errors on macOS with locked keychain",
+    "zh": "添加了有用的提示，以便在使用锁定钥匙串的macOS上遇到API密钥错误时运行安全解锁钥匙串"
+  },
+  "2.0.31": {
+    "en": "Windows: native installation uses shift+tab as shortcut for mode switching, instead of alt+m",
+    "zh": "Windows ：本机安装使用shift + tab作为模式切换的快捷方式，而不是alt + m"
+  },
+  "2.0.32": {
+    "en": "Un-deprecate output styles based on community feedback",
+    "zh": "根据社区反馈取消弃用输出样式"
+  },
+  "2.0.33": {
+    "en": "Native binary installs now launch quicker.",
+    "zh": "本机二进制安装现在启动速度更快。"
+  },
+  "2.0.34": {
+    "en": "VSCode Extension: Added setting to configure the initial permission mode for new conversations",
+    "zh": "VSCode扩展：添加了为新对话配置初始权限模式的设置"
+  },
+  "2.0.35": {
+    "en": "Improve fuzzy search results when searching commands",
+    "zh": "在搜索命令时改进模糊搜索结果"
+  },
+  "2.0.36": {
+    "en": "Fixed: DISABLE_AUTOUPDATER environment variable now properly disables package manager update notifications",
+    "zh": "修复： DISABLE_AUTOUPDATER环境变量现在正确禁用包管理器更新通知"
+  },
+  "2.0.37": {
+    "en": "Fixed how idleness is computed for notifications",
+    "zh": "修复了通知的闲置计算方式"
+  },
+  "2.0.41": {
+    "en": "Added model parameter to prompt-based stop hooks, allowing users to specify a custom model for hook evaluation",
+    "zh": "向基于提示的停止挂钩添加了模型参数，允许用户指定用于挂钩评估的自定义模型"
+  },
+  "2.0.42": {
+    "en": "Added agent_id and agent_transcript_path fields to SubagentStop hooks.",
+    "zh": "向SubagentStop钩子添加了agent_id和agent_transcript_path字段。"
+  },
+  "2.0.43": {
+    "en": "Added permissionMode field for custom agents",
+    "zh": "为自定义代理添加了permissionMode字段"
+  },
+  "2.0.45": {
+    "en": "Added support for Microsoft Foundry! See https://code.claude.com/docs/en/azure-ai-foundry",
+    "zh": "添加了对Microsoft Foundry的支持！请参阅https://code.claude.com/docs/en/azure-ai-foundry"
+  },
+  "2.0.46": {
+    "en": "Fixed image files being reported with incorrect media type when format cannot be detected from metadata",
+    "zh": "修复了无法从元数据中检测到格式时报告媒体类型不正确的图像文件的问题"
+  },
+  "2.0.47": {
+    "en": "Improved error messages and validation for claude --teleport",
+    "zh": "改进了claude --teleport的错误消息和验证"
+  },
+  "2.0.49": {
+    "en": "Added readline-style ctrl-y for pasting deleted text",
+    "zh": "添加了用于粘贴已删除文本的readline样式ctrl-y"
+  },
+  "2.0.5": {
+    "en": "IDE: Fix IME unintended message submission with Enter and Tab",
+    "zh": "IDE ：使用Enter和Tab修复IME意外消息提交"
+  },
+  "2.0.50": {
+    "en": "Fixed bug preventing calling MCP tools that have nested references in their input schemas",
+    "zh": "修复了阻止调用在其输入架构中具有嵌套引用的MCP工具的错误"
+  },
+  "2.0.51": {
+    "en": "Added Opus 4.5! https://www.anthropic.com/news/claude-opus-4-5",
+    "zh": "添加了Opus 4.5 ！ https://www.anthropic.com/news/claude-opus-4-5"
+  },
+  "2.0.52": {
+    "en": "Fixed duplicate message display when starting Claude with a command line argument",
+    "zh": "修复了使用命令行参数启动Claude时显示重复消息的问题"
+  },
+  "2.0.54": {
+    "en": "Hooks: Enable PermissionRequest hooks to process ‘always allow’ suggestions and apply permission updates",
+    "zh": "钩子：启用PermissionRequest钩子以处理“始终允许”建议并应用权限更新"
+  },
+  "2.0.55": {
+    "en": "Fixed proxy DNS resolution being forced on by default. Now opt-in via CLAUDE_CODE_PROXY_RESOLVES_HOSTS=true environment variable",
+    "zh": "修复了默认强制启用代理DNS解析的问题。现在通过CLAUDE_CODE_PROXY_RESOLVES_HOSTS = TRUE环境变量选择加入"
+  },
+  "2.0.56": {
+    "en": "Added setting to enable/disable terminal progress bar (OSC 9;4)",
+    "zh": "添加了启用/禁用终端进度条的设置（ OSC 9; 4 ）"
+  },
+  "2.0.57": {
+    "en": "Added feedback input when rejecting plans, allowing users to tell Claude what to change",
+    "zh": "在拒绝计划时添加了反馈输入，允许用户告诉Claude要更改的内容"
+  },
+  "2.0.58": {
+    "en": "Pro users now have access to Opus 4.5 as part of their subscription!",
+    "zh": "作为订阅的一部分，专业版用户现在可以访问Opus 4.5 ！"
+  },
+  "2.0.59": {
+    "en": "Added —agent CLI flag to override the agent setting for the current session",
+    "zh": "添加了-agent CLI标志以覆盖当前会话的代理设置"
+  },
+  "2.0.60": {
+    "en": "Added background agent support. Agents run in the background while you work",
+    "zh": "已新增后台客服人员支援。当您工作时，客服代表在后台运行"
+  },
+  "2.0.61": {
+    "en": "Reverted VSCode support for multiple terminal clients due to responsiveness issues.",
+    "zh": "由于响应问题，恢复了对多个终端客户端的VSCode支持。"
+  },
+  "2.0.62": {
+    "en": "Added “(Recommended)” indicator for multiple-choice questions, with the recommended option moved to the top of the list",
+    "zh": "为多项选择题添加了“（推荐）”指示器，推荐选项已移至列表顶部"
+  },
+  "2.0.64": {
+    "en": "Made auto-compacting instant",
+    "zh": "制作自动压实即时"
+  },
+  "2.0.65": {
+    "en": "Added ability to switch models while writing a prompt using alt+p (linux, windows), option+p (macos).",
+    "zh": "添加了使用alt + p （ linux、windows ）、option + p （ macos ）编写提示时切换模型的功能。"
+  },
+  "2.0.67": {
+    "en": "Thinking mode is now enabled by default for Opus 4.5",
+    "zh": "Opus 4.5现在默认启用了思维模式"
+  },
+  "2.0.68": {
+    "en": "Fixed IME (Input Method Editor) support for languages like Chinese, Japanese, and Korean by correctly positioning the composition window at ",
+    "zh": "通过将撰写窗口正确定位到以下位置，修复了对中文、日文和韩文等语言的IME （输入法编辑器）支持"
+  },
+  "2.0.69": {
+    "en": "Minor bugfixes",
+    "zh": "– 少量错误修复"
+  },
+  "2.0.70": {
+    "en": "Added Enter key to accept and submit prompt suggestions immediately (tab still accepts for editing)",
+    "zh": "添加了Enter键以立即接受并提交提示建议（ TAB仍然接受编辑）"
+  },
+  "2.0.71": {
+    "en": "Added /config toggle to enable/disable prompt suggestions",
+    "zh": "添加/config切换以启用/禁用提示建议"
+  },
+  "2.0.72": {
+    "en": "Added Claude in Chrome (Beta) feature that works with the Chrome extension (https://claude.ai/chrome) to let you control your browser direct",
+    "zh": "添加了Chrome中的Claude （测试版）功能，可与Chrome扩展程序（ https://claude.ai/chrome ）配合使用，让您直接控制浏览器"
+  },
+  "2.0.73": {
+    "en": "Added clickable [Image #N] links that open attached images in the default viewer",
+    "zh": "添加了可在默认查看器中打开附加图像的可点击[Image # N]链接"
+  },
+  "2.0.74": {
+    "en": "Added LSP (Language Server Protocol) tool for code intelligence features like go-to-definition, find references, and hover documentation",
+    "zh": "添加了LSP （语言服务器协议）工具，用于代码智能功能，如定位、查找引用和悬停文档"
+  },
+  "2.0.75": {
+    "en": "Minor bugfixes",
+    "zh": "– 少量错误修复"
+  },
+  "2.0.76": {
+    "en": "Fixed issue with macOS code-sign warning when using Claude in Chrome integration",
+    "zh": "修复了在Chrome集成中使用Claude时macOS代码签名警告的问题"
+  },
+  "2.0.8": {
+    "en": "Update Bedrock default Sonnet model to global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "zh": "将基岩默认Sonnet模型更新为global.anthropic.claude-sonnet-4-5-20250929-v1: 0"
+  },
+  "2.0.9": {
+    "en": "Fix regression where bash backgrounding stopped working",
+    "zh": "修复bash背景停止工作的回归"
+  },
+  "2.1.0": {
+    "en": "Added automatic skill hot-reload - skills created or modified in ~/.claude/skills or .claude/skills are now immediately available without re",
+    "zh": "添加了自动技能热重载-在~/.claude/skills或.claude/skills中创建或修改的技能现在可以立即使用，无需重新"
+  },
+  "2.1.10": {
+    "en": "Added new Setup hook event that can be triggered via --init, --init-only, or --maintenance CLI flags for repository setup and maintenance op",
+    "zh": "添加了可通过--init、--init-only或--maintenance CLI标志触发的新安装挂钩事件，用于存储库设置和维护操作"
+  },
+  "2.1.101": {
+    "en": "Added /team-onboarding command to generate a teammate ramp-up guide from your local Claude Code usage",
+    "zh": "添加了/team-onboarding命令，以根据您当地的Claude Code用法生成团队成员提升指南"
+  },
+  "2.1.105": {
+    "en": "Added path parameter to the EnterWorktree tool to switch into an existing worktree of the current repository",
+    "zh": "向EnterWorktree工具添加了路径参数，以切换到当前存储库的现有工作树"
+  },
+  "2.1.107": {
+    "en": "Show thinking hints sooner during long operations",
+    "zh": "在长时间操作期间更快地显示思维提示"
+  },
+  "2.1.108": {
+    "en": "Added ENABLE_PROMPT_CACHING_1H env var to opt into 1-hour prompt cache TTL on API key, Bedrock, Vertex, and Foundry (ENABLE_PROMPT_CACHING_1",
+    "zh": "添加了ENABLE_PROMPT_CACHING_1H env var ，用于在API密钥、基岩、顶点和铸造厂上选择加入1小时提示缓存TTL （ ENABLE_PROMPT_CACHING_1"
+  },
+  "2.1.109": {
+    "en": "Improved the extended-thinking indicator with a rotating progress hint",
+    "zh": "通过旋转进度提示改进了扩展思维指标"
+  },
+  "2.1.11": {
+    "en": "Fixed excessive MCP connection requests for HTTP/SSE transports",
+    "zh": "修复了HTTP/SSE传输的过多MCP连接请求"
+  },
+  "2.1.110": {
+    "en": "Added /tui command and tui setting — run /tui fullscreen to switch to flicker-free rendering in the same conversation",
+    "zh": "添加了/tui命令和tui设置—运行/tui全屏以在同一对话中切换到无闪烁渲染"
+  },
+  "2.1.111": {
+    "en": "Claude Opus 4.7 xhigh is now available! Use /effort to tune speed vs. intelligence",
+    "zh": "Claude Opus 4.7 xhigh现已推出！使用/努力调整速度与智力"
+  },
+  "2.1.112": {
+    "en": "Fixed “claude-opus-4-7 is temporarily unavailable” for auto mode",
+    "zh": "修复了自动模式下“claude-opus-4-7暂时不可用”的问题"
+  },
+  "2.1.113": {
+    "en": "Changed the CLI to spawn a native Claude Code binary (via a per-platform optional dependency) instead of bundled JavaScript",
+    "zh": "更改了CLI以生成本机Claude代码二进制文件（通过每个平台的可选依赖项） ，而不是捆绑的JavaScript"
+  },
+  "2.1.114": {
+    "en": "Fixed a crash in the permission dialog when an agent teams teammate requested tool permission",
+    "zh": "修复了代理团队成员请求工具权限时权限对话框中的崩溃问题"
+  },
+  "2.1.116": {
+    "en": "/resume on large sessions is significantly faster (up to 67% on 40MB+ sessions) and handles sessions with many dead-fork entries more effici",
+    "zh": "大型会话的/resume明显更快（ 40MB +会话高达67 ％ ） ，并且处理具有许多死叉条目的会话效率更高"
+  },
+  "2.1.117": {
+    "en": "Forked subagents can now be enabled on external builds by setting CLAUDE_CODE_FORK_SUBAGENT=1",
+    "zh": "现在可以通过设置CLAUDE_CODE_FORK_SUBAGENT = 1在外部版本上启用分叉的子代理"
+  },
+  "2.1.118": {
+    "en": "Added vim visual mode (v) and visual-line mode (V) with selection, operators, and visual feedback",
+    "zh": "添加了VIM视觉模式（ v ）和视觉线条模式（ V ） ，包括选择、操作员和视觉反馈"
+  },
+  "2.1.119": {
+    "en": "/config settings (theme, editor mode, verbose, etc.) now persist to ~/.claude/settings.json and participate in project/local/policy override",
+    "zh": "/config设置（主题、编辑器模式、详细等）现在保留为~/.claude/settings.json并参与project/local/policy覆盖"
+  },
+  "2.1.12": {
+    "en": "Fixed message rendering bug",
+    "zh": "修复了消息渲染错误"
+  },
+  "2.1.120": {
+    "en": "Windows: Git for Windows (Git Bash) is no longer required — when absent, Claude Code uses PowerShell as the shell tool",
+    "zh": "Windows ：不再需要Git for Windows （ Git Bash ） —缺失时， Claude Code使用PowerShell作为shell工具"
+  },
+  "2.1.121": {
+    "en": "Added alwaysLoad option to MCP server config — when true, all tools from that server skip tool-search deferral and are always available",
+    "zh": "向MCP服务器配置添加了alwaysLoad选项—如果为true ，则来自该服务器的所有工具都会跳过工具搜索延迟，并且始终可用"
+  },
+  "2.1.122": {
+    "en": "Added ANTHROPIC_BEDROCK_SERVICE_TIER environment variable to select a Bedrock service tier (default, flex, or priority), sent as the X-Amzn-",
+    "zh": "添加了ANTHROPIC_BEDROCK_SERVICE_TIER环境变量以选择作为X-Amzn-发送的基岩服务层（默认、弹性或优先级）"
+  },
+  "2.1.123": {
+    "en": "Fixed OAuth authentication failing with a 401 retry loop when CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 is set",
+    "zh": "修复了设置CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS = 1时OAuth身份验证失败并出现401重试循环的问题"
+  },
+  "2.1.126": {
+    "en": "The /model picker now lists models from your gateway’s /v1/models endpoint when ANTHROPIC_BASE_URL points at an Anthropic-compatible gateway",
+    "zh": "当ANTHROPIC_BASE_URL指向与人类兼容的网关时，/model选取器现在会列出网关的/v1/models端点中的模型"
+  },
+  "2.1.128": {
+    "en": "Bare /color (no args) now picks a random session color",
+    "zh": "裸/颜色（无参数）现在选择随机会话颜色"
+  },
+  "2.1.129": {
+    "en": "Added --plugin-url <url> flag to fetch a plugin .zip archive from a URL for the current session",
+    "zh": "添加了<url>--plugin-url标志，以从当前会话的URL获取插件.zip存档"
+  },
+  "2.1.131": {
+    "en": "Fixed VS Code extension failing to activate on Windows due to a hardcoded build path in the bundled SDK (createRequire polyfill bug)",
+    "zh": "修复了由于捆绑SDK中的硬编码生成路径而无法在Windows上激活VS代码扩展（ createRequire polyfill bug ）"
+  },
+  "2.1.132": {
+    "en": "Added CLAUDE_CODE_SESSION_ID environment variable to the Bash tool subprocess environment, matching the session_id passed to hooks",
+    "zh": "将CLAUDE_CODE_SESSION_ID环境变量添加到Bash工具子过程环境，匹配传递给hooks的session_id"
+  },
+  "2.1.133": {
+    "en": "Added worktree.baseRef setting (fresh | head) to choose whether --worktree, EnterWorktree, and agent-isolation worktrees branch from origin/",
+    "zh": "添加了worktree.baseRef设置(fresh | head) ，以选择--worktree、EnterWorktree和agent-isolation工作树是否从origin/分支"
+  },
+  "2.1.136": {
+    "en": "Added CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL to re-enable the session quality survey for enterprises capturing responses through OpenTe",
+    "zh": "添加了CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL ，以重新启用通过OpenTe捕获回复的企业的会话质量调查"
+  },
+  "2.1.137": {
+    "en": "[VSCode] Fixed extension failing to activate on Windows",
+    "zh": "[VSCode]修复了在Windows上激活扩展失败的问题"
+  },
+  "2.1.138": {
+    "en": "Internal fixes",
+    "zh": "内部修复"
+  },
+  "2.1.139": {
+    "en": "Added agent view (Research Preview): a single list of every Claude Code session — running, blocked on you, or done. Run claude agents to get",
+    "zh": "添加了代理视图（研究预览） ：每个Claude Code会话的单个列表—运行、阻止或完成。运行克劳德特工以获取"
+  },
+  "2.1.14": {
+    "en": "Added history-based autocomplete in bash mode (!) - type a partial command and press Tab to complete from your bash command history",
+    "zh": "在bash模式下添加了基于历史记录的自动完成（ ！ ） -键入部分命令，然后按Tab键从bash命令历史记录中完成"
+  },
+  "2.1.140": {
+    "en": "Improved Agent tool subagent_type matching to accept case- and separator-insensitive values (e.g. \"Code Reviewer\" resolves to code-reviewer)",
+    "zh": "改进了代理工具subagent_type匹配，以接受大小写和分隔符不区分的值（例如， “代码审阅者”解析为代码审阅者）"
+  },
+  "2.1.141": {
+    "en": "Added terminalSequence field to hook JSON output so hooks can emit desktop notifications, window titles, and bells without a controlling ter",
+    "zh": "添加了terminalSequence字段以挂钩JSON输出，以便挂钩可以在没有控制ter的情况下发出桌面通知、窗口标题和铃铛"
+  },
+  "2.1.15": {
+    "en": "Added deprecation notification for npm installations - run claude install or see https://docs.anthropic.com/en/docs/claude-code/getting-star",
+    "zh": "为npm安装添加了弃用通知-运行claude install或查看https://docs.anthropic.com/en/docs/claude-code/getting-star"
+  },
+  "2.1.16": {
+    "en": "Added new task management system, including new capabilities like dependency tracking",
+    "zh": "添加了新的任务管理系统，包括依赖关系跟踪等新功能"
+  },
+  "2.1.17": {
+    "en": "Fixed crashes on processors without AVX instruction support",
+    "zh": "修复了不支持AVX指令的处理器崩溃问题"
+  },
+  "2.1.18": {
+    "en": "Added customizable keyboard shortcuts. Configure keybindings per context, create chord sequences, and personalize your workflow. Run /keybin",
+    "zh": "添加了可自定义的键盘快捷方式。根据上下文配置键绑定，创建和弦序列，并个性化您的工作流。运行/keybin"
+  },
+  "2.1.19": {
+    "en": "Added env var CLAUDE_CODE_ENABLE_TASKS, set to false to keep the old system temporarily",
+    "zh": "添加了env var CLAUDE_CODE_ENABLE_TASKS ，设置为FALSE暂时保留旧系统"
+  },
+  "2.1.2": {
+    "en": "Added source path metadata to images dragged onto the terminal, helping Claude understand where images originated",
+    "zh": "将源路径元数据添加到拖到终端上的图像，帮助Claude了解图像的来源"
+  },
+  "2.1.20": {
+    "en": "Added arrow key history navigation in vim normal mode when cursor cannot move further",
+    "zh": "当光标无法进一步移动时，在VIM正常模式下添加箭头键历史导航"
+  },
+  "2.1.21": {
+    "en": "Added support for full-width (zenkaku) number input from Japanese IME in option selection prompts",
+    "zh": "在选项选择提示中添加了对日语输入法输入的全宽（ zenkaku ）数字的支持"
+  },
+  "2.1.22": {
+    "en": "Fixed structured outputs for non-interactive (-p) mode",
+    "zh": "固定非交互式（ -p ）模式的结构化输出"
+  },
+  "2.1.23": {
+    "en": "Added customizable spinner verbs setting (spinnerVerbs)",
+    "zh": "添加了可自定义的微调动词设置（ spinnerVerbs ）"
+  },
+  "2.1.25": {
+    "en": "Fixed beta header validation error for gateway users on Bedrock and Vertex, ensuring CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 avoids the err",
+    "zh": "修复了基岩和顶点上的网关用户的测试头验证错误，确保CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS = 1避免了错误"
+  },
+  "2.1.27": {
+    "en": "Added tool call failures and denials to debug logs",
+    "zh": "为调试日志添加了工具调用失败和拒绝"
+  },
+  "2.1.29": {
+    "en": "Fixed startup performance issues when resuming sessions that have saved_hook_context",
+    "zh": "修复了恢复已保存_HOOK_CONTEXT的会话时的启动性能问题"
+  },
+  "2.1.3": {
+    "en": "Merged slash commands and skills, simplifying the mental model with no change in behavior",
+    "zh": "合并斜杠命令和技能，简化心智模型，行为不变"
+  },
+  "2.1.30": {
+    "en": "Added pages parameter to the Read tool for PDFs, allowing specific page ranges to be read (e.g., pages: \"1-5\"). Large PDFs (>10 pages) now r",
+    "zh": "向PDF的读取工具添加了页面参数，允许读取特定的页面范围（例如，页面： “1-5” ）。大型PDF （ > 10页）现在可以"
+  },
+  "2.1.31": {
+    "en": "Added session resume hint on exit, showing how to continue your conversation later",
+    "zh": "添加了退出时的会话简历提示，展示了以后如何继续对话"
+  },
+  "2.1.32": {
+    "en": "Claude Opus 4.6 is now available!",
+    "zh": "Claude Opus 4.6现已推出！"
+  },
+  "2.1.33": {
+    "en": "Fixed agent teammate sessions in tmux to send and receive messages",
+    "zh": "修复了代理队友在tmux中发送和接收消息的会话"
+  },
+  "2.1.34": {
+    "en": "Fixed a crash when agent teams setting changed between renders",
+    "zh": "修复了代理团队设置在渲染之间更改时的崩溃"
+  },
+  "2.1.36": {
+    "en": "Fast mode is now available for Opus 4.6. Learn more at https://code.claude.com/docs/en/fast-mode",
+    "zh": "快速模式现在可用于Opus 4.6。如需了解更多信息，请访问https://code.claude.com/docs/en/fast-mode"
+  },
+  "2.1.37": {
+    "en": "Fixed an issue where /fast was not immediately available after enabling /extra-usage",
+    "zh": "修复了启用/extra-usage后无法立即使用/fast的问题"
+  },
+  "2.1.38": {
+    "en": "Fixed VS Code terminal scroll-to-top regression introduced in 2.1.37",
+    "zh": "2.1.37中引入的固定VS码终端滚动到顶部回归"
+  },
+  "2.1.39": {
+    "en": "Improved terminal rendering performance",
+    "zh": "提高了终端渲染性能"
+  },
+  "2.1.4": {
+    "en": "Added CLAUDE_CODE_DISABLE_BACKGROUND_TASKS environment variable to disable all background task functionality including auto-backgrounding an",
+    "zh": "添加了CLAUDE_CODE_DISABLE_BACKGROUND_TASKS环境变量，以禁用所有后台任务功能，包括自动后台"
+  },
+  "2.1.41": {
+    "en": "Added guard against launching Claude Code inside another Claude Code session",
+    "zh": "防止在另一个Claude Code会话中启动Claude Code"
+  },
+  "2.1.42": {
+    "en": "Improved startup performance by deferring Zod schema construction",
+    "zh": "通过延迟Zod架构构建来提高启动性能"
+  },
+  "2.1.43": {
+    "en": "Fixed AWS auth refresh hanging indefinitely by adding a 3-minute timeout",
+    "zh": "通过添加3分钟超时修复了AWS身份验证刷新无限期挂起的问题"
+  },
+  "2.1.44": {
+    "en": "Fixed ENAMETOOLONG errors for deeply-nested directory paths",
+    "zh": "修复了深度嵌套目录路径的ENAMETOOLONG错误"
+  },
+  "2.1.45": {
+    "en": "Added support for Claude Sonnet 4.6",
+    "zh": "新增了对Claude Sonnet 4.6的支持"
+  },
+  "2.1.46": {
+    "en": "Fixed orphaned CC processes after terminal disconnect on macOS",
+    "zh": "修复了macOS终端断开连接后的孤立CC进程"
+  },
+  "2.1.47": {
+    "en": "Fixed FileWriteTool line counting to preserve intentional trailing blank lines instead of stripping them with trimEnd().",
+    "zh": "修复了FileWriteTool行计数，以保留有意的尾随空行，而不是使用trimEnd ()剥离它们。"
+  },
+  "2.1.49": {
+    "en": "Improved MCP OAuth authentication with step-up auth support and discovery caching, reducing redundant network requests during server connect",
+    "zh": "通过升级身份验证支持和发现缓存改进了MCP OAuth身份验证，减少了服务器连接期间的冗余网络请求"
+  },
+  "2.1.5": {
+    "en": "Added CLAUDE_CODE_TMPDIR environment variable to override the temp directory used for internal temp files, useful for environments with cust",
+    "zh": "添加了CLAUDE_CODE_TMPDIR环境变量以覆盖用于内部临时文件的临时目录，这对于具有cust的环境非常有用"
+  },
+  "2.1.50": {
+    "en": "Added support for startupTimeout configuration for LSP servers",
+    "zh": "为LSP服务器添加了对startupTimeout配置的支持"
+  },
+  "2.1.51": {
+    "en": "Added claude remote-control subcommand for external builds, enabling local environment serving for all users.",
+    "zh": "为外部构建添加了claude远程控制子命令，使本地环境服务于所有用户。"
+  },
+  "2.1.52": {
+    "en": "VS Code: Fixed extension crash on Windows (“command ‘claude-vscode.editor.openLast’ not found”)",
+    "zh": "VS Code ：修复了Windows上的扩展崩溃问题（未找到“command ‘claude-vscode.editor.openLast'” ）"
+  },
+  "2.1.53": {
+    "en": "Fixed a UI flicker where user input would briefly disappear after submission before the message rendered",
+    "zh": "修复了用户界面闪烁，其中用户输入将在消息呈现之前提交后短暂消失"
+  },
+  "2.1.55": {
+    "en": "Fixed BashTool failing on Windows with EINVAL error",
+    "zh": "修复了Windows上出现EINVAL错误的BashTool失败"
+  },
+  "2.1.56": {
+    "en": "VS Code: Fixed another cause of “command ‘claude-vscode.editor.openLast’ not found” crashes",
+    "zh": "VS Code ：修复了“command ‘claude-vscode.editor.openLast‘ not found”崩溃的另一个原因"
+  },
+  "2.1.58": {
+    "en": "Expand Remote Control to more users",
+    "zh": "将远程控制扩展到更多用户"
+  },
+  "2.1.59": {
+    "en": "Claude automatically saves useful context to auto-memory. Manage with /memory",
+    "zh": "Claude会自动将有用的上下文保存到自动记忆中。使用/memory管理"
+  },
+  "2.1.6": {
+    "en": "Added search functionality to /config command for quickly filtering settings",
+    "zh": "向/config命令添加了搜索功能，用于快速过滤设置"
+  },
+  "2.1.61": {
+    "en": "Fixed concurrent writes corrupting config file on Windows",
+    "zh": "修复了Windows上并发写入损坏的配置文件的问题"
+  },
+  "2.1.62": {
+    "en": "Fixed prompt suggestion cache regression that reduced cache hit rates",
+    "zh": "修复了提示建议缓存回归，降低了缓存命中率"
+  },
+  "2.1.63": {
+    "en": "Added /simplify and /batch bundled slash commands",
+    "zh": "添加/simplify和/batch捆绑斜杠命令"
+  },
+  "2.1.66": {
+    "en": "Reduced spurious error logging",
+    "zh": "减少虚假错误日志记录"
+  },
+  "2.1.68": {
+    "en": "Opus 4.6 now defaults to medium effort for Max and Team subscribers. Medium effort works well for most tasks — it’s the sweet spot between s",
+    "zh": "对于Max和Team订阅者， Opus 4.6现在默认为中等工作量。中等努力适用于大多数任务—这是两者之间的最佳点"
+  },
+  "2.1.69": {
+    "en": "Added the /claude-api skill for building applications with the Claude API and Anthropic SDK",
+    "zh": "添加了/claude-api技能，用于使用Claude API和Anthropic SDK构建应用程序"
+  },
+  "2.1.7": {
+    "en": "Added showTurnDuration setting to hide turn duration messages (e.g., “Cooked for 1m 6s”)",
+    "zh": "添加了showTurnDuration设置以隐藏转弯持续时间消息（例如， “Cooked for 1m 6s” ）"
+  },
+  "2.1.70": {
+    "en": "Fixed API 400 errors when using ANTHROPIC_BASE_URL with a third-party gateway — tool search now correctly detects proxy endpoints and disabl",
+    "zh": "修复了将ANTHROPIC_BASE_URL与第三方网关一起使用时的API 400错误—工具搜索现在可以正确检测代理端点并禁用"
+  },
+  "2.1.71": {
+    "en": "Added /loop command to run a prompt or slash command on a recurring interval (e.g. /loop 5m check the deploy)",
+    "zh": "添加了/loop命令以定期运行提示符或斜杠命令（例如/loop 5m检查部署）"
+  },
+  "2.1.72": {
+    "en": "Fixed tool search to activate even with ANTHROPIC_BASE_URL as long as ENABLE_TOOL_SEARCH is set.",
+    "zh": "修正了工具搜索，只要设置了ENABLE_TOOL_SEARCH ，即使使用ANTHROPIC_BASE_URL也能激活。"
+  },
+  "2.1.73": {
+    "en": "Added modelOverrides setting to map model picker entries to custom provider model IDs (e.g. Bedrock inference profile ARNs)",
+    "zh": "添加了modelOverrides设置，以将模型选取器条目映射到自定义提供程序模型ID （例如基岩推断配置文件ARN ）"
+  },
+  "2.1.74": {
+    "en": "Added actionable suggestions to /context command — identifies context-heavy tools, memory bloat, and capacity warnings with specific optimiz",
+    "zh": "向/context命令添加了可操作的建议—通过特定的优化来识别上下文繁重的工具、内存膨胀和容量警告"
+  },
+  "2.1.75": {
+    "en": "Added 1M context window for Opus 4.6 by default for Max, Team, and Enterprise plans (previously required extra usage)",
+    "zh": "默认情况下，为Max、Team和Enterprise计划添加了Opus 4.6的1M上下文窗口（以前需要额外使用）"
+  },
+  "2.1.76": {
+    "en": "Added MCP elicitation support — MCP servers can now request structured input mid-task via an interactive dialog (form fields or browser URL)",
+    "zh": "添加了MCP引发支持— MCP服务器现在可以通过交互式对话框（表单字段或浏览器URL ）请求结构化输入中间任务"
+  },
+  "2.1.77": {
+    "en": "Increased default maximum output token limits for Claude Opus 4.6 to 64k tokens, and the upper bound for Opus 4.6 and Sonnet 4.6 models to 1",
+    "zh": "Claude Opus 4.6至64k代币的默认最大输出代币限制增加， Opus 4.6和Sonnet 4.6型号的上限增加至1"
+  },
+  "2.1.78": {
+    "en": "Added StopFailure hook event that fires when the turn ends due to an API error (rate limit, auth failure, etc.)",
+    "zh": "添加了StopFailure钩子事件，该事件在由于API错误（速率限制、身份验证失败等）导致的转弯结束时触发"
+  },
+  "2.1.79": {
+    "en": "Added --console flag to claude auth login for Anthropic Console (API billing) authentication",
+    "zh": "为Anthropic Console （ API计费）身份验证的claude身份验证登录添加了--console标志"
+  },
+  "2.1.80": {
+    "en": "Added rate_limits field to statusline scripts for displaying Claude.ai rate limit usage (5-hour and 7-day windows with used_percentage and r",
+    "zh": "在状态线脚本中添加了rate_limits字段，用于显示Claude.ai速率限制使用情况（ 5小时和7天窗口，带有used_percentage和r"
+  },
+  "2.1.81": {
+    "en": "Added --bare flag for scripted -p calls — skips hooks, LSP, plugin sync, and skill directory walks; requires ANTHROPIC_API_KEY or an apiKeyH",
+    "zh": "为脚本化的-p调用添加了--bare标志—跳过钩子、LSP、插件同步和技能目录遍历；需要ANTHROPIC_API_KEY或apiKeyH"
+  },
+  "2.1.83": {
+    "en": "Added managed-settings.d/ drop-in directory alongside managed-settings.json, letting separate teams deploy independent policy fragments that",
+    "zh": "在managed-settings.json旁边添加了managed-settings.d/插件目录，允许单独的团队部署独立的策略片段，"
+  },
+  "2.1.84": {
+    "en": "Added PowerShell tool for Windows as an opt-in preview. Learn more at https://code.claude.com/docs/en/tools-reference#powershell-tool",
+    "zh": "添加了适用于Windows的PowerShell工具作为选择加入预览。如需了解更多信息，请访问https://code.claude.com/docs/en/tools-reference#powershell-tool"
+  },
+  "2.1.85": {
+    "en": "Added CLAUDE_CODE_MCP_SERVER_NAME and CLAUDE_CODE_MCP_SERVER_URL environment variables to MCP headersHelper scripts, allowing one helper to ",
+    "zh": "向MCP headersHelper脚本添加了CLAUDE_CODE_MCP_SERVER_NAME和CLAUDE_CODE_MCP_SERVER_URL环境变量，允许一个助手"
+  },
+  "2.1.86": {
+    "en": "Added X-Claude-Code-Session-Id header to API requests so proxies can aggregate requests by session without parsing the body",
+    "zh": "向API请求添加了X-Claude-Code-Session-Id标头，以便代理可以按会话聚合请求，而无需解析正文"
+  },
+  "2.1.87": {
+    "en": "Fixed messages in Cowork Dispatch not getting delivered",
+    "zh": "修复了Cowork Dispatch中未送达的消息"
+  },
+  "2.1.89": {
+    "en": "Added \"defer\" permission decision to PreToolUse hooks — headless sessions can pause at a tool call and resume with -p --resume to have the h",
+    "zh": "向PreToolUse钩子添加了“推迟”权限决策—无头会话可以在工具调用时暂停，并使用-p --resume恢复以具有"
+  },
+  "2.1.9": {
+    "en": "Added auto:N syntax for configuring the MCP tool search auto-enable threshold, where N is the context window percentage (0-100)",
+    "zh": "添加了用于配置MCP工具搜索自动启用阈值的auto: N语法，其中N是上下文窗口百分比（ 0-100 ）"
+  },
+  "2.1.90": {
+    "en": "Added /powerup — interactive lessons teaching Claude Code features with animated demos",
+    "zh": "已添加/powerup -通过动画演示教授Claude Code功能的交互式课程"
+  },
+  "2.1.91": {
+    "en": "Added MCP tool result persistence override via _meta[\"anthropic/maxResultSizeChars\"] annotation (up to 500K), allowing larger results like D",
+    "zh": "添加了MCP工具结果持久性重写via_meta [\"anthropic/maxResultSizeChars\"]注释（最多500K ） ，允许更大的结果，如D"
+  },
+  "2.1.92": {
+    "en": "Added forceRemoteSettingsRefresh policy setting: when set, the CLI blocks startup until remote managed settings are freshly fetched, and exi",
+    "zh": "添加了forceRemoteSettingsRefresh策略设置：设置后， CLI会阻止启动，直到重新获取远程托管设置，并且"
+  },
+  "2.1.94": {
+    "en": "Added support for Amazon Bedrock powered by Mantle, set CLAUDE_CODE_USE_MANTLE=1",
+    "zh": "添加了对由Mantle提供支持的Amazon Bedrock的支持，设置CLAUDE_CODE_USE_MANTLE = 1"
+  },
+  "2.1.96": {
+    "en": "Fixed Bedrock requests failing with 403 \"Authorization header is missing\" when using AWS_BEARER_TOKEN_BEDROCK or CLAUDE_CODE_SKIP_BEDROCK_AU",
+    "zh": "修复了使用AWS_BEARER_TOKEN_BEDROCK或CLAUDE_CODE_SKIP_BEDROCK_AU时使用403 “缺少授权标头”失败的基岩请求"
+  },
+  "2.1.97": {
+    "en": "Added focus view toggle (Ctrl+O) in NO_FLICKER mode showing prompt, one-line tool summary with edit diffstats, and final response",
+    "zh": "在NO_FLICKER模式下添加了焦点视图切换（ Ctrl + O ） ，显示提示、具有编辑diffstats的单行工具摘要和最终响应"
+  },
+  "2.1.98": {
+    "en": "Added interactive Google Vertex AI setup wizard accessible from the login screen when selecting “3rd-party platform”, guiding you through GC",
+    "zh": "添加了选择“第三方平台”时可从登录屏幕访问的交互式Google Vertex AI设置向导，引导您完成GC"
+  }
+}
