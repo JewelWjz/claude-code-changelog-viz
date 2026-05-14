@@ -274,6 +274,29 @@
   }
   footer a { color: var(--ink-2); text-decoration: none; }
 
+  /* ---------- Global range bar ---------- */
+  .range-bar {
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    margin: 28px 0 -4px;
+    padding: 14px 18px;
+    background: var(--panel); border: 1px solid var(--line);
+  }
+  .range-bar .range-label {
+    font-size: 11px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-3); font-weight: 500;
+  }
+  .range-bar .range-chips { display: flex; gap: 8px; flex-wrap: wrap; }
+  .range-bar .range-meta {
+    margin-left: auto; font-size: 11px; color: var(--ink-3);
+    font-family: "JetBrains Mono", monospace; letter-spacing: 0.04em;
+  }
+  .r-h-en {
+    font-size: 11px; color: var(--ink-3);
+    margin-top: 4px; line-height: 1.45;
+    font-family: "JetBrains Mono", monospace;
+    opacity: 0.85; word-break: break-word;
+  }
+
   @media (max-width: 960px) {
     .hero { grid-template-columns: 1fr; gap: 28px; }
     .hero h1 { font-size: 48px; }
@@ -309,6 +332,18 @@
         这是 Claude Code 公开变更日志的可视化解读。下方按发布日期排列每个版本的功能与修复条目数量，让你一眼看清开发节奏、密集修复期、以及那些“轻量补丁”和“大版本”的分布。
       </p>
     </section>
+
+    <!-- Global range filter -->
+    <div class="range-bar">
+      <span class="range-label">时间范围</span>
+      <div class="range-chips">
+        <button class="chip" data-range="30">最近 30 天</button>
+        <button class="chip active" data-range="90">最近 90 天</button>
+        <button class="chip" data-range="180">最近 180 天</button>
+        <button class="chip" data-range="all">全部</button>
+      </div>
+      <span class="range-meta" id="rangeMeta"></span>
+    </div>
 
     <!-- KPI -->
     <div class="kpi-row" id="kpi"></div>
@@ -390,219 +425,207 @@
 <script src="data.js"></script>
 <script>
 (function() {
-  const data = (window.CHANGELOG || []).slice().sort((a,b)=> a.date.localeCompare(b.date));
+  const allData = (window.CHANGELOG || []).slice().sort((a,b)=> a.date.localeCompare(b.date));
 
-  // ---------- KPI ----------
-  const total = data.reduce((s,d)=> s+d.count, 0);
-  const majors = data.filter(d=> d.count >= 5).length;
-  const patches = data.length - majors;
-  const dates = data.map(d=> d.date);
-  const first = dates[0], last = dates[dates.length-1];
-  const dayDiff = (new Date(last) - new Date(first)) / 86400000 + 1;
-  const releasesPerWeek = (data.length / (dayDiff/7)).toFixed(1);
+  let range = 90;        // days, or Infinity
+  let filter = "all";    // all | major | patch
+  let sort = "date";     // date | version
 
-  const fmtDate = s => {
-    const d = new Date(s);
-    return d.toLocaleDateString("en-US",{month:"short", day:"numeric"});
-  };
-  const fmtDateLong = s => {
-    const d = new Date(s);
-    return d.toLocaleDateString("zh-CN",{year:"numeric",month:"long",day:"numeric"});
-  };
+  const fmtDate = s => new Date(s).toLocaleDateString("en-US",{month:"short", day:"numeric"});
+  const fmtDateLong = s => new Date(s).toLocaleDateString("zh-CN",{year:"numeric",month:"long",day:"numeric"});
 
-  const kpiEl = document.getElementById("kpi");
-  const kpis = [
-    { label: "Total releases", value: data.length, unit: "次", sub: `${fmtDate(first)} → ${fmtDate(last)}` },
-    { label: "Tracked entries", value: total.toLocaleString(), unit: "条", sub: `平均每版本 ${(total/data.length).toFixed(1)} 条` },
-    { label: "Major releases", value: majors, unit: `/ ${data.length}`, sub: `${patches} 个补丁版本` },
-    { label: "Release cadence", value: releasesPerWeek, unit: "/ 周", sub: `共 ${Math.round(dayDiff)} 天` },
-  ];
-  kpiEl.innerHTML = kpis.map(k => `
-    <div class="kpi">
-      <div class="kpi-label">${k.label}</div>
-      <div class="kpi-value mono">${k.value}<span class="unit">${k.unit}</span></div>
-      <div class="kpi-sub">${k.sub}</div>
-    </div>`).join("");
+  function applyRange(arr, days) {
+    if (!arr.length) return arr.slice();
+    if (!isFinite(days)) return arr.slice();
+    const anchor = new Date(arr[arr.length-1].date).getTime();
+    const cutoff = anchor - (days-1) * 86400000;
+    return arr.filter(d => new Date(d.date).getTime() >= cutoff);
+  }
 
-  // ---------- Bar chart ----------
-  const svg = document.getElementById("chart");
-  const W = 1200, H = 320;
-  const margin = { top: 20, right: 16, bottom: 36, left: 40 };
-  const innerW = W - margin.left - margin.right;
-  const innerH = H - margin.top - margin.bottom;
-  const maxCount = Math.max(...data.map(d=>d.count));
+  function renderRangeMeta(data) {
+    const meta = document.getElementById("rangeMeta");
+    if (!data.length) { meta.textContent = "no data"; return; }
+    meta.textContent = `${data[0].date} → ${data[data.length-1].date}  ·  ${data.length} 个版本`;
+  }
 
-  const t0 = new Date(first).getTime();
-  const t1 = new Date(last).getTime();
-  const xScale = t => margin.left + ((t - t0) / (t1 - t0)) * innerW;
-  const yScale = v => margin.top + innerH - (v / maxCount) * innerH;
-
-  let svgHTML = "";
-
-  // Grid + Y axis
-  const yTicks = [0, 10, 20, 30, 40, 50];
-  svgHTML += `<g class="grid">`;
-  yTicks.forEach(t => {
-    const y = yScale(t);
-    svgHTML += `<line x1="${margin.left}" x2="${W-margin.right}" y1="${y}" y2="${y}" />`;
-  });
-  svgHTML += `</g>`;
-  svgHTML += `<g class="axis">`;
-  yTicks.forEach(t => {
-    const y = yScale(t);
-    svgHTML += `<text x="${margin.left-8}" y="${y+3}" text-anchor="end">${t}</text>`;
-  });
-  // X axis ticks: by week
-  const tickDates = [];
-  for (let t = t0; t <= t1; t += 7*86400000) tickDates.push(t);
-  if (tickDates[tickDates.length-1] < t1) tickDates.push(t1);
-  tickDates.forEach(td => {
-    const x = xScale(td);
-    const d = new Date(td);
-    const lbl = `${d.getMonth()+1}/${d.getDate()}`;
-    svgHTML += `<text x="${x}" y="${H-margin.bottom+18}" text-anchor="middle">${lbl}</text>`;
-  });
-  svgHTML += `<line x1="${margin.left}" x2="${W-margin.right}" y1="${H-margin.bottom}" y2="${H-margin.bottom}" />`;
-  svgHTML += `</g>`;
-
-  // Bars (group by date, sub-position)
-  const byDate = {};
-  data.forEach(d => { (byDate[d.date] = byDate[d.date] || []).push(d); });
-  Object.entries(byDate).forEach(([date, items]) => {
-    const cx = xScale(new Date(date).getTime());
-    const barWidth = 10;
-    const total = items.length;
-    items.forEach((d, idx) => {
-      const offset = (idx - (total-1)/2) * (barWidth + 1);
-      const x = cx + offset - barWidth/2;
-      const y = yScale(d.count);
-      const h = (H - margin.bottom) - y;
-      const cls = d.count < 5 ? "bar small" : "bar";
-      svgHTML += `<rect class="${cls}" data-v="${d.v}" x="${x}" y="${y}" width="${barWidth}" height="${Math.max(h, 2)}" rx="1.5"></rect>`;
-    });
-  });
-
-  svg.innerHTML = svgHTML;
-
-  const tip = document.getElementById("tooltip");
-  const chartWrap = svg.parentElement;
-  svg.querySelectorAll(".bar").forEach(bar => {
-    bar.addEventListener("mouseenter", e => {
-      const v = bar.getAttribute("data-v");
-      const d = data.find(x => x.v === v);
-      tip.innerHTML = `
-        <div><span class="t-v">${d.v}</span> · ${fmtDateLong(d.date)}</div>
-        <div><span class="t-c">${d.count}</span> 条更新</div>
-        <div class="t-h">${d.h}</div>`;
-      tip.classList.add("on");
-      const rect = svg.getBoundingClientRect();
-      const wrapRect = chartWrap.getBoundingClientRect();
-      const barRect = bar.getBoundingClientRect();
-      tip.style.left = (barRect.left - wrapRect.left + barRect.width/2) + "px";
-      tip.style.top = (barRect.top - wrapRect.top) + "px";
-      // Highlight in list
-      document.querySelectorAll(".release").forEach(r=>r.classList.remove("active"));
-      const node = document.querySelector(`.release[data-v="${v}"]`);
-      if (node) node.classList.add("active");
-      document.querySelectorAll(".bar").forEach(b=>b.classList.remove("active"));
-      bar.classList.add("active");
-    });
-    bar.addEventListener("mouseleave", () => {
-      tip.classList.remove("on");
-    });
-    bar.addEventListener("click", () => {
-      const v = bar.getAttribute("data-v");
-      const node = document.querySelector(`.release[data-v="${v}"]`);
-      if (node) {
-        node.scrollIntoView({ behavior: "smooth", block: "center" });
-      }
-    });
-  });
-
-  // ---------- Calendar heatmap ----------
-  const cal = document.getElementById("cal");
-  // Compute day buckets
-  const dayMap = {};
-  data.forEach(d => { dayMap[d.date] = (dayMap[d.date] || 0) + d.count; });
-  // Build a grid: weeks (columns) × days (rows, Mon-Sun)
-  const startCal = new Date(first);
-  // back up to Monday
-  const sd = new Date(startCal);
-  const dow = (sd.getDay() + 6) % 7; // 0=Mon
-  sd.setDate(sd.getDate() - dow);
-  const endCal = new Date(last);
-  const ed = new Date(endCal);
-  const edow = (ed.getDay() + 6) % 7;
-  ed.setDate(ed.getDate() + (6 - edow));
-
-  const weeks = Math.round((ed - sd) / (7*86400000)) + 1;
-  cal.style.setProperty("--cols", weeks);
-
-  const maxDay = Math.max(...Object.values(dayMap));
-  const colorFor = v => {
-    if (!v) return "var(--bg-2)";
-    const r = v / maxDay;
-    if (r < 0.15) return "#f0d4c2";
-    if (r < 0.35) return "#e89c70";
-    if (r < 0.6)  return "#d97a3f";
-    if (r < 0.85) return "var(--accent)";
-    return "#8a2810";
-  };
-
-  // Day labels column (rows 2..8 — row 1 is month header)
-  const dayLabels = ["Mon","","Wed","","Fri","",""];
-  const monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-  let cellsHTML = "";
-
-  // Determine which weeks contain the first appearance of each month
-  // — place the month label at that column.
-  const monthStarts = {}; // weekIndex -> monthName
-  let cursor = new Date(sd);
-  let lastSeenMonth = -1;
-  for (let w = 0; w < weeks; w++) {
-    for (let d = 0; d < 7; d++) {
-      const m = cursor.getMonth();
-      if (m !== lastSeenMonth) {
-        // Only label if the month genuinely changes within the visible range
-        if (!(w in monthStarts)) monthStarts[w] = monthNames[m];
-        lastSeenMonth = m;
-      }
-      cursor.setDate(cursor.getDate() + 1);
+  function renderKpi(data) {
+    const kpiEl = document.getElementById("kpi");
+    if (!data.length) {
+      kpiEl.innerHTML = `<div class="kpi"><div class="kpi-label">No data in range</div><div class="kpi-value mono">—</div></div>`;
+      return;
     }
+    const total = data.reduce((s,d)=> s+d.count, 0);
+    const majors = data.filter(d=> d.count >= 5).length;
+    const patches = data.length - majors;
+    const first = data[0].date, last = data[data.length-1].date;
+    const dayDiff = (new Date(last) - new Date(first)) / 86400000 + 1;
+    const perWeek = (data.length / (dayDiff/7)).toFixed(1);
+    const kpis = [
+      { label: "Total releases", value: data.length, unit: "次", sub: `${fmtDate(first)} → ${fmtDate(last)}` },
+      { label: "Tracked entries", value: total.toLocaleString(), unit: "条", sub: `平均每版本 ${(total/data.length).toFixed(1)} 条` },
+      { label: "Major releases", value: majors, unit: `/ ${data.length}`, sub: `${patches} 个补丁版本` },
+      { label: "Release cadence", value: perWeek, unit: "/ 周", sub: `共 ${Math.round(dayDiff)} 天` },
+    ];
+    kpiEl.innerHTML = kpis.map(k => `
+      <div class="kpi">
+        <div class="kpi-label">${k.label}</div>
+        <div class="kpi-value mono">${k.value}<span class="unit">${k.unit}</span></div>
+        <div class="kpi-sub">${k.sub}</div>
+      </div>`).join("");
   }
-  // Render month labels on row 1
-  Object.entries(monthStarts).forEach(([w, name]) => {
-    cellsHTML += `<div class="cal-month-label" style="grid-row:1;grid-column:${+w+2};">${name}</div>`;
-  });
 
-  // Day labels (left column, rows 2..8)
-  for (let row = 0; row < 7; row++) {
-    cellsHTML += `<div class="cal-day-label" style="grid-row:${row+2}; grid-column:1;">${dayLabels[row]||""}</div>`;
+  function renderChart(data) {
+    const svg = document.getElementById("chart");
+    if (!data.length) { svg.innerHTML = ""; return; }
+    const W = 1200, H = 320;
+    const margin = { top: 20, right: 16, bottom: 36, left: 40 };
+    const innerW = W - margin.left - margin.right;
+    const innerH = H - margin.top - margin.bottom;
+    const maxCount = Math.max(...data.map(d=>d.count), 1);
+    const first = data[0].date, last = data[data.length-1].date;
+    const t0 = new Date(first).getTime(), t1 = new Date(last).getTime();
+    const xScale = t => t0===t1 ? margin.left + innerW/2 : margin.left + ((t - t0) / (t1 - t0)) * innerW;
+    const yScale = v => margin.top + innerH - (v / maxCount) * innerH;
+
+    let html = "";
+    const yTicks = [0,10,20,30,40,50];
+    html += `<g class="grid">` + yTicks.map(t=> `<line x1="${margin.left}" x2="${W-margin.right}" y1="${yScale(t)}" y2="${yScale(t)}" />`).join("") + `</g>`;
+    html += `<g class="axis">` + yTicks.map(t=> `<text x="${margin.left-8}" y="${yScale(t)+3}" text-anchor="end">${t}</text>`).join("");
+
+    const spanDays = (t1 - t0) / 86400000;
+    const stepDays = spanDays <= 35 ? 7 : (spanDays <= 100 ? 14 : (spanDays <= 240 ? 28 : 60));
+    const ticks = [];
+    for (let t = t0; t <= t1; t += stepDays*86400000) ticks.push(t);
+    if (ticks[ticks.length-1] < t1) ticks.push(t1);
+    ticks.forEach(td => {
+      const x = xScale(td);
+      const d = new Date(td);
+      const lbl = `${d.getMonth()+1}/${d.getDate()}`;
+      html += `<text x="${x}" y="${H-margin.bottom+18}" text-anchor="middle">${lbl}</text>`;
+    });
+    html += `<line x1="${margin.left}" x2="${W-margin.right}" y1="${H-margin.bottom}" y2="${H-margin.bottom}" />`;
+    html += `</g>`;
+
+    const byDate = {};
+    data.forEach(d => { (byDate[d.date] = byDate[d.date] || []).push(d); });
+    const barWidth = Math.max(3, Math.min(14, innerW / Math.max(data.length, 1) * 0.7));
+    Object.entries(byDate).forEach(([date, items]) => {
+      const cx = xScale(new Date(date).getTime());
+      const n = items.length;
+      items.forEach((d, idx) => {
+        const offset = (idx - (n-1)/2) * (barWidth + 1);
+        const x = cx + offset - barWidth/2;
+        const y = yScale(d.count);
+        const h = (H - margin.bottom) - y;
+        const cls = d.count < 5 ? "bar small" : "bar";
+        html += `<rect class="${cls}" data-v="${d.v}" x="${x}" y="${y}" width="${barWidth}" height="${Math.max(h, 2)}" rx="1.5"></rect>`;
+      });
+    });
+    svg.innerHTML = html;
+
+    const tip = document.getElementById("tooltip");
+    const chartWrap = svg.parentElement;
+    svg.querySelectorAll(".bar").forEach(bar => {
+      bar.addEventListener("mouseenter", () => {
+        const v = bar.getAttribute("data-v");
+        const d = allData.find(x => x.v === v);
+        const showEn = d.zh && d.zh !== d.h;
+        const summary = showEn
+          ? `${d.zh}<div style="opacity:0.55; margin-top:3px; font-size:11px;">${d.h}</div>`
+          : d.h;
+        tip.innerHTML = `
+          <div><span class="t-v">${d.v}</span> · ${fmtDateLong(d.date)}</div>
+          <div><span class="t-c">${d.count}</span> 条更新</div>
+          <div class="t-h">${summary}</div>`;
+        tip.classList.add("on");
+        const wrapRect = chartWrap.getBoundingClientRect();
+        const barRect = bar.getBoundingClientRect();
+        tip.style.left = (barRect.left - wrapRect.left + barRect.width/2) + "px";
+        tip.style.top = (barRect.top - wrapRect.top) + "px";
+        document.querySelectorAll(".release").forEach(r=>r.classList.remove("active"));
+        const node = document.querySelector(`.release[data-v="${v}"]`);
+        if (node) node.classList.add("active");
+        document.querySelectorAll(".bar").forEach(b=>b.classList.remove("active"));
+        bar.classList.add("active");
+      });
+      bar.addEventListener("mouseleave", () => tip.classList.remove("on"));
+      bar.addEventListener("click", () => {
+        const v = bar.getAttribute("data-v");
+        const node = document.querySelector(`.release[data-v="${v}"]`);
+        if (node) node.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+    });
   }
 
-  // Cells (rows 2..8)
-  cursor = new Date(sd);
-  for (let w = 0; w < weeks; w++) {
-    for (let d = 0; d < 7; d++) {
-      const iso = cursor.toISOString().slice(0,10);
-      const v = dayMap[iso] || 0;
-      const inRange = cursor >= new Date(first) && cursor <= new Date(last);
-      const cls = inRange ? "cal-cell" : "cal-cell empty";
-      const bg = inRange ? colorFor(v) : "transparent";
-      const title = inRange ? `${iso} · ${v} 条更新` : "";
-      cellsHTML += `<div class="${cls}" style="grid-row:${d+2};grid-column:${w+2};background:${bg};" title="${title}"></div>`;
-      cursor.setDate(cursor.getDate() + 1);
+  function renderCalendar(data) {
+    const cal = document.getElementById("cal");
+    if (!data.length) { cal.innerHTML = ""; return; }
+    const dayMap = {};
+    data.forEach(d => { dayMap[d.date] = (dayMap[d.date] || 0) + d.count; });
+    const first = data[0].date, last = data[data.length-1].date;
+    const sd = new Date(first);
+    sd.setDate(sd.getDate() - ((sd.getDay() + 6) % 7));
+    const ed = new Date(last);
+    ed.setDate(ed.getDate() + (6 - ((ed.getDay() + 6) % 7)));
+    const weeks = Math.round((ed - sd) / (7*86400000)) + 1;
+    cal.style.setProperty("--cols", weeks);
+
+    const maxDay = Math.max(...Object.values(dayMap), 1);
+    const colorFor = v => {
+      if (!v) return "var(--bg-2)";
+      const r = v / maxDay;
+      if (r < 0.15) return "#f0d4c2";
+      if (r < 0.35) return "#e89c70";
+      if (r < 0.6)  return "#d97a3f";
+      if (r < 0.85) return "var(--accent)";
+      return "#8a2810";
+    };
+
+    const dayLabels = ["Mon","","Wed","","Fri","",""];
+    const monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    const monthStarts = {};
+    let cursor = new Date(sd), lastSeenMonth = -1;
+    for (let w = 0; w < weeks; w++) {
+      for (let d = 0; d < 7; d++) {
+        const m = cursor.getMonth();
+        if (m !== lastSeenMonth) {
+          if (!(w in monthStarts)) monthStarts[w] = monthNames[m];
+          lastSeenMonth = m;
+        }
+        cursor.setDate(cursor.getDate() + 1);
+      }
     }
+    let html = "";
+    Object.entries(monthStarts).forEach(([w, name]) => {
+      html += `<div class="cal-month-label" style="grid-row:1;grid-column:${+w+2};">${name}</div>`;
+    });
+    for (let row = 0; row < 7; row++) {
+      html += `<div class="cal-day-label" style="grid-row:${row+2}; grid-column:1;">${dayLabels[row]||""}</div>`;
+    }
+    cursor = new Date(sd);
+    const firstD = new Date(first), lastD = new Date(last);
+    for (let w = 0; w < weeks; w++) {
+      for (let d = 0; d < 7; d++) {
+        const iso = cursor.toISOString().slice(0,10);
+        const v = dayMap[iso] || 0;
+        const inRange = cursor >= firstD && cursor <= lastD;
+        const cls = inRange ? "cal-cell" : "cal-cell empty";
+        const bg = inRange ? colorFor(v) : "transparent";
+        const title = inRange ? `${iso} · ${v} 条更新` : "";
+        html += `<div class="${cls}" style="grid-row:${d+2};grid-column:${w+2};background:${bg};" title="${title}"></div>`;
+        cursor.setDate(cursor.getDate() + 1);
+      }
+    }
+    cal.innerHTML = html;
   }
-  cal.innerHTML = cellsHTML;
 
-  // ---------- Release list ----------
-  const listEl = document.getElementById("releaseList");
-  const listCount = document.getElementById("listCount");
-  let filter = "all", sort = "date";
-  const maxC = Math.max(...data.map(d=>d.count));
+  function escapeHTML(s) {
+    return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  }
 
-  function render() {
+  function renderList(data) {
+    const listEl = document.getElementById("releaseList");
+    const listCount = document.getElementById("listCount");
     let arr = data.slice();
     if (filter === "major") arr = arr.filter(d => d.count >= 5);
     if (filter === "patch") arr = arr.filter(d => d.count < 5);
@@ -612,11 +635,14 @@
       for (let i=0;i<3;i++) if (av[i]!==bv[i]) return bv[i]-av[i];
       return 0;
     });
+    const maxC = Math.max(...data.map(d=>d.count), 1);
     listEl.innerHTML = arr.map(d => {
       const dt = new Date(d.date);
       const mon = dt.toLocaleDateString("en-US",{month:"short"});
       const day = dt.getDate();
       const pct = Math.max(8, (d.count / maxC) * 100);
+      const zh = d.zh || d.h;
+      const showEn = d.zh && d.zh !== d.h;
       return `
         <div class="release" data-v="${d.v}">
           <div class="r-date">
@@ -624,7 +650,8 @@
           </div>
           <div class="r-mid">
             <div class="r-v">${d.v}</div>
-            <div class="r-h">${d.h}</div>
+            <div class="r-h">${escapeHTML(zh)}</div>
+            ${showEn ? `<div class="r-h-en">${escapeHTML(d.h)}</div>` : ``}
           </div>
           <div class="r-bar">
             <div class="num">${d.count}</div>
@@ -635,22 +662,41 @@
     }).join("");
     listCount.textContent = `显示 ${arr.length} / ${data.length} 个版本`;
   }
-  render();
 
+  function update() {
+    const data = applyRange(allData, range);
+    renderRangeMeta(data);
+    renderKpi(data);
+    renderChart(data);
+    renderCalendar(data);
+    renderList(data);
+  }
+
+  document.querySelectorAll(".chip[data-range]").forEach(c => {
+    c.addEventListener("click", () => {
+      document.querySelectorAll(".chip[data-range]").forEach(x=>x.classList.remove("active"));
+      c.classList.add("active");
+      const v = c.dataset.range;
+      range = v === "all" ? Infinity : parseInt(v, 10);
+      update();
+    });
+  });
   document.querySelectorAll(".chip[data-filter]").forEach(c => {
     c.addEventListener("click", () => {
       document.querySelectorAll(".chip[data-filter]").forEach(x=>x.classList.remove("active"));
       c.classList.add("active");
-      filter = c.dataset.filter; render();
+      filter = c.dataset.filter; update();
     });
   });
   document.querySelectorAll(".chip[data-sort]").forEach(c => {
     c.addEventListener("click", () => {
       document.querySelectorAll(".chip[data-sort]").forEach(x=>x.classList.remove("active"));
       c.classList.add("active");
-      sort = c.dataset.sort; render();
+      sort = c.dataset.sort; update();
     });
   });
+
+  update();
 })();
 </script>
 </body>

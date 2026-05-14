@@ -10,7 +10,7 @@ on:
     branches: [ main ]
 
 permissions:
-  contents: read
+  contents: write     # we commit translations.json cache back
   pages: write
   id-token: write
 
@@ -33,6 +33,18 @@ jobs:
 
       - name: Build site
         run: python3 scripts/build.py
+
+      - name: Persist translation cache (if changed)
+        run: |
+          if [[ -n "$(git status --porcelain translations.json)" ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add translations.json
+            git commit -m "Update translations cache [skip ci]"
+            git push
+          else
+            echo "translations.json unchanged"
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
