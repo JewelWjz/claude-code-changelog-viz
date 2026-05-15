@@ -245,6 +245,19 @@
     font-size: 15px; font-weight: 600; color: var(--ink);
     letter-spacing: -0.01em;
   }
+  .r-v-link {
+    color: inherit; text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+    transition: border-color 120ms, color 120ms;
+  }
+  .r-v-link:hover { border-color: var(--accent); color: var(--accent); }
+  .r-v-arrow {
+    display: inline-block; margin-left: 6px;
+    font-size: 11px; color: var(--ink-3); font-weight: 500;
+    vertical-align: 1px; transition: color 120ms;
+  }
+  .r-v-link:hover .r-v-arrow { color: var(--accent); }
   .r-h {
     font-size: 13px; color: var(--ink-2); line-height: 1.45;
     margin-top: 6px;
@@ -649,7 +662,7 @@
             <span class="r-mon">${mon}</span>${day} · ${d.date.slice(0,4)}
           </div>
           <div class="r-mid">
-            <div class="r-v">${d.v}</div>
+            <div class="r-v"><a class="r-v-link" href="https://code.claude.com/docs/en/changelog#${d.v.replace(/\./g,'-')}" target="_blank" rel="noopener">${d.v}<span class="r-v-arrow">↗</span></a></div>
             <div class="r-h">${escapeHTML(zh)}</div>
             ${showEn ? `<div class="r-h-en">${escapeHTML(d.h)}</div>` : ``}
           </div>
