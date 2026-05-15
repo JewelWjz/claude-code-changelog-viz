@@ -851,6 +851,10 @@
     "en": "Added terminalSequence field to hook JSON output so hooks can emit desktop notifications, window titles, and bells without a controlling ter",
     "zh": "添加了terminalSequence字段以挂钩JSON输出，以便挂钩可以在没有控制ter的情况下发出桌面通知、窗口标题和铃铛"
   },
+  "2.1.142": {
+    "en": "Added new claude agents flags: --add-dir, --settings, --mcp-config, --plugin-dir, --permission-mode, --model, --effort, and --dangerously-sk",
+    "zh": "添加了新的claude agent标志： --add-dir、--settings、--mcp-config、--plugin-dir、--permission-mode、--model、--effort和--dangerously-sk"
+  },
   "2.1.15": {
     "en": "Added deprecation notification for npm installations - run claude install or see https://docs.anthropic.com/en/docs/claude-code/getting-star",
     "zh": "为npm安装添加了弃用通知-运行claude install或查看https://docs.anthropic.com/en/docs/claude-code/getting-star"
