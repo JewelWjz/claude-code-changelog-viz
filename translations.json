@@ -871,6 +871,14 @@
     "en": "Renamed /simplify to /code-review with an optional effort level (e.g. /code-review high)",
     "zh": "使用可选工作量级别（例如/code-review high ）重命名/简化为/code-review"
   },
+  "2.1.147": {
+    "en": "Pinned background sessions (Ctrl+T in claude agents) now stay alive when idle, are restarted in place to apply Claude Code updates, and are ",
+    "zh": "固定的后台会话（ Claude代理中的Ctrl + T ）现在在空闲时保持活跃，重新启动以应用Claude Code更新，并且"
+  },
+  "2.1.148": {
+    "en": "Fixed the Bash tool returning exit code 127 on every command for some users (a regression introduced in 2.1.147)",
+    "zh": "修复了Bash工具在某些用户的每个命令上返回退出代码127的问题（ 2.1.147中引入的回归）"
+  },
   "2.1.15": {
     "en": "Added deprecation notification for npm installations - run claude install or see https://docs.anthropic.com/en/docs/claude-code/getting-star",
     "zh": "为npm安装添加了弃用通知-运行claude install或查看https://docs.anthropic.com/en/docs/claude-code/getting-star"
