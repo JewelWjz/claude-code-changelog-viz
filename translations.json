@@ -895,6 +895,10 @@
     "en": "/code-review --fix now applies review findings to your working tree after the review, surfacing reuse, simplification, and efficiency sugges",
     "zh": "/code-review --fix现在在审核后将审核结果应用于您的工作树，显示重用、简化和效率建议"
   },
+  "2.1.153": {
+    "en": "Added skipLfs option to github/git plugin marketplace sources to skip Git LFS downloads during clone and update",
+    "zh": "向github/git插件市场源添加了skipLfs选项，以在克隆和更新期间跳过Git LFS下载"
+  },
   "2.1.16": {
     "en": "Added new task management system, including new capabilities like dependency tracking",
     "zh": "添加了新的任务管理系统，包括依赖关系跟踪等新功能"
