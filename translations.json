@@ -899,6 +899,14 @@
     "en": "Added skipLfs option to github/git plugin marketplace sources to skip Git LFS downloads during clone and update",
     "zh": "向github/git插件市场源添加了skipLfs选项，以在克隆和更新期间跳过Git LFS下载"
   },
+  "2.1.154": {
+    "en": "Opus 4.8 is here! Now defaults to high effort · /effort xhigh for your hardest tasks",
+    "zh": "Opus 4.8来了！现在，对于您最困难的任务，默认为高投入量·/投入量xhigh"
+  },
+  "2.1.156": {
+    "en": "Fixed an issue when using Opus 4.8 where thinking blocks were modified, leading to API errors.",
+    "zh": "修复了使用Opus 4.8时修改思维块导致API错误的问题。"
+  },
   "2.1.16": {
     "en": "Added new task management system, including new capabilities like dependency tracking",
     "zh": "添加了新的任务管理系统，包括依赖关系跟踪等新功能"
