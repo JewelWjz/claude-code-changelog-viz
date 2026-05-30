@@ -907,6 +907,14 @@
     "en": "Fixed an issue when using Opus 4.8 where thinking blocks were modified, leading to API errors.",
     "zh": "修复了使用Opus 4.8时修改思维块导致API错误的问题。"
   },
+  "2.1.157": {
+    "en": "Plugins in .claude/skills directories are now automatically loaded, no marketplace required",
+    "zh": ".claude/skills目录中的插件现在自动加载，无需市场"
+  },
+  "2.1.158": {
+    "en": "Auto mode is now available on Bedrock, Vertex, and Foundry for Opus 4.7 and Opus 4.8. Opt in by setting CLAUDE_CODE_ENABLE_AUTO_MODE=1",
+    "zh": "Opus 4.7和Opus 4.8的自动模式现已在基岩、顶点和铸造厂上可用。通过设置CLAUDE_CODE_ENABLE_AUTO_MODE = 1选择加入"
+  },
   "2.1.16": {
     "en": "Added new task management system, including new capabilities like dependency tracking",
     "zh": "添加了新的任务管理系统，包括依赖关系跟踪等新功能"
