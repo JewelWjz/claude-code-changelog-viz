@@ -923,6 +923,10 @@
     "en": "Added new task management system, including new capabilities like dependency tracking",
     "zh": "添加了新的任务管理系统，包括依赖关系跟踪等新功能"
   },
+  "2.1.160": {
+    "en": "Added a prompt before writing to shell startup files (.zshenv, .zlogin, .bash_login) and ~/.config/git/, which could otherwise lead to unint",
+    "zh": "在写入shell启动文件（ .zshenv、.zlogin、.bash_login ）和~/.config/git/之前添加了提示，否则可能会导致unint"
+  },
   "2.1.17": {
     "en": "Fixed crashes on processors without AVX instruction support",
     "zh": "修复了不支持AVX指令的处理器崩溃问题"
