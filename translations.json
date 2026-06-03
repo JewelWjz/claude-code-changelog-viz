@@ -927,6 +927,10 @@
     "en": "Added a prompt before writing to shell startup files (.zshenv, .zlogin, .bash_login) and ~/.config/git/, which could otherwise lead to unint",
     "zh": "在写入shell启动文件（ .zshenv、.zlogin、.bash_login ）和~/.config/git/之前添加了提示，否则可能会导致unint"
   },
+  "2.1.161": {
+    "en": "OTEL_RESOURCE_ATTRIBUTES values are now included as labels on metric datapoints, so you can slice usage metrics by custom dimensions like te",
+    "zh": "OTEL_RESOURCE_ATTRIBUTES值现在包含在指标数据点上的标签中，因此您可以按自定义维度（如te"
+  },
   "2.1.17": {
     "en": "Fixed crashes on processors without AVX instruction support",
     "zh": "修复了不支持AVX指令的处理器崩溃问题"
