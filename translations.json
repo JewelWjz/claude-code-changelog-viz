@@ -931,6 +931,10 @@
     "en": "OTEL_RESOURCE_ATTRIBUTES values are now included as labels on metric datapoints, so you can slice usage metrics by custom dimensions like te",
     "zh": "OTEL_RESOURCE_ATTRIBUTES值现在包含在指标数据点上的标签中，因此您可以按自定义维度（如te"
   },
+  "2.1.162": {
+    "en": "claude agents --json now includes waitingFor showing what a waiting session is blocked on (e.g. permission prompt)",
+    "zh": "claude agents --json现在包括waitingFor显示等待会话被阻止的内容（例如权限提示）"
+  },
   "2.1.17": {
     "en": "Fixed crashes on processors without AVX instruction support",
     "zh": "修复了不支持AVX指令的处理器崩溃问题"
