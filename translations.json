@@ -943,6 +943,14 @@
     "en": "Bug fixes and reliability improvements",
     "zh": "错误修正和改善"
   },
+  "2.1.166": {
+    "en": "Added fallbackModel setting to configure up to three fallback models tried in order when the primary model is overloaded or unavailable; --f",
+    "zh": "添加了fallbackModel设置，以便在主模型过载或不可用时按顺序配置最多三个回退模型; --f"
+  },
+  "2.1.167": {
+    "en": "Bug fixes and reliability improvements",
+    "zh": "错误修正和改善"
+  },
   "2.1.17": {
     "en": "Fixed crashes on processors without AVX instruction support",
     "zh": "修复了不支持AVX指令的处理器崩溃问题"
