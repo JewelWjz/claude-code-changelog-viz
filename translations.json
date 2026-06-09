@@ -955,6 +955,10 @@
     "en": "Bug fixes and reliability improvements",
     "zh": "错误修正和改善"
   },
+  "2.1.169": {
+    "en": "Added --safe-mode flag (and CLAUDE_CODE_SAFE_MODE) to start Claude Code with all customizations (CLAUDE.md, plugins, skills, hooks, MCP serv",
+    "zh": "添加了--safe-mode标志（和CLAUDE_CODE_SAFE_MODE ）以启动包含所有自定义（ CLAUDE.md、插件、技能、钩子、MCP服务器）的Claude Code"
+  },
   "2.1.17": {
     "en": "Fixed crashes on processors without AVX instruction support",
     "zh": "修复了不支持AVX指令的处理器崩溃问题"
