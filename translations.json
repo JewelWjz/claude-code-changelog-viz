@@ -956,12 +956,16 @@
     "zh": "错误修正和改善"
   },
   "2.1.169": {
-    "en": "Added --safe-mode flag (and CLAUDE_CODE_SAFE_MODE) to start Claude Code with all customizations (CLAUDE.md, plugins, skills, hooks, MCP serv",
-    "zh": "添加了--safe-mode标志（和CLAUDE_CODE_SAFE_MODE ）以启动包含所有自定义（ CLAUDE.md、插件、技能、钩子、MCP服务器）的Claude Code"
+    "en": "Self-hosted runner: added a post-session lifecycle hook that runs after the session ends and before the workspace is deleted, so you can sna",
+    "zh": "自托管运行器：添加了一个会话后生命周期挂钩，该挂钩在会话结束后删除工作区之前运行，因此您可以sna"
   },
   "2.1.17": {
     "en": "Fixed crashes on processors without AVX instruction support",
     "zh": "修复了不支持AVX指令的处理器崩溃问题"
+  },
+  "2.1.170": {
+    "en": "Introducing Claude Fable 5: a Mythos-class model that we’ve made safe for general use. Fable’s capabilities exceed those of any model we’ve ",
+    "zh": "隆重推出Claude Fable 5 ：我们为普通用户打造的神话级模型。寓言的功能超过了我们任何型号的功能"
   },
   "2.1.18": {
     "en": "Added customizable keyboard shortcuts. Configure keybindings per context, create chord sequences, and personalize your workflow. Run /keybin",
