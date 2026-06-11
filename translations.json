@@ -967,6 +967,14 @@
     "en": "Introducing Claude Fable 5: a Mythos-class model that we’ve made safe for general use. Fable’s capabilities exceed those of any model we’ve ",
     "zh": "隆重推出Claude Fable 5 ：我们为普通用户打造的神话级模型。寓言的功能超过了我们任何型号的功能"
   },
+  "2.1.172": {
+    "en": "Sub-agents can now spawn their own sub-agents (up to 5 levels deep)",
+    "zh": "子代理现在可以生成自己的子代理（最多5个级别）"
+  },
+  "2.1.173": {
+    "en": "Fixed Fable 5 model names with a [1m] suffix not being normalized — Fable 5 includes 1M context by default, so the suffix is now stripped au",
+    "zh": "Fixed Fable 5 model names with a [1m] suffix not be normalized — Fable 5默认包含1M上下文，因此现在剥离了后缀au"
+  },
   "2.1.18": {
     "en": "Added customizable keyboard shortcuts. Configure keybindings per context, create chord sequences, and personalize your workflow. Run /keybin",
     "zh": "添加了可自定义的键盘快捷方式。根据上下文配置键绑定，创建和弦序列，并个性化您的工作流。运行/keybin"
