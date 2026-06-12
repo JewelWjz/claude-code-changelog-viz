@@ -975,6 +975,14 @@
     "en": "Fixed Fable 5 model names with a [1m] suffix not being normalized — Fable 5 includes 1M context by default, so the suffix is now stripped au",
     "zh": "Fixed Fable 5 model names with a [1m] suffix not be normalized — Fable 5默认包含1M上下文，因此现在剥离了后缀au"
   },
+  "2.1.174": {
+    "en": "Added wheelScrollAccelerationEnabled setting to disable mouse-wheel scroll acceleration in fullscreen mode",
+    "zh": "添加了wheelScrollAccelerationEnabled设置，以在全屏模式下禁用鼠标滚轮滚动加速"
+  },
+  "2.1.175": {
+    "en": "Added enforceAvailableModels managed setting — when enabled, the availableModels allowlist also constrains the Default model (a Default that",
+    "zh": "添加了enforceAvailableModels托管设置—启用后， availableModels allowlist还会约束默认模型（默认值为"
+  },
   "2.1.18": {
     "en": "Added customizable keyboard shortcuts. Configure keybindings per context, create chord sequences, and personalize your workflow. Run /keybin",
     "zh": "添加了可自定义的键盘快捷方式。根据上下文配置键绑定，创建和弦序列，并个性化您的工作流。运行/keybin"
