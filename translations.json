@@ -983,6 +983,10 @@
     "en": "Added enforceAvailableModels managed setting — when enabled, the availableModels allowlist also constrains the Default model (a Default that",
     "zh": "添加了enforceAvailableModels托管设置—启用后， availableModels allowlist还会约束默认模型（默认值为"
   },
+  "2.1.176": {
+    "en": "Session titles are now generated in the language of your conversation (set the language setting to pin a specific language)",
+    "zh": "会话标题现在以您对话的语言生成（将语言设置为固定特定语言）"
+  },
   "2.1.18": {
     "en": "Added customizable keyboard shortcuts. Configure keybindings per context, create chord sequences, and personalize your workflow. Run /keybin",
     "zh": "添加了可自定义的键盘快捷方式。根据上下文配置键绑定，创建和弦序列，并个性化您的工作流。运行/keybin"
