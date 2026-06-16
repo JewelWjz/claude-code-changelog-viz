@@ -987,6 +987,10 @@
     "en": "Session titles are now generated in the language of your conversation (set the language setting to pin a specific language)",
     "zh": "会话标题现在以您对话的语言生成（将语言设置为固定特定语言）"
   },
+  "2.1.178": {
+    "en": "Added Tool(param:value) syntax for permission rules to match a tool’s input parameters (with * wildcard), e.g. Agent(model:opus) to block Op",
+    "zh": "添加了权限规则的工具(param: value)语法，以匹配工具的输入参数(带*通配符) ，例如Agent (model: opus)以阻止Op"
+  },
   "2.1.18": {
     "en": "Added customizable keyboard shortcuts. Configure keybindings per context, create chord sequences, and personalize your workflow. Run /keybin",
     "zh": "添加了可自定义的键盘快捷方式。根据上下文配置键绑定，创建和弦序列，并个性化您的工作流。运行/keybin"
