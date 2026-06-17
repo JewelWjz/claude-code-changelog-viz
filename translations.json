@@ -991,6 +991,10 @@
     "en": "Added Tool(param:value) syntax for permission rules to match a tool’s input parameters (with * wildcard), e.g. Agent(model:opus) to block Op",
     "zh": "添加了权限规则的工具(param: value)语法，以匹配工具的输入参数(带*通配符) ，例如Agent (model: opus)以阻止Op"
   },
+  "2.1.179": {
+    "en": "Fixed mid-stream connection drops: partial responses are now preserved instead of showing a raw error, and the spinner no longer gets stuck ",
+    "zh": "固定的中间流连接丢失：部分响应现在被保留，而不是显示原始错误，并且微调器不再被卡住"
+  },
   "2.1.18": {
     "en": "Added customizable keyboard shortcuts. Configure keybindings per context, create chord sequences, and personalize your workflow. Run /keybin",
     "zh": "添加了可自定义的键盘快捷方式。根据上下文配置键绑定，创建和弦序列，并个性化您的工作流。运行/keybin"
