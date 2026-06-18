@@ -999,6 +999,10 @@
     "en": "Added customizable keyboard shortcuts. Configure keybindings per context, create chord sequences, and personalize your workflow. Run /keybin",
     "zh": "添加了可自定义的键盘快捷方式。根据上下文配置键绑定，创建和弦序列，并个性化您的工作流。运行/keybin"
   },
+  "2.1.181": {
+    "en": "Added /config key=value syntax to set any setting from the prompt (e.g. /config thinking=false) — works in interactive, -p, and Remote Contr",
+    "zh": "添加/config key = value语法以设置提示中的任何设置（例如/config thinking = false ） —适用于交互式、-p和远程控制"
+  },
   "2.1.19": {
     "en": "Added env var CLAUDE_CODE_ENABLE_TASKS, set to false to keep the old system temporarily",
     "zh": "添加了env var CLAUDE_CODE_ENABLE_TASKS ，设置为FALSE暂时保留旧系统"
