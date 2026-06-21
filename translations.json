@@ -1007,6 +1007,10 @@
     "en": "Improved auto mode safety: destructive git commands (git reset --hard, git checkout -- ., git clean -fd, git stash drop) are now blocked whe",
     "zh": "改进的自动模式安全性：破坏性的git命令（ git reset --hard、git checkout --.、git clean -fd、git stash drop ）现在被阻止"
   },
+  "2.1.185": {
+    "en": "The stream-stall hint now reads “Waiting for API response · will retry in …” instead of “No response from API · Retrying in …”, and triggers",
+    "zh": "流停止提示现在显示为“等待API响应·将在……内重试” ，而不是“API无响应·正在……内重试” ，并触发"
+  },
   "2.1.19": {
     "en": "Added env var CLAUDE_CODE_ENABLE_TASKS, set to false to keep the old system temporarily",
     "zh": "添加了env var CLAUDE_CODE_ENABLE_TASKS ，设置为FALSE暂时保留旧系统"
