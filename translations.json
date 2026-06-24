@@ -1015,6 +1015,10 @@
     "en": "Added claude mcp login <name> and claude mcp logout <name> to authenticate MCP servers from the CLI without opening the interactive /mcp men",
     "zh": "添加了claude mcp login<name>和claude mcp logout <name> ，以从CLI验证MCP服务器，而无需打开交互式/mcp men"
   },
+  "2.1.187": {
+    "en": "Added sandbox.credentials setting to block sandboxed commands from reading credential files and secret environment variables",
+    "zh": "添加了sandbox.credentials设置，以阻止沙盒命令读取凭据文件和机密环境变量"
+  },
   "2.1.19": {
     "en": "Added env var CLAUDE_CODE_ENABLE_TASKS, set to false to keep the old system temporarily",
     "zh": "添加了env var CLAUDE_CODE_ENABLE_TASKS ，设置为FALSE暂时保留旧系统"
