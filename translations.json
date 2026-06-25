@@ -1023,6 +1023,14 @@
     "en": "Added env var CLAUDE_CODE_ENABLE_TASKS, set to false to keep the old system temporarily",
     "zh": "添加了env var CLAUDE_CODE_ENABLE_TASKS ，设置为FALSE暂时保留旧系统"
   },
+  "2.1.190": {
+    "en": "Bug fixes and reliability improvements",
+    "zh": "错误修正和改善"
+  },
+  "2.1.191": {
+    "en": "Added /rewind support for resuming a conversation from before /clear was run",
+    "zh": "添加/rewind支持从运行/clear之前恢复对话"
+  },
   "2.1.2": {
     "en": "Added source path metadata to images dragged onto the terminal, helping Claude understand where images originated",
     "zh": "将源路径元数据添加到拖到终端上的图像，帮助Claude了解图像的来源"
