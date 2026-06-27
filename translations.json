@@ -1035,6 +1035,10 @@
     "en": "Added autoMode.classifyAllShell setting to route all Bash/PowerShell commands through the auto-mode classifier instead of only arbitrary-cod",
     "zh": "添加了autoMode.classifyAllShell设置，以通过自动模式分类器路由所有Bash/PowerShell命令，而不是仅路由任意代码"
   },
+  "2.1.195": {
+    "en": "Added CLAUDE_CODE_DISABLE_MOUSE_CLICKS to disable mouse click/drag/hover in fullscreen mode while keeping wheel scroll",
+    "zh": "添加了CLAUDE_CODE_DISABLE_MOUSE_CLICKS ，以在全屏模式下禁用鼠标单击/拖动/悬停，同时保持滚轮滚动"
+  },
   "2.1.2": {
     "en": "Added source path metadata to images dragged onto the terminal, helping Claude understand where images originated",
     "zh": "将源路径元数据添加到拖到终端上的图像，帮助Claude了解图像的来源"
