@@ -1047,6 +1047,10 @@
     "en": "Introducing Claude Sonnet 5: now the default model in Claude Code, with a native 1M-token context window and promotional pricing of 2/2/2/10",
     "zh": "介绍Claude Sonnet 5 ：现在是Claude Code中的默认模型，具有原生1M代币上下文窗口和2/2/2/10的促销定价"
   },
+  "2.1.198": {
+    "en": "Claude in Chrome is now generally available",
+    "zh": "Chrome中的Claude现已正式推出"
+  },
   "2.1.2": {
     "en": "Added source path metadata to images dragged onto the terminal, helping Claude understand where images originated",
     "zh": "将源路径元数据添加到拖到终端上的图像，帮助Claude了解图像的来源"
