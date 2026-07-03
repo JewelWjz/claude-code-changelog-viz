@@ -1048,8 +1048,12 @@
     "zh": "介绍Claude Sonnet 5 ：现在是Claude Code中的默认模型，具有原生1M代币上下文窗口和2/2/2/10的促销定价"
   },
   "2.1.198": {
-    "en": "Claude in Chrome is now generally available",
-    "zh": "Chrome中的Claude现已正式推出"
+    "en": "Subagents now run in the background by default, so Claude keeps working while they run and is notified when they finish (previously a gradua",
+    "zh": "子代理现在默认在后台运行，因此Claude在他们运行时继续工作，并在他们完成时收到通知（以前是毕业生"
+  },
+  "2.1.199": {
+    "en": "Stacked slash-skill invocations like /skill-a /skill-b do XYZ now load all leading skills (up to 5), not just the first",
+    "zh": "像/skill-a/skill-b do XYZ这样的堆叠斜杠技能调用现在加载所有主要技能（最多5个） ，而不仅仅是第一个"
   },
   "2.1.2": {
     "en": "Added source path metadata to images dragged onto the terminal, helping Claude understand where images originated",
