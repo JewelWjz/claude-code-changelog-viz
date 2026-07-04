@@ -1063,6 +1063,14 @@
     "en": "Added arrow key history navigation in vim normal mode when cursor cannot move further",
     "zh": "当光标无法进一步移动时，在VIM正常模式下添加箭头键历史导航"
   },
+  "2.1.200": {
+    "en": "Changed AskUserQuestion dialogs to no longer auto-continue by default; opt into an idle timeout via /config",
+    "zh": "已将AskUserQuestion对话框更改为默认不再自动继续；通过/config选择进入空闲超时"
+  },
+  "2.1.201": {
+    "en": "Claude Sonnet 5 sessions no longer use the mid-conversation system role for harness reminders",
+    "zh": "Claude Sonnet 5会话不再使用中间对话系统角色进行线束提醒"
+  },
   "2.1.21": {
     "en": "Added support for full-width (zenkaku) number input from Japanese IME in option selection prompts",
     "zh": "在选项选择提示中添加了对日语输入法输入的全宽（ zenkaku ）数字的支持"
