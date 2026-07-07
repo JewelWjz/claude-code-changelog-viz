@@ -1071,6 +1071,10 @@
     "en": "Claude Sonnet 5 sessions no longer use the mid-conversation system role for harness reminders",
     "zh": "Claude Sonnet 5会话不再使用中间对话系统角色进行线束提醒"
   },
+  "2.1.202": {
+    "en": "Added a “Dynamic workflow size” setting in /config for controlling how large Claude generally makes dynamic workflows (small/medium/large ag",
+    "zh": "在/config中添加了“动态工作流大小”设置，用于控制Claude通常制作动态工作流（小/中/大ag"
+  },
   "2.1.21": {
     "en": "Added support for full-width (zenkaku) number input from Japanese IME in option selection prompts",
     "zh": "在选项选择提示中添加了对日语输入法输入的全宽（ zenkaku ）数字的支持"
