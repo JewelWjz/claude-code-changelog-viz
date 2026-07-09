@@ -1083,6 +1083,10 @@
     "en": "Fixed hook events not streaming during SessionStart hooks in headless sessions, which could cause remote workers to be idle-reaped mid-hook",
     "zh": "修复了在无头会话中SessionStart挂钩期间未流式传输的挂钩事件，这可能导致远程工作人员处于空闲恢复中间挂钩状态"
   },
+  "2.1.205": {
+    "en": "Added an auto mode rule that blocks tampering with session transcript files",
+    "zh": "添加了阻止篡改会话转录文件的自动模式规则"
+  },
   "2.1.21": {
     "en": "Added support for full-width (zenkaku) number input from Japanese IME in option selection prompts",
     "zh": "在选项选择提示中添加了对日语输入法输入的全宽（ zenkaku ）数字的支持"
