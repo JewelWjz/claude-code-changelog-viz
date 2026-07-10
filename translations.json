@@ -1087,6 +1087,10 @@
     "en": "Added an auto mode rule that blocks tampering with session transcript files",
     "zh": "添加了阻止篡改会话转录文件的自动模式规则"
   },
+  "2.1.206": {
+    "en": "Added directory path suggestions to /cd, matching /add-dir behavior",
+    "zh": "向/cd添加了目录路径建议，匹配/add-dir行为"
+  },
   "2.1.21": {
     "en": "Added support for full-width (zenkaku) number input from Japanese IME in option selection prompts",
     "zh": "在选项选择提示中添加了对日语输入法输入的全宽（ zenkaku ）数字的支持"
