@@ -1091,6 +1091,10 @@
     "en": "Added directory path suggestions to /cd, matching /add-dir behavior",
     "zh": "向/cd添加了目录路径建议，匹配/add-dir行为"
   },
+  "2.1.207": {
+    "en": "Auto mode is now available without CLAUDE_CODE_ENABLE_AUTO_MODE opt-in on Bedrock, Vertex AI, and Foundry; disable via disableAutoMode in se",
+    "zh": "在Bedrock、Vertex AI和Foundry上没有CLAUDE_CODE_ENABLE_AUTO_MODE选项的情况下，现在可以使用自动模式；通过disableAutoMode in se禁用"
+  },
   "2.1.21": {
     "en": "Added support for full-width (zenkaku) number input from Japanese IME in option selection prompts",
     "zh": "在选项选择提示中添加了对日语输入法输入的全宽（ zenkaku ）数字的支持"
