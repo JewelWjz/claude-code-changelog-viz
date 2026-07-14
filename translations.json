@@ -1095,6 +1095,14 @@
     "en": "Auto mode is now available without CLAUDE_CODE_ENABLE_AUTO_MODE opt-in on Bedrock, Vertex AI, and Foundry; disable via disableAutoMode in se",
     "zh": "在Bedrock、Vertex AI和Foundry上没有CLAUDE_CODE_ENABLE_AUTO_MODE选项的情况下，现在可以使用自动模式；通过disableAutoMode in se禁用"
   },
+  "2.1.208": {
+    "en": "Added screen reader mode: opt-in plain-text rendering for screen reader users. Run claude --ax-screen-reader, set CLAUDE_AX_SCREEN_READER=1,",
+    "zh": "添加了屏幕阅读器模式：为屏幕阅读器用户选择加入纯文本渲染。运行claude --ax-screen-reader ，设置CLAUDE_AX_SCREEN_READER = 1 ，"
+  },
+  "2.1.209": {
+    "en": "Fixed /model and other dialogs being blocked in claude agents background sessions (reverts an overly broad guard)",
+    "zh": "修复了在claude客服代表后台会话中被屏蔽的/model和其他对话框（恢复过于宽泛的保护）"
+  },
   "2.1.21": {
     "en": "Added support for full-width (zenkaku) number input from Japanese IME in option selection prompts",
     "zh": "在选项选择提示中添加了对日语输入法输入的全宽（ zenkaku ）数字的支持"
