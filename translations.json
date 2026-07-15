@@ -884,8 +884,8 @@
     "zh": "/usage现在显示每个类别的限制使用细分—技能、子代理、插件和每个MCP服务器的成本"
   },
   "2.1.15": {
-    "en": "Added deprecation notification for npm installations - run claude install or see https://docs.anthropic.com/en/docs/claude-code/getting-star",
-    "zh": "为npm安装添加了弃用通知-运行claude install或查看https://docs.anthropic.com/en/docs/claude-code/getting-star"
+    "en": "Added deprecation notification for npm installations - run claude install or see https://code.claude.com/docs/en/setup for more options",
+    "zh": "为npm安装添加了弃用通知-运行claude install或查看https://code.claude.com/docs/en/setup以获取更多选项"
   },
   "2.1.150": {
     "en": "Internal infrastructure improvements (no user-facing changes)",
@@ -1106,6 +1106,10 @@
   "2.1.21": {
     "en": "Added support for full-width (zenkaku) number input from Japanese IME in option selection prompts",
     "zh": "在选项选择提示中添加了对日语输入法输入的全宽（ zenkaku ）数字的支持"
+  },
+  "2.1.210": {
+    "en": "Added a live elapsed-time counter to the collapsed tool summary line so long-running tool calls visibly tick instead of looking stuck",
+    "zh": "在折叠的工具摘要行中添加了实时运行时间计数器，以便长时间运行的工具调用能够以可见的滴答声显示，而不是看起来像卡住了一样。"
   },
   "2.1.22": {
     "en": "Fixed structured outputs for non-interactive (-p) mode",
