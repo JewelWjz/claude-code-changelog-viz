@@ -1111,6 +1111,10 @@
     "en": "Added a live elapsed-time counter to the collapsed tool summary line so long-running tool calls visibly tick instead of looking stuck",
     "zh": "在折叠的工具摘要行中添加了实时运行时间计数器，以便长时间运行的工具调用能够以可见的滴答声显示，而不是看起来像卡住了一样。"
   },
+  "2.1.211": {
+    "en": "Added --forward-subagent-text flag and CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable to include subagent text and thinking in strea",
+    "zh": "添加了--forward-subagent-text标志和CLAUDE_CODE_FORWARD_SUBAGENT_TEXT环境变量，以在strea中包含子代理文本和思维"
+  },
   "2.1.22": {
     "en": "Fixed structured outputs for non-interactive (-p) mode",
     "zh": "固定非交互式（ -p ）模式的结构化输出"
