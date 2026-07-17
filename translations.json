@@ -1115,6 +1115,10 @@
     "en": "Added --forward-subagent-text flag and CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable to include subagent text and thinking in strea",
     "zh": "添加了--forward-subagent-text标志和CLAUDE_CODE_FORWARD_SUBAGENT_TEXT环境变量，以在strea中包含子代理文本和思维"
   },
+  "2.1.212": {
+    "en": "/fork now copies your conversation into a new background session (its own row in claude agents) while you keep working; the in-session subag",
+    "zh": "/fork现在在您继续工作时将您的对话复制到新的后台会话（它自己的claude agent行） ；会话中的子标签"
+  },
   "2.1.22": {
     "en": "Fixed structured outputs for non-interactive (-p) mode",
     "zh": "固定非交互式（ -p ）模式的结构化输出"
