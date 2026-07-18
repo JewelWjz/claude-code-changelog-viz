@@ -1119,6 +1119,10 @@
     "en": "/fork now copies your conversation into a new background session (its own row in claude agents) while you keep working; the in-session subag",
     "zh": "/fork现在在您继续工作时将您的对话复制到新的后台会话（它自己的claude agent行） ；会话中的子标签"
   },
+  "2.1.214": {
+    "en": "Fixed single-segment dir/** allow rules like Edit(src/**) auto-approving writes to nested dir/ directories anywhere in the tree instead of o",
+    "zh": "修复了单段目录/* *允许编辑(src/* *)等规则自动批准对树中任何位置的嵌套目录/目录的写入，而不是"
+  },
   "2.1.22": {
     "en": "Fixed structured outputs for non-interactive (-p) mode",
     "zh": "固定非交互式（ -p ）模式的结构化输出"
