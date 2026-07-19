@@ -1123,6 +1123,10 @@
     "en": "Fixed single-segment dir/** allow rules like Edit(src/**) auto-approving writes to nested dir/ directories anywhere in the tree instead of o",
     "zh": "修复了单段目录/* *允许编辑(src/* *)等规则自动批准对树中任何位置的嵌套目录/目录的写入，而不是"
   },
+  "2.1.215": {
+    "en": "Claude no longer runs the /verify and /code-review skills on its own; invoke them with /verify or /code-review when you want them",
+    "zh": "Claude不再自行运行/verify和/code-review技能；在需要时使用/verify或/code-review调用它们"
+  },
   "2.1.22": {
     "en": "Fixed structured outputs for non-interactive (-p) mode",
     "zh": "固定非交互式（ -p ）模式的结构化输出"
