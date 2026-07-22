@@ -1131,6 +1131,10 @@
     "en": "Added sandbox.filesystem.disabled setting to skip filesystem isolation while keeping network egress control",
     "zh": "添加了sandbox.filesystem.disabled设置，以跳过文件系统隔离，同时保持网络出口控制"
   },
+  "2.1.217": {
+    "en": "Added emoji shortcode autocomplete in the prompt input: type :heart: to insert ❤️, or :hea for suggestions — disable with the emojiCompletio",
+    "zh": "在提示输入中添加了表情符号短代码自动完成： type: heart: to insert ❤️，或: hea for suggestions —禁用表情符号Completio"
+  },
   "2.1.22": {
     "en": "Fixed structured outputs for non-interactive (-p) mode",
     "zh": "固定非交互式（ -p ）模式的结构化输出"
