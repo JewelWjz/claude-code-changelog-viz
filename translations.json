@@ -1135,6 +1135,10 @@
     "en": "Added emoji shortcode autocomplete in the prompt input: type :heart: to insert ❤️, or :hea for suggestions — disable with the emojiCompletio",
     "zh": "在提示输入中添加了表情符号短代码自动完成： type: heart: to insert ❤️，或: hea for suggestions —禁用表情符号Completio"
   },
+  "2.1.218": {
+    "en": "Changed /code-review to run as a background subagent, so review work no longer fills your conversation and keeps stacked slash commands as i",
+    "zh": "已将/code-review更改为作为后台子代理运行，因此审核工作不再填充您的对话，而是将堆叠的斜杠命令保留为"
+  },
   "2.1.22": {
     "en": "Fixed structured outputs for non-interactive (-p) mode",
     "zh": "固定非交互式（ -p ）模式的结构化输出"
