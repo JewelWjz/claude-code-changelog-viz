@@ -956,8 +956,8 @@
     "zh": "错误修正和改善"
   },
   "2.1.169": {
-    "en": "Self-hosted runner: added a post-session lifecycle hook that runs after the session ends and before the workspace is deleted, so you can sna",
-    "zh": "自托管运行器：添加了一个会话后生命周期挂钩，该挂钩在会话结束后删除工作区之前运行，因此您可以sna"
+    "en": "Added --safe-mode flag (and CLAUDE_CODE_SAFE_MODE) to start Claude Code with all customizations (CLAUDE.md, plugins, skills, hooks, MCP serv",
+    "zh": "添加了--safe-mode标志（和CLAUDE_CODE_SAFE_MODE ）以启动包含所有自定义（ CLAUDE.md、插件、技能、钩子、MCP服务器）的Claude Code"
   },
   "2.1.17": {
     "en": "Fixed crashes on processors without AVX instruction support",
@@ -1139,9 +1139,17 @@
     "en": "Changed /code-review to run as a background subagent, so review work no longer fills your conversation and keeps stacked slash commands as i",
     "zh": "已将/code-review更改为作为后台子代理运行，因此审核工作不再填充您的对话，而是将堆叠的斜杠命令保留为"
   },
+  "2.1.219": {
+    "en": "Added Claude Opus 5 (claude-opus-5), now the default Opus model — 1M context, fast mode at 10/10/10/50 per Mtok",
+    "zh": "添加了Claude Opus 5 （ claude-opus-5 ） ，现在是默认的Opus模型— 1M上下文，快速模式，每MTOK 10/10/10/50"
+  },
   "2.1.22": {
     "en": "Fixed structured outputs for non-interactive (-p) mode",
     "zh": "固定非交互式（ -p ）模式的结构化输出"
+  },
+  "2.1.220": {
+    "en": "Bug fixes and reliability improvements",
+    "zh": "错误修正和改善"
   },
   "2.1.23": {
     "en": "Added customizable spinner verbs setting (spinnerVerbs)",
