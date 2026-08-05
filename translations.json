@@ -1155,6 +1155,10 @@
     "en": "[VSCode] Added Focus view: a chat-menu toggle that hides tool activity behind an expandable per-turn summary with a live running-tool indica",
     "zh": "[VSCode]添加了焦点视图：聊天菜单切换，使用实时运行工具标记将工具活动隐藏在可扩展的每回合摘要后面"
   },
+  "2.1.222": {
+    "en": "Fixed worktree-isolated sessions and their subagents being able to run destructive git commands against the main checkout; isolation now app",
+    "zh": "修复了工作树隔离会话及其子代理能够对主结帐运行破坏性git命令的问题；隔离现在应用程序"
+  },
   "2.1.23": {
     "en": "Added customizable spinner verbs setting (spinnerVerbs)",
     "zh": "添加了可自定义的微调动词设置（ spinnerVerbs ）"
