@@ -1159,6 +1159,10 @@
     "en": "Fixed worktree-isolated sessions and their subagents being able to run destructive git commands against the main checkout; isolation now app",
     "zh": "修复了工作树隔离会话及其子代理能够对主结帐运行破坏性git命令的问题；隔离现在应用程序"
   },
+  "2.1.223": {
+    "en": "Added owner wildcard entries (\"owner/*\") to the strictKnownMarketplaces and blockedMarketplaces managed settings for allowing or blocking al",
+    "zh": "向strictKnownMarketplaces和blockedMarketplaces管理的设置添加了所有者通配符条目(\"owner/*\") ，以允许或阻止所有"
+  },
   "2.1.23": {
     "en": "Added customizable spinner verbs setting (spinnerVerbs)",
     "zh": "添加了可自定义的微调动词设置（ spinnerVerbs ）"
