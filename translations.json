@@ -1163,6 +1163,10 @@
     "en": "Added owner wildcard entries (\"owner/*\") to the strictKnownMarketplaces and blockedMarketplaces managed settings for allowing or blocking al",
     "zh": "向strictKnownMarketplaces和blockedMarketplaces管理的设置添加了所有者通配符条目(\"owner/*\") ，以允许或阻止所有"
   },
+  "2.1.224": {
+    "en": "Added self-hosted environments: claude self-hosted-runner turns your own machines or containers into a place Claude Code web, mobile, and de",
+    "zh": "添加了自托管环境： claude self-hosted-runner将您自己的机器或容器转换为Claude Code web、mobile和de"
+  },
   "2.1.23": {
     "en": "Added customizable spinner verbs setting (spinnerVerbs)",
     "zh": "添加了可自定义的微调动词设置（ spinnerVerbs ）"
