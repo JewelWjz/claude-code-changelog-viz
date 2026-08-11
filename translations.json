@@ -1175,6 +1175,10 @@
     "en": "Bug fixes and reliability improvements",
     "zh": "错误修正和改善"
   },
+  "2.1.227": {
+    "en": "Fixed feature flags being evaluated without the user’s subscription tier when a session started with an expired login token, which could wro",
+    "zh": "修复了当会话使用过期的登录令牌启动时，在没有用户订阅层的情况下评估功能标志的问题，这可能会导致"
+  },
   "2.1.23": {
     "en": "Added customizable spinner verbs setting (spinnerVerbs)",
     "zh": "添加了可自定义的微调动词设置（ spinnerVerbs ）"
