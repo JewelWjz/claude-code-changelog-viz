@@ -1179,6 +1179,10 @@
     "en": "Fixed feature flags being evaluated without the user’s subscription tier when a session started with an expired login token, which could wro",
     "zh": "修复了当会话使用过期的登录令牌启动时，在没有用户订阅层的情况下评估功能标志的问题，这可能会导致"
   },
+  "2.1.228": {
+    "en": "Fixed interactive sessions that could stop redrawing entirely, while the process kept running, after a rare internal layout error",
+    "zh": "修复了在罕见的内部布局错误后，进程继续运行时可能完全停止重绘的交互式会话"
+  },
   "2.1.23": {
     "en": "Added customizable spinner verbs setting (spinnerVerbs)",
     "zh": "添加了可自定义的微调动词设置（ spinnerVerbs ）"
