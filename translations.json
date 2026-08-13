@@ -1183,6 +1183,10 @@
     "en": "Fixed interactive sessions that could stop redrawing entirely, while the process kept running, after a rare internal layout error",
     "zh": "修复了在罕见的内部布局错误后，进程继续运行时可能完全停止重绘的交互式会话"
   },
+  "2.1.229": {
+    "en": "Documented claude remote-control --continue for resuming the most recent Remote Control session",
+    "zh": "记录的CLAUDE远程控制--继续以恢复最近的远程控制会话"
+  },
   "2.1.23": {
     "en": "Added customizable spinner verbs setting (spinnerVerbs)",
     "zh": "添加了可自定义的微调动词设置（ spinnerVerbs ）"
