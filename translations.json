@@ -1191,6 +1191,14 @@
     "en": "Added customizable spinner verbs setting (spinnerVerbs)",
     "zh": "添加了可自定义的微调动词设置（ spinnerVerbs ）"
   },
+  "2.1.231": {
+    "en": "Fixed MCP OAuth sign-in failing with a redirect URI mismatch for servers that use a pre-registered OAuth client, such as Slack",
+    "zh": "修复了使用预先注册的OAuth客户端（如Slack ）的服务器由于重定向URI不匹配而导致MCP OAuth登录失败的问题"
+  },
+  "2.1.232": {
+    "en": "Subagent forking is now on by default: a subagent_type: \"fork\" subagent inherits the full conversation and prompt cache, and non-teammate ag",
+    "zh": "默认情况下，子代理分叉现在处于打开状态： subagent_type: \"fork\"子代理继承完整的会话和提示缓存，非团队成员继承"
+  },
   "2.1.25": {
     "en": "Fixed beta header validation error for gateway users on Bedrock and Vertex, ensuring CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 avoids the err",
     "zh": "修复了基岩和顶点上的网关用户的测试头验证错误，确保CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS = 1避免了错误"
