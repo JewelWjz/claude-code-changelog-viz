@@ -1199,6 +1199,10 @@
     "en": "Subagent forking is now on by default: a subagent_type: \"fork\" subagent inherits the full conversation and prompt cache, and non-teammate ag",
     "zh": "默认情况下，子代理分叉现在处于打开状态： subagent_type: \"fork\"子代理继承完整的会话和提示缓存，非团队成员继承"
   },
+  "2.1.233": {
+    "en": "Added GitLab merge request URL support to the --worktree flag and the claude agents view (where MRs display as !N)",
+    "zh": "向--worktree标志和claude agents视图添加了GitLab合并请求URL支持（其中MR显示为！ N ）"
+  },
   "2.1.25": {
     "en": "Fixed beta header validation error for gateway users on Bedrock and Vertex, ensuring CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 avoids the err",
     "zh": "修复了基岩和顶点上的网关用户的测试头验证错误，确保CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS = 1避免了错误"
