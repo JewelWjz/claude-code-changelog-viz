@@ -1207,6 +1207,10 @@
     "en": "Added the optional CLAUDE_CODE_PROJECT_DIR_NAME environment variable: hosts that give each session its own config directory can choose a sho",
     "zh": "添加了可选的CLAUDE_CODE_PROJECT_DIR_NAME环境变量：为每个会话提供自己的配置目录的主机可以选择"
   },
+  "2.1.235": {
+    "en": "Added an optional spellcheck setting that underlines misspelled words in the prompt input as you type, using your installed aspell, hunspell",
+    "zh": "添加了一个可选的拼写检查设置，当您使用已安装的aspell、hunspell键入时，会在提示输入中为拼写错误的单词加下划线"
+  },
   "2.1.25": {
     "en": "Fixed beta header validation error for gateway users on Bedrock and Vertex, ensuring CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 avoids the err",
     "zh": "修复了基岩和顶点上的网关用户的测试头验证错误，确保CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS = 1避免了错误"
