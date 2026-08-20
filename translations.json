@@ -1211,6 +1211,14 @@
     "en": "Added an optional spellcheck setting that underlines misspelled words in the prompt input as you type, using your installed aspell, hunspell",
     "zh": "添加了一个可选的拼写检查设置，当您使用已安装的aspell、hunspell键入时，会在提示输入中为拼写错误的单词加下划线"
   },
+  "2.1.236": {
+    "en": "Added ANTHROPIC_DEFAULT_MODEL environment variable: sets the model new sessions start on, while a /model pick still overrides it and persist",
+    "zh": "添加了ANTHROPIC_DEFAULT_MODEL环境变量：设置新会话开始的模型，而/model pick仍然覆盖它并保留"
+  },
+  "2.1.237": {
+    "en": "Fixed prompt caching for sessions using an LLM gateway or custom base URL",
+    "zh": "修复了使用LLM网关或自定义基本URL的会话的提示缓存"
+  },
   "2.1.25": {
     "en": "Fixed beta header validation error for gateway users on Bedrock and Vertex, ensuring CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 avoids the err",
     "zh": "修复了基岩和顶点上的网关用户的测试头验证错误，确保CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS = 1避免了错误"
