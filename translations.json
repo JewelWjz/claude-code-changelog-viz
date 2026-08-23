@@ -1227,6 +1227,14 @@
     "en": "Cost estimates (/cost, status line, --max-budget-usd) now include the 1.1× US-only-inference premium for data-residency workspaces",
     "zh": "成本估算（/cost, status line, --max-budget-usd ）现在包括数据驻留工作空间的1.1倍仅限美国的推理溢价"
   },
+  "2.1.240": {
+    "en": "Bug fixes and reliability improvements",
+    "zh": "错误修正和改善"
+  },
+  "2.1.241": {
+    "en": "Bug fixes and reliability improvements",
+    "zh": "错误修正和改善"
+  },
   "2.1.25": {
     "en": "Fixed beta header validation error for gateway users on Bedrock and Vertex, ensuring CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 avoids the err",
     "zh": "修复了基岩和顶点上的网关用户的测试头验证错误，确保CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS = 1避免了错误"
