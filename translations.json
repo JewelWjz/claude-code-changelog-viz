@@ -1235,6 +1235,18 @@
     "en": "Bug fixes and reliability improvements",
     "zh": "错误修正和改善"
   },
+  "2.1.243": {
+    "en": "Added a Loops breakdown to /usage: per-loop run count, total tokens, tokens per run, and last run, so runaway or chatty /loop tasks are easy",
+    "zh": "为/usage添加了循环细分：每循环运行计数、总令牌、每次运行和上次运行的令牌，因此可以轻松完成失控或闲聊/循环任务"
+  },
+  "2.1.245": {
+    "en": "Fixed a crash on startup on Linux distributions that ship glibc 2.44 (for example Arch Linux, CachyOS and Fedora Rawhide)",
+    "zh": "修复了在发布glibc 2.44的Linux发行版（例如Arch Linux、CachyOS和Fedora Rawhide ）上启动时崩溃的问题"
+  },
+  "2.1.246": {
+    "en": "Added a startup warning for Bash allow rules with a wildcard before the subcommand (e.g. Bash(git * main)), since they also match options in",
+    "zh": "为子命令前带有通配符的Bash允许规则添加了启动警告（例如Bash （ git * main ） ） ，因为它们也匹配"
+  },
   "2.1.25": {
     "en": "Fixed beta header validation error for gateway users on Bedrock and Vertex, ensuring CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 avoids the err",
     "zh": "修复了基岩和顶点上的网关用户的测试头验证错误，确保CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS = 1避免了错误"
