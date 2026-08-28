@@ -1251,9 +1251,17 @@
     "en": "Added the SendFeedback tool: when something goes wrong in a session, Claude can draft a feedback report for you to review and send from /fee",
     "zh": "添加了SendFeedback工具：当会话中出现问题时， Claude可以起草一份反馈报告，供您查看和发送/费用"
   },
+  "2.1.248": {
+    "en": "Added --restricted (or CLAUDE_CODE_RESTRICTED=1): removes the built-in tools that run commands or code and WebFetch (unless named in --tools",
+    "zh": "添加了--restricted （或CLAUDE_CODE_RESTRICTED = 1 ） ：删除运行命令或代码和WebFetch的内置工具（除非在--tools中命名）"
+  },
   "2.1.25": {
     "en": "Fixed beta header validation error for gateway users on Bedrock and Vertex, ensuring CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 avoids the err",
     "zh": "修复了基岩和顶点上的网关用户的测试头验证错误，确保CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS = 1避免了错误"
+  },
+  "2.1.250": {
+    "en": "Bug fixes and reliability improvements",
+    "zh": "错误修正和改善"
   },
   "2.1.27": {
     "en": "Added tool call failures and denials to debug logs",
