@@ -1267,6 +1267,10 @@
     "en": "Added PreModelSwitch and PostModelSwitch hook events (block, confirm, or annotate a model switch); SessionStart resume hooks now receive ses",
     "zh": "添加了PreModelSwitch和PostModelSwitch钩子事件（阻止、确认或注释模型开关） ； SessionStart恢复钩子现在接收ses"
   },
+  "2.1.252": {
+    "en": "Fixed Bash commands failing with “task output swap refused (tasks dir moved or linked)” on some Macs",
+    "zh": "修复了Bash命令在某些Mac上因“任务输出交换被拒绝（任务目录移动或链接）”而失败的问题"
+  },
   "2.1.27": {
     "en": "Added tool call failures and denials to debug logs",
     "zh": "为调试日志添加了工具调用失败和拒绝"
