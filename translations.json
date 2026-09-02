@@ -1271,6 +1271,14 @@
     "en": "Fixed Bash commands failing with “task output swap refused (tasks dir moved or linked)” on some Macs",
     "zh": "修复了Bash命令在某些Mac上因“任务输出交换被拒绝（任务目录移动或链接）”而失败的问题"
   },
+  "2.1.257": {
+    "en": "Added Claude Fable 5.1 (claude-fable-5-1), now the default Fable model — 1M context, 10/10/10/50 per Mtok with $0.25/Mtok cache reads",
+    "zh": "添加了克劳德寓言5.1 （ claude-fable-5-1 ） ，现在是默认寓言模型— 100万上下文，每Mtok 10/10/10/50 ， $ 0.25/Mtok缓存读数"
+  },
+  "2.1.258": {
+    "en": "Fixed Claude Code failing to launch on macOS 12 (Monterey), a regression introduced in 2.1.255",
+    "zh": "修复了无法在macOS 12 (Monterey)上启动Claude Code的问题，这是2.1.255中引入的回归"
+  },
   "2.1.27": {
     "en": "Added tool call failures and denials to debug logs",
     "zh": "为调试日志添加了工具调用失败和拒绝"
