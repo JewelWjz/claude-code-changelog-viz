@@ -1279,6 +1279,10 @@
     "en": "Fixed Claude Code failing to launch on macOS 12 (Monterey), a regression introduced in 2.1.255",
     "zh": "修复了无法在macOS 12 (Monterey)上启动Claude Code的问题，这是2.1.255中引入的回归"
   },
+  "2.1.259": {
+    "en": "Added managedMcpServers managed setting: organizations can provide HTTP/SSE MCP servers to every user (same entry shape as .mcp.json); entri",
+    "zh": "添加了managedMcpServers托管设置：组织可以为每个用户提供HTTP/SSE MCP服务器（条目形状与.mcp.json相同） ； entri"
+  },
   "2.1.27": {
     "en": "Added tool call failures and denials to debug logs",
     "zh": "为调试日志添加了工具调用失败和拒绝"
