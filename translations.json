@@ -1287,6 +1287,10 @@
     "en": "Added a diff panel that opens beside the conversation in fullscreen mode and shows your uncommitted changes as Claude edits; toggle it with ",
     "zh": "添加了一个差异面板，该面板以全屏模式在对话旁边打开，并在Claude编辑时显示未提交的更改；将其切换为"
   },
+  "2.1.261": {
+    "en": "Added an “Organization policy” line to /status and claude doctor that says why your organization’s policy could not be loaded, such as a pro",
+    "zh": "向/status和claude doctor添加了“组织策略”行，说明无法加载您组织的策略的原因，例如专业"
+  },
   "2.1.27": {
     "en": "Added tool call failures and denials to debug logs",
     "zh": "为调试日志添加了工具调用失败和拒绝"
