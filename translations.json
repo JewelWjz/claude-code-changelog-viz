@@ -1291,6 +1291,10 @@
     "en": "Added an “Organization policy” line to /status and claude doctor that says why your organization’s policy could not be loaded, such as a pro",
     "zh": "向/status和claude doctor添加了“组织策略”行，说明无法加载您组织的策略的原因，例如专业"
   },
+  "2.1.263": {
+    "en": "Bug fixes and reliability improvements",
+    "zh": "错误修正和改善"
+  },
   "2.1.27": {
     "en": "Added tool call failures and denials to debug logs",
     "zh": "为调试日志添加了工具调用失败和拒绝"
