@@ -1295,6 +1295,14 @@
     "en": "Bug fixes and reliability improvements",
     "zh": "错误修正和改善"
   },
+  "2.1.265": {
+    "en": "Added user.email and user.groups to the telemetry Claude Desktop and Cowork send through a Claude apps gateway, matching terminal sessions",
+    "zh": "将user.email和user.groups添加到Claude Desktop和Cowork通过Claude应用程序网关发送的遥测，匹配终端会话"
+  },
+  "2.1.266": {
+    "en": "Fixed a 2.1.265 regression affecting LLM-gateway and proxy setups: the undocumented CLAUDE_CODE_USE_GATEWAY environment variable, previously",
+    "zh": "修复了影响LLM-gateway和代理设置的2.1.265回归：之前未记录的CLAUDE_CODE_USE_GATEWAY环境变量"
+  },
   "2.1.27": {
     "en": "Added tool call failures and denials to debug logs",
     "zh": "为调试日志添加了工具调用失败和拒绝"
