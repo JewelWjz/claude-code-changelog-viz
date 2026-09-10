@@ -1303,6 +1303,10 @@
     "en": "Fixed a 2.1.265 regression affecting LLM-gateway and proxy setups: the undocumented CLAUDE_CODE_USE_GATEWAY environment variable, previously",
     "zh": "修复了影响LLM-gateway和代理设置的2.1.265回归：之前未记录的CLAUDE_CODE_USE_GATEWAY环境变量"
   },
+  "2.1.267": {
+    "en": "Added maxEffortLevel setting (top-level or per model under modelSettings): caps the effort level on every provider, including Bedrock, Verte",
+    "zh": "添加了maxEffortLevel设置（顶级或modelSettings下的每个模型） ：限制每个提供商的工作量级别，包括Bedrock、Verte"
+  },
   "2.1.27": {
     "en": "Added tool call failures and denials to debug logs",
     "zh": "为调试日志添加了工具调用失败和拒绝"
