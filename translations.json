@@ -1311,6 +1311,10 @@
     "en": "Added to the Claude apps gateway: with pricing: set in gateway.yaml, signed-in Claude Code clients receive the same rates through managed se",
     "zh": "添加到Claude应用程序网关：定价：在gateway.yaml中设置，登录的Claude Code客户端通过托管服务获得相同的费率"
   },
+  "2.1.269": {
+    "en": "Added claude plugin eval: run a plugin’s eval suite against Claude Code and get scored, reproducible results (JSON + HTML report); see claud",
+    "zh": "添加了claude插件eval ：针对Claude Code运行插件的eval套件，并获得可重现的评分结果（ JSON + HTML报告） ；请参阅claud"
+  },
   "2.1.27": {
     "en": "Added tool call failures and denials to debug logs",
     "zh": "为调试日志添加了工具调用失败和拒绝"
