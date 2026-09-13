@@ -1319,6 +1319,10 @@
     "en": "Added tool call failures and denials to debug logs",
     "zh": "为调试日志添加了工具调用失败和拒绝"
   },
+  "2.1.270": {
+    "en": "Fixed read-only git commands in Bash unexpectedly asking for permission after a session had been running for a while (regression in 2.1.269)",
+    "zh": "修复了会话运行一段时间后， Bash中的只读git命令意外请求权限的问题（ 2.1.269中的回归）"
+  },
   "2.1.29": {
     "en": "Fixed startup performance issues when resuming sessions that have saved_hook_context",
     "zh": "修复了恢复已保存_HOOK_CONTEXT的会话时的启动性能问题"
