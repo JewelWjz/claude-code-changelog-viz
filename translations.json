@@ -1323,6 +1323,14 @@
     "en": "Fixed read-only git commands in Bash unexpectedly asking for permission after a session had been running for a while (regression in 2.1.269)",
     "zh": "修复了会话运行一段时间后， Bash中的只读git命令意外请求权限的问题（ 2.1.269中的回归）"
   },
+  "2.1.271": {
+    "en": "Added fast mode in Claude Code Remote sessions (cloud and self-hosted runners): the host’s fast-mode setting or /fast typed in the session a",
+    "zh": "在Claude Code Remote会话中添加了快速模式（云和自托管运行程序） ：主机的快速模式设置或/fast在会话中键入a"
+  },
+  "2.1.272": {
+    "en": "Bug fixes and reliability improvements",
+    "zh": "错误修正和改善"
+  },
   "2.1.29": {
     "en": "Fixed startup performance issues when resuming sessions that have saved_hook_context",
     "zh": "修复了恢复已保存_HOOK_CONTEXT的会话时的启动性能问题"
