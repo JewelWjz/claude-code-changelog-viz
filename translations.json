@@ -1331,6 +1331,10 @@
     "en": "Bug fixes and reliability improvements",
     "zh": "错误修正和改善"
   },
+  "2.1.273": {
+    "en": "Added x-claude-code-request-class, x-claude-code-agent-type, x-claude-code-prev-tool-durations, x-claude-code-compaction and x-claude-code-c",
+    "zh": "添加了x-claude-code-request-class、x-claude-code-agent-type、x-claude-code-prev-tool-durations、x-claude-code-compaction和x-claude-code-c"
+  },
   "2.1.29": {
     "en": "Fixed startup performance issues when resuming sessions that have saved_hook_context",
     "zh": "修复了恢复已保存_HOOK_CONTEXT的会话时的启动性能问题"
