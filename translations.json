@@ -1335,6 +1335,10 @@
     "en": "Added x-claude-code-request-class, x-claude-code-agent-type, x-claude-code-prev-tool-durations, x-claude-code-compaction and x-claude-code-c",
     "zh": "添加了x-claude-code-request-class、x-claude-code-agent-type、x-claude-code-prev-tool-durations、x-claude-code-compaction和x-claude-code-c"
   },
+  "2.1.274": {
+    "en": "Added a visible warning when memory usage is critical, with steps to free memory or restart safely",
+    "zh": "添加了内存使用严重时的可见警告，包括释放内存或安全重启的步骤"
+  },
   "2.1.29": {
     "en": "Fixed startup performance issues when resuming sessions that have saved_hook_context",
     "zh": "修复了恢复已保存_HOOK_CONTEXT的会话时的启动性能问题"
