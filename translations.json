@@ -1355,6 +1355,10 @@
     "en": "Changed auto mode for Claude API and Enterprise users, and on Bedrock, Vertex, Foundry and gateways, to default to the server-side classifie",
     "zh": "更改了Claude API和Enterprise用户的自动模式，以及在Bedrock、Vertex、Foundry和网关上的自动模式，默认为服务器端分类"
   },
+  "2.1.280": {
+    "en": "Added Claude Opus 5.5 (claude-opus-5-5), now the default Opus model — 1M context, 4/4/4/20 per Mtok with $0.20/Mtok cache reads",
+    "zh": "添加了Claude Opus 5.5 （ claude-opus-5-5 ） ，现在是默认的Opus模型— 100万上下文，每Mtok 4/4/4/20 ， $ 0.20/Mtok缓存读数"
+  },
   "2.1.29": {
     "en": "Fixed startup performance issues when resuming sessions that have saved_hook_context",
     "zh": "修复了恢复已保存_HOOK_CONTEXT的会话时的启动性能问题"
