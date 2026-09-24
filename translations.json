@@ -1359,6 +1359,10 @@
     "en": "Added Claude Opus 5.5 (claude-opus-5-5), now the default Opus model — 1M context, 4/4/4/20 per Mtok with $0.20/Mtok cache reads",
     "zh": "添加了Claude Opus 5.5 （ claude-opus-5-5 ） ，现在是默认的Opus模型— 100万上下文，每Mtok 4/4/4/20 ， $ 0.20/Mtok缓存读数"
   },
+  "2.1.281": {
+    "en": "Added Claude apps gateway support for newer Claude Desktop keys in desktop policy blocks, including blockReadsOutsideWorkingDirectories and ",
+    "zh": "在桌面策略块中添加了对较新Claude Desktop密钥的Claude应用程序网关支持，包括blockReadsOutsideWorkingDirectories和"
+  },
   "2.1.29": {
     "en": "Fixed startup performance issues when resuming sessions that have saved_hook_context",
     "zh": "修复了恢复已保存_HOOK_CONTEXT的会话时的启动性能问题"
