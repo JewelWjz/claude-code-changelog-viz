@@ -1363,6 +1363,10 @@
     "en": "Added Claude apps gateway support for newer Claude Desktop keys in desktop policy blocks, including blockReadsOutsideWorkingDirectories and ",
     "zh": "在桌面策略块中添加了对较新Claude Desktop密钥的Claude应用程序网关支持，包括blockReadsOutsideWorkingDirectories和"
   },
+  "2.1.282": {
+    "en": "Added a maxProseWidth setting that caps the width of Claude’s prose in wide terminals while tables and code blocks keep the full width",
+    "zh": "添加了一个maxProseWidth设置，该设置在宽端子中限制Claude散文的宽度，而表格和代码块保持全宽"
+  },
   "2.1.29": {
     "en": "Fixed startup performance issues when resuming sessions that have saved_hook_context",
     "zh": "修复了恢复已保存_HOOK_CONTEXT的会话时的启动性能问题"
