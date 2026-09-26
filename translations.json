@@ -1367,6 +1367,10 @@
     "en": "Added a maxProseWidth setting that caps the width of Claude’s prose in wide terminals while tables and code blocks keep the full width",
     "zh": "添加了一个maxProseWidth设置，该设置在宽端子中限制Claude散文的宽度，而表格和代码块保持全宽"
   },
+  "2.1.283": {
+    "en": "Added x-claude-code-prompt-id to the gateway hint headers so LLM gateways can group the requests that serve one user prompt; opt in with CLA",
+    "zh": "向网关提示标头添加了x-claude-code-prompt-id ，以便LLM网关可以对服务于一个用户提示的请求进行分组；选择加入CLA"
+  },
   "2.1.29": {
     "en": "Fixed startup performance issues when resuming sessions that have saved_hook_context",
     "zh": "修复了恢复已保存_HOOK_CONTEXT的会话时的启动性能问题"
