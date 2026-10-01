@@ -1379,6 +1379,10 @@
     "en": "Added CLAUDE_CODE_DISABLE_WEB_FETCH environment variable to turn off the WebFetch tool",
     "zh": "添加了CLAUDE_CODE_DISABLE_WEB_FETCH环境变量以关闭WebFetch工具"
   },
+  "2.1.286": {
+    "en": "Added a count such as “2 of 5” to the permission prompt when several permission requests stack up",
+    "zh": "当多个权限请求堆叠时，向权限提示中添加了计数，例如“2 of 5”"
+  },
   "2.1.29": {
     "en": "Fixed startup performance issues when resuming sessions that have saved_hook_context",
     "zh": "修复了恢复已保存_HOOK_CONTEXT的会话时的启动性能问题"
