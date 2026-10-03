@@ -1387,6 +1387,10 @@
     "en": "Added Claude Mods: plugins may now modify deeper behavior",
     "zh": "添加了Claude Mods ：插件现在可以修改更深层次的行为"
   },
+  "2.1.288": {
+    "en": "Added $.ui.selection() for mods: returns the text you last selected in fullscreen mode and, when the selection lies within one transcript ro",
+    "zh": "为mods添加了$ .ui.selection () ：返回您上次在全屏模式下选择的文本，当选择位于一个成绩单ro内时"
+  },
   "2.1.29": {
     "en": "Fixed startup performance issues when resuming sessions that have saved_hook_context",
     "zh": "修复了恢复已保存_HOOK_CONTEXT的会话时的启动性能问题"
