@@ -1391,6 +1391,10 @@
     "en": "Added $.ui.selection() for mods: returns the text you last selected in fullscreen mode and, when the selection lies within one transcript ro",
     "zh": "为mods添加了$ .ui.selection () ：返回您上次在全屏模式下选择的文本，当选择位于一个成绩单ro内时"
   },
+  "2.1.289": {
+    "en": "Fixed a deny or ask rule on a nested part of a compound shell command not holding over a user-installed mod’s approval on managed machines",
+    "zh": "修复了复合shell命令的嵌套部分上的拒绝或询问规则，该规则未占用托管计算机上用户安装的mod的批准"
+  },
   "2.1.29": {
     "en": "Fixed startup performance issues when resuming sessions that have saved_hook_context",
     "zh": "修复了恢复已保存_HOOK_CONTEXT的会话时的启动性能问题"
