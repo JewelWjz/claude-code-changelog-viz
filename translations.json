@@ -1399,6 +1399,14 @@
     "en": "Fixed startup performance issues when resuming sessions that have saved_hook_context",
     "zh": "修复了恢复已保存_HOOK_CONTEXT的会话时的启动性能问题"
   },
+  "2.1.290": {
+    "en": "Added serverToolUses to the result of a mod’s turn.step hook: the tool calls the API ran itself (the advisor), each with its id, name, input",
+    "zh": "向mod的turn.step钩子的结果添加了serverToolUses ：工具调用API运行本身（顾问） ，每个都有其ID、名称、输入"
+  },
+  "2.1.291": {
+    "en": "Fixed a regression in 2.1.290 where cloud sessions could drop answers to permission prompts",
+    "zh": "修复了2.1.290中的回归，其中云会话可能会丢弃对权限提示的答案"
+  },
   "2.1.3": {
     "en": "Merged slash commands and skills, simplifying the mental model with no change in behavior",
     "zh": "合并斜杠命令和技能，简化心智模型，行为不变"
