@@ -656,16 +656,16 @@
     "zh": "为多项选择题添加了“（推荐）”指示器，推荐选项已移至列表顶部"
   },
   "2.0.64": {
-    "en": "Made auto-compacting instant",
-    "zh": "制作自动压实即时"
+    "en": "Added named session support: use /rename to name sessions, /resume <name> in REPL or claude --resume <name> from the terminal to resume them",
+    "zh": "添加了命名会话支持：使用/rename to name sessions ，/resume <name> in REPL或claude <name> --resume从终端恢复会话"
   },
   "2.0.65": {
     "en": "Added ability to switch models while writing a prompt using alt+p (linux, windows), option+p (macos).",
     "zh": "添加了使用alt + p （ linux、windows ）、option + p （ macos ）编写提示时切换模型的功能。"
   },
   "2.0.67": {
-    "en": "Thinking mode is now enabled by default for Opus 4.5",
-    "zh": "Opus 4.5现在默认启用了思维模式"
+    "en": "Added search functionality to /permissions command with / keyboard shortcut for filtering rules by tool name",
+    "zh": "使用/keyboard快捷方式向/permissions命令添加了搜索功能，用于按工具名称筛选规则"
   },
   "2.0.68": {
     "en": "Fixed IME (Input Method Editor) support for languages like Chinese, Japanese, and Korean by correctly positioning the composition window at ",
@@ -748,16 +748,16 @@
     "zh": "添加了/tui命令和tui设置—运行/tui全屏以在同一对话中切换到无闪烁渲染"
   },
   "2.1.111": {
-    "en": "Claude Opus 4.7 xhigh is now available! Use /effort to tune speed vs. intelligence",
-    "zh": "Claude Opus 4.7 xhigh现已推出！使用/努力调整速度与智力"
+    "en": "Added xhigh effort level for Opus 4.7, sitting between high and max. Available via /effort, --effort, and the model picker; other models fal",
+    "zh": "为Opus 4.7增加了xhigh努力等级，位于高和最大之间。通过/effort、--effort和模型选择器提供；其他模型失败"
   },
   "2.1.112": {
     "en": "Fixed “claude-opus-4-7 is temporarily unavailable” for auto mode",
     "zh": "修复了自动模式下“claude-opus-4-7暂时不可用”的问题"
   },
   "2.1.113": {
-    "en": "Changed the CLI to spawn a native Claude Code binary (via a per-platform optional dependency) instead of bundled JavaScript",
-    "zh": "更改了CLI以生成本机Claude代码二进制文件（通过每个平台的可选依赖项） ，而不是捆绑的JavaScript"
+    "en": "Added sandbox.network.deniedDomains setting to block specific domains even when a broader allowedDomains wildcard would otherwise permit the",
+    "zh": "添加了sandbox.network.deniedDomains设置，以阻止特定域，即使更广泛的allowedDomains通配符否则将允许"
   },
   "2.1.114": {
     "en": "Fixed a crash in the permission dialog when an agent teams teammate requested tool permission",
@@ -776,16 +776,16 @@
     "zh": "添加了VIM视觉模式（ v ）和视觉线条模式（ V ） ，包括选择、操作员和视觉反馈"
   },
   "2.1.119": {
-    "en": "/config settings (theme, editor mode, verbose, etc.) now persist to ~/.claude/settings.json and participate in project/local/policy override",
-    "zh": "/config设置（主题、编辑器模式、详细等）现在保留为~/.claude/settings.json并参与project/local/policy覆盖"
+    "en": "Added prUrlTemplate setting to point the footer PR badge at a custom code-review URL instead of github.com",
+    "zh": "添加了prUrlTemplate设置，以将页脚PR徽章指向自定义代码审查URL而不是github.com"
   },
   "2.1.12": {
     "en": "Fixed message rendering bug",
     "zh": "修复了消息渲染错误"
   },
   "2.1.120": {
-    "en": "Windows: Git for Windows (Git Bash) is no longer required — when absent, Claude Code uses PowerShell as the shell tool",
-    "zh": "Windows ：不再需要Git for Windows （ Git Bash ） —缺失时， Claude Code使用PowerShell作为shell工具"
+    "en": "Added claude ultrareview [target] subcommand to run /ultrareview non-interactively from CI or scripts — prints findings to stdout (--json fo",
+    "zh": "添加了claude ultrareview [target]子命令，用于从CI或脚本非交互式运行/ultrareview —将发现打印到stdout (--json fo"
   },
   "2.1.121": {
     "en": "Added alwaysLoad option to MCP server config — when true, all tools from that server skip tool-search deferral and are always available",
@@ -844,8 +844,8 @@
     "zh": "在bash模式下添加了基于历史记录的自动完成（ ！ ） -键入部分命令，然后按Tab键从bash命令历史记录中完成"
   },
   "2.1.140": {
-    "en": "Improved Agent tool subagent_type matching to accept case- and separator-insensitive values (e.g. \"Code Reviewer\" resolves to code-reviewer)",
-    "zh": "改进了代理工具subagent_type匹配，以接受大小写和分隔符不区分的值（例如， “代码审阅者”解析为代码审阅者）"
+    "en": "Updated agent color palette",
+    "zh": "客服代表调色板已更新"
   },
   "2.1.141": {
     "en": "Added terminalSequence field to hook JSON output so hooks can emit desktop notifications, window titles, and bells without a controlling ter",
@@ -880,8 +880,8 @@
     "zh": "修复了Bash工具在某些用户的每个命令上返回退出代码127的问题（ 2.1.147中引入的回归）"
   },
   "2.1.149": {
-    "en": "/usage now shows a per-category breakdown of what’s driving your limits usage — skills, subagents, plugins, and per-MCP-server cost",
-    "zh": "/usage现在显示每个类别的限制使用细分—技能、子代理、插件和每个MCP服务器的成本"
+    "en": "Enterprise: added the allowAllClaudeAiMcps managed setting to load claude.ai cloud MCP connectors alongside managed-mcp.json",
+    "zh": "企业：添加了allowAllClaudeAiMcps托管设置，以与managed-mcp.json一起加载claude.ai云MCP连接器"
   },
   "2.1.15": {
     "en": "Added deprecation notification for npm installations - run claude install or see https://code.claude.com/docs/en/setup for more options",
@@ -892,24 +892,24 @@
     "zh": "内部基础设施改进（无面向用户的更改）"
   },
   "2.1.152": {
-    "en": "/code-review --fix now applies review findings to your working tree after the review, surfacing reuse, simplification, and efficiency sugges",
-    "zh": "/code-review --fix现在在审核后将审核结果应用于您的工作树，显示重用、简化和效率建议"
+    "en": "Added /reload-skills command to re-scan skill directories without restarting the session",
+    "zh": "添加/reload-skills命令以重新扫描技能目录，而无需重新启动会话"
   },
   "2.1.153": {
     "en": "Added skipLfs option to github/git plugin marketplace sources to skip Git LFS downloads during clone and update",
     "zh": "向github/git插件市场源添加了skipLfs选项，以在克隆和更新期间跳过Git LFS下载"
   },
   "2.1.154": {
-    "en": "Opus 4.8 is here! Now defaults to high effort · /effort xhigh for your hardest tasks",
-    "zh": "Opus 4.8来了！现在，对于您最困难的任务，默认为高投入量·/投入量xhigh"
+    "en": "Introducing dynamic workflows: ask Claude to create a workflow and it orchestrates work across tens to hundreds of agents in the background,",
+    "zh": "引入动态工作流程：让Claude创建工作流程，并在后台协调数十到数百名客服代表的工作，"
   },
   "2.1.156": {
     "en": "Fixed an issue when using Opus 4.8 where thinking blocks were modified, leading to API errors.",
     "zh": "修复了使用Opus 4.8时修改思维块导致API错误的问题。"
   },
   "2.1.157": {
-    "en": "Plugins in .claude/skills directories are now automatically loaded, no marketplace required",
-    "zh": ".claude/skills目录中的插件现在自动加载，无需市场"
+    "en": "Added claude plugin init <name> to scaffold a new plugin in .claude/skills",
+    "zh": "<name> 在.claude/skills中添加了claude插件init来搭建新插件"
   },
   "2.1.158": {
     "en": "Auto mode is now available on Bedrock, Vertex, and Foundry for Opus 4.7 and Opus 4.8. Opt in by setting CLAUDE_CODE_ENABLE_AUTO_MODE=1",
@@ -928,8 +928,8 @@
     "zh": "在写入shell启动文件（ .zshenv、.zlogin、.bash_login ）和~/.config/git/之前添加了提示，否则可能会导致unint"
   },
   "2.1.161": {
-    "en": "OTEL_RESOURCE_ATTRIBUTES values are now included as labels on metric datapoints, so you can slice usage metrics by custom dimensions like te",
-    "zh": "OTEL_RESOURCE_ATTRIBUTES值现在包含在指标数据点上的标签中，因此您可以按自定义维度（如te"
+    "en": "[VSCode] Added a tip suggesting disabling terminal GPU acceleration (or running /terminal-setup) to fix garbled glyphs",
+    "zh": "[VSCode]添加了一个提示，建议禁用终端GPU加速（或运行/终端设置）以修复乱码"
   },
   "2.1.162": {
     "en": "claude agents --json now includes waitingFor showing what a waiting session is blocked on (e.g. permission prompt)",
@@ -968,8 +968,8 @@
     "zh": "隆重推出Claude Fable 5 ：我们为普通用户打造的神话级模型。寓言的功能超过了我们任何型号的功能"
   },
   "2.1.172": {
-    "en": "Sub-agents can now spawn their own sub-agents (up to 5 levels deep)",
-    "zh": "子代理现在可以生成自己的子代理（最多5个级别）"
+    "en": "Added a search bar when browsing a marketplace’s plugins in /plugin",
+    "zh": "在/plugin中浏览市场插件时添加了搜索栏"
   },
   "2.1.173": {
     "en": "Fixed Fable 5 model names with a [1m] suffix not being normalized — Fable 5 includes 1M context by default, so the suffix is now stripped au",
@@ -984,12 +984,12 @@
     "zh": "添加了enforceAvailableModels托管设置—启用后， availableModels allowlist还会约束默认模型（默认值为"
   },
   "2.1.176": {
-    "en": "Session titles are now generated in the language of your conversation (set the language setting to pin a specific language)",
-    "zh": "会话标题现在以您对话的语言生成（将语言设置为固定特定语言）"
+    "en": "Added footerLinksRegexes setting for regex-matched link badges in the footer row, configurable via user or managed settings",
+    "zh": "为页脚行中的正则表达式匹配链接徽章添加了footerLinksRegexes设置，可通过用户或托管设置进行配置"
   },
   "2.1.178": {
-    "en": "Agent teams: removed the TeamCreate and TeamDelete tools. With CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 set, every session now has one implici",
-    "zh": "座席团队：删除了TeamCreate和TeamDelete工具。在CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS = 1的情况下，现在每个会话都有一个隐含"
+    "en": "Added Tool(param:value) syntax for permission rules to match a tool’s input parameters (with * wildcard), e.g. Agent(model:opus) to block Op",
+    "zh": "添加了权限规则的工具(param: value)语法，以匹配工具的输入参数(带*通配符) ，例如Agent (model: opus)以阻止Op"
   },
   "2.1.179": {
     "en": "Fixed mid-stream connection drops: partial responses are now preserved instead of showing a raw error, and the spinner no longer gets stuck ",
@@ -1004,8 +1004,8 @@
     "zh": "添加/config key = value语法以设置提示中的任何设置（例如/config thinking = false ） —适用于交互式、-p和远程控制"
   },
   "2.1.183": {
-    "en": "Improved auto mode safety: destructive git commands (git reset --hard, git checkout -- ., git clean -fd, git stash drop) are now blocked whe",
-    "zh": "改进的自动模式安全性：破坏性的git命令（ git reset --hard、git checkout --.、git clean -fd、git stash drop ）现在被阻止"
+    "en": "Added a warning when the requested model is deprecated or automatically updated to a newer model, shown on stderr in print mode (-p) and now",
+    "zh": "当请求的模型被弃用或自动更新到较新的模型时，添加了一个警告，以打印模式（ -p ）显示在stderr上，现在"
   },
   "2.1.185": {
     "en": "The stream-stall hint now reads “Waiting for API response · will retry in …” instead of “No response from API · Retrying in …”, and triggers",
@@ -1048,8 +1048,8 @@
     "zh": "介绍Claude Sonnet 5 ：现在是Claude Code中的默认模型，具有原生1M代币上下文窗口和2/2/2/10的促销定价"
   },
   "2.1.198": {
-    "en": "Subagents now run in the background by default, so Claude keeps working while they run and is notified when they finish (previously a gradua",
-    "zh": "子代理现在默认在后台运行，因此Claude在他们运行时继续工作，并在他们完成时收到通知（以前是毕业生"
+    "en": "Added background agent notifications in claude agents — sessions that need input or finish now fire the Notification hook (agent_needs_input",
+    "zh": "在claude代理中添加了后台代理通知—需要输入或完成的会话现在触发通知挂钩（ agent_needs_input"
   },
   "2.1.199": {
     "en": "Stacked slash-skill invocations like /skill-a /skill-b do XYZ now load all leading skills (up to 5), not just the first",
@@ -1116,12 +1116,12 @@
     "zh": "添加了--forward-subagent-text标志和CLAUDE_CODE_FORWARD_SUBAGENT_TEXT环境变量，以在strea中包含子代理文本和思维"
   },
   "2.1.212": {
-    "en": "/fork now copies your conversation into a new background session (its own row in claude agents) while you keep working; the in-session subag",
-    "zh": "/fork现在在您继续工作时将您的对话复制到新的后台会话（它自己的claude agent行） ；会话中的子标签"
+    "en": "Added claude auto-mode reset to restore the default auto-mode configuration, with a confirmation prompt (pass --yes to skip)",
+    "zh": "添加了claude auto-mode reset ，以恢复默认的自动模式配置，并提供确认提示（ pass --是跳过）"
   },
   "2.1.214": {
-    "en": "Fixed single-segment dir/** allow rules like Edit(src/**) auto-approving writes to nested dir/ directories anywhere in the tree instead of o",
-    "zh": "修复了单段目录/* *允许编辑(src/* *)等规则自动批准对树中任何位置的嵌套目录/目录的写入，而不是"
+    "en": "Added the EndConversation tool: Claude can end sessions with highly abusive users or jailbreak attempts, as on claude.ai since 2025 — see ht",
+    "zh": "添加了EndConversation工具： Claude可以结束与高度滥用用户的会话或越狱尝试，自2025年以来一直在claude.ai上—请参阅ht"
   },
   "2.1.215": {
     "en": "Claude no longer runs the /verify and /code-review skills on its own; invoke them with /verify or /code-review when you want them",
@@ -1136,8 +1136,8 @@
     "zh": "在提示输入中添加了表情符号短代码自动完成： type: heart: to insert ❤️，或: hea for suggestions —禁用表情符号Completio"
   },
   "2.1.218": {
-    "en": "Changed /code-review to run as a background subagent, so review work no longer fills your conversation and keeps stacked slash commands as i",
-    "zh": "已将/code-review更改为作为后台子代理运行，因此审核工作不再填充您的对话，而是将堆叠的斜杠命令保留为"
+    "en": "Added screen-reader announcements of deleted text for word and line deletions (Option+Delete, Ctrl+W, Cmd+Backspace, Ctrl+U, Ctrl+K) in --ax",
+    "zh": "在--ax中添加了删除文字和行删除的屏幕阅读器公告（ Option + Delete、Ctrl + W、Cmd + Backspace、Ctrl + U、Ctrl + K ）"
   },
   "2.1.219": {
     "en": "Added Claude Opus 5 (claude-opus-5), now the default Opus model — 1M context, fast mode at 10/10/10/50 per Mtok",
@@ -1156,8 +1156,8 @@
     "zh": "[VSCode]添加了焦点视图：聊天菜单切换，使用实时运行工具标记将工具活动隐藏在可扩展的每回合摘要后面"
   },
   "2.1.222": {
-    "en": "Fixed worktree-isolated sessions and their subagents being able to run destructive git commands against the main checkout; isolation now app",
-    "zh": "修复了工作树隔离会话及其子代理能够对主结帐运行破坏性git命令的问题；隔离现在应用程序"
+    "en": "Changed Remote Control auto-start so repo-local settings (.claude/settings.json or .claude/settings.local.json) can no longer turn it on (th",
+    "zh": "更改了远程控制自动启动，因此存储库本地设置（ .claude/settings.json或.claude/settings.local.json ）无法再打开（"
   },
   "2.1.223": {
     "en": "Added owner wildcard entries (\"owner/*\") to the strictKnownMarketplaces and blockedMarketplaces managed settings for allowing or blocking al",
@@ -1180,12 +1180,12 @@
     "zh": "修复了当会话使用过期的登录令牌启动时，在没有用户订阅层的情况下评估功能标志的问题，这可能会导致"
   },
   "2.1.228": {
-    "en": "Fixed interactive sessions that could stop redrawing entirely, while the process kept running, after a rare internal layout error",
-    "zh": "修复了在罕见的内部布局错误后，进程继续运行时可能完全停止重绘的交互式会话"
+    "en": "Hardened skills synced from claude.ai: they no longer shadow local commands or MCP prompts, their descriptions are sanitized and labeled, an",
+    "zh": "从claude.ai同步的强化技能：他们不再隐藏本地命令或MCP提示，他们的描述被消毒和标记，"
   },
   "2.1.229": {
-    "en": "Documented claude remote-control --continue for resuming the most recent Remote Control session",
-    "zh": "记录的CLAUDE远程控制--继续以恢复最近的远程控制会话"
+    "en": "Added server-supplied Claude Code hook support for self-hosted runner sessions, matching managed-environment behavior",
+    "zh": "为自托管运行器会话添加了服务器提供的Claude Code钩子支持，匹配托管环境行为"
   },
   "2.1.23": {
     "en": "Added customizable spinner verbs setting (spinnerVerbs)",
@@ -1196,8 +1196,8 @@
     "zh": "修复了使用预先注册的OAuth客户端（如Slack ）的服务器由于重定向URI不匹配而导致MCP OAuth登录失败的问题"
   },
   "2.1.232": {
-    "en": "Subagent forking is now on by default: a subagent_type: \"fork\" subagent inherits the full conversation and prompt cache, and non-teammate ag",
-    "zh": "默认情况下，子代理分叉现在处于打开状态： subagent_type: \"fork\"子代理继承完整的会话和提示缓存，非团队成员继承"
+    "en": "Added /config rows for “Dialog expiry” and “Messages from your other sessions” (cross-session inbound accept/hold/refuse)",
+    "zh": "为“对话到期”和“来自其他会话的消息”添加了/config行（跨会话入站接受/保留/拒绝）"
   },
   "2.1.233": {
     "en": "Added GitLab merge request URL support to the --worktree flag and the claude agents view (where MRs display as !N)",
@@ -1224,8 +1224,8 @@
     "zh": "添加了keybindingFlavor设置：将其设置为“readline” ，使提示符中的Ctrl + W删除回到上一个空格，如Bash ；"
   },
   "2.1.239": {
-    "en": "Cost estimates (/cost, status line, --max-budget-usd) now include the 1.1× US-only-inference premium for data-residency workspaces",
-    "zh": "成本估算（/cost, status line, --max-budget-usd ）现在包括数据驻留工作空间的1.1倍仅限美国的推理溢价"
+    "en": "Added the one-time fullscreen renderer offer on Bedrock, Vertex, Foundry and other previously excluded setups; new installs there now start ",
+    "zh": "在Bedrock、Vertex、Foundry和其他先前排除的设置上添加了一次性全屏渲染器优惠；新的安装现在开始"
   },
   "2.1.240": {
     "en": "Bug fixes and reliability improvements",
@@ -1392,8 +1392,8 @@
     "zh": "为mods添加了$ .ui.selection () ：返回您上次在全屏模式下选择的文本，当选择位于一个成绩单ro内时"
   },
   "2.1.289": {
-    "en": "Fixed a deny or ask rule on a nested part of a compound shell command not holding over a user-installed mod’s approval on managed machines",
-    "zh": "修复了复合shell命令的嵌套部分上的拒绝或询问规则，该规则未占用托管计算机上用户安装的mod的批准"
+    "en": "Added agent.spawn for teammates, one agent id across plugin hook events, and idle and waiting states in $.agent.list()",
+    "zh": "为队友添加了agent.spawn ，在插件挂钩事件中添加了一个代理ID ，并在$ .agent.list ()中添加了空闲和等待状态"
   },
   "2.1.29": {
     "en": "Fixed startup performance issues when resuming sessions that have saved_hook_context",
@@ -1419,9 +1419,13 @@
     "en": "Fixed prompt and agent hooks written as instructions (such as “Block commands that…”) allowing what they should block",
     "zh": "修复了作为指令编写的提示和代理挂钩（例如“阻止……的命令” ） ，允许他们应该阻止的内容"
   },
+  "2.1.295": {
+    "en": "Added onFailure: \"block\" for command and HTTP hooks: a hook that can’t start, times out, or exits with an unexpected code blocks the action ",
+    "zh": "为命令和HTTP钩子添加了onFailure: \"block\" ：无法启动、超时或以意外代码退出的钩子阻止了操作"
+  },
   "2.1.3": {
-    "en": "Merged slash commands and skills, simplifying the mental model with no change in behavior",
-    "zh": "合并斜杠命令和技能，简化心智模型，行为不变"
+    "en": "Added release channel (stable or latest) toggle to /config",
+    "zh": "已添加发布通道（稳定或最新）切换到/config"
   },
   "2.1.30": {
     "en": "Added pages parameter to the Read tool for PDFs, allowing specific page ranges to be read (e.g., pages: \"1-5\"). Large PDFs (>10 pages) now r",
@@ -1432,12 +1436,12 @@
     "zh": "添加了退出时的会话简历提示，展示了以后如何继续对话"
   },
   "2.1.32": {
-    "en": "Claude Opus 4.6 is now available!",
-    "zh": "Claude Opus 4.6现已推出！"
+    "en": "Added research preview agent teams feature for multi-agent collaboration (token-intensive feature, requires setting CLAUDE_CODE_EXPERIMENTAL",
+    "zh": "为多代理协作添加了研究预览代理团队功能（令牌密集型功能，需要设置CLAUDE_CODE_EXPERIMENTAL"
   },
   "2.1.33": {
-    "en": "Fixed agent teammate sessions in tmux to send and receive messages",
-    "zh": "修复了代理队友在tmux中发送和接收消息的会话"
+    "en": "Added TeammateIdle and TaskCompleted hook events for multi-agent workflows",
+    "zh": "为多代理工作流添加了TeammateIdle和TaskCompleted挂钩事件"
   },
   "2.1.34": {
     "en": "Fixed a crash when agent teams setting changed between renders",
@@ -1488,12 +1492,12 @@
     "zh": "修复了macOS终端断开连接后的孤立CC进程"
   },
   "2.1.47": {
-    "en": "Fixed FileWriteTool line counting to preserve intentional trailing blank lines instead of stripping them with trimEnd().",
-    "zh": "修复了FileWriteTool行计数，以保留有意的尾随空行，而不是使用trimEnd ()剥离它们。"
+    "en": "Added last_assistant_message field to Stop and SubagentStop hook inputs, providing the final assistant response text so hooks can access it ",
+    "zh": "将last_assistant_message字段添加到Stop和SubagentStop钩子输入，提供最终助理响应文本，以便钩子可以访问它"
   },
   "2.1.49": {
-    "en": "Improved MCP OAuth authentication with step-up auth support and discovery caching, reducing redundant network requests during server connect",
-    "zh": "通过升级身份验证支持和发现缓存改进了MCP OAuth身份验证，减少了服务器连接期间的冗余网络请求"
+    "en": "Added --worktree (-w) flag to start Claude in an isolated git worktree",
+    "zh": "添加了--worktree (-w)标志，以在隔离的git工作树中启动Claude"
   },
   "2.1.5": {
     "en": "Added CLAUDE_CODE_TMPDIR environment variable to override the temp directory used for internal temp files, useful for environments with cust",
@@ -1564,16 +1568,16 @@
     "zh": "添加了showTurnDuration设置以隐藏转弯持续时间消息（例如， “Cooked for 1m 6s” ）"
   },
   "2.1.70": {
-    "en": "Fixed API 400 errors when using ANTHROPIC_BASE_URL with a third-party gateway — tool search now correctly detects proxy endpoints and disabl",
-    "zh": "修复了将ANTHROPIC_BASE_URL与第三方网关一起使用时的API 400错误—工具搜索现在可以正确检测代理端点并禁用"
+    "en": "[VSCode] Added spark icon in VS Code activity bar that lists all Claude Code sessions, with sessions opening as full editors",
+    "zh": "[VSCode]在VS Code活动栏中添加了火花图标，列出了所有Claude Code会话，会话以完全编辑者的身份打开"
   },
   "2.1.71": {
     "en": "Added /loop command to run a prompt or slash command on a recurring interval (e.g. /loop 5m check the deploy)",
     "zh": "添加了/loop命令以定期运行提示符或斜杠命令（例如/loop 5m检查部署）"
   },
   "2.1.72": {
-    "en": "Fixed tool search to activate even with ANTHROPIC_BASE_URL as long as ENABLE_TOOL_SEARCH is set.",
-    "zh": "修正了工具搜索，只要设置了ENABLE_TOOL_SEARCH ，即使使用ANTHROPIC_BASE_URL也能激活。"
+    "en": "Added w key in /copy to write the focused selection directly to a file, bypassing the clipboard (useful over SSH)",
+    "zh": "添加了w键入/复制以将焦点选择直接写入文件，绕过剪贴板（在SSH上很有用）"
   },
   "2.1.73": {
     "en": "Added modelOverrides setting to map model picker entries to custom provider model IDs (e.g. Bedrock inference profile ARNs)",
@@ -1592,8 +1596,8 @@
     "zh": "添加了MCP引发支持— MCP服务器现在可以通过交互式对话框（表单字段或浏览器URL ）请求结构化输入中间任务"
   },
   "2.1.77": {
-    "en": "Increased default maximum output token limits for Claude Opus 4.6 to 64k tokens, and the upper bound for Opus 4.6 and Sonnet 4.6 models to 1",
-    "zh": "Claude Opus 4.6至64k代币的默认最大输出代币限制增加， Opus 4.6和Sonnet 4.6型号的上限增加至1"
+    "en": "Added allowRead sandbox filesystem setting to re-allow read access within denyRead regions",
+    "zh": "添加了allowRead沙盒文件系统设置，以重新允许在denyRead区域内进行读取访问"
   },
   "2.1.78": {
     "en": "Added StopFailure hook event that fires when the turn ends due to an API error (rate limit, auth failure, etc.)",
