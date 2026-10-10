@@ -1423,6 +1423,10 @@
     "en": "Added onFailure: \"block\" for command and HTTP hooks: a hook that can’t start, times out, or exits with an unexpected code blocks the action ",
     "zh": "为命令和HTTP钩子添加了onFailure: \"block\" ：无法启动、超时或以意外代码退出的钩子阻止了操作"
   },
+  "2.1.296": {
+    "en": "Added a code key to the Claude apps gateway’s managed.policies[]: the same settings as cli, also applied in Claude Desktop’s Code tab; besid",
+    "zh": "向Claude应用程序网关的managed.policies []添加了一个代码键：与cli相同的设置，也适用于Claude Desktop的代码选项卡；在旁边"
+  },
   "2.1.3": {
     "en": "Added release channel (stable or latest) toggle to /config",
     "zh": "已添加发布通道（稳定或最新）切换到/config"
