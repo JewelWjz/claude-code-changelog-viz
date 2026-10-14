@@ -1427,6 +1427,10 @@
     "en": "Added a code key to the Claude apps gateway’s managed.policies[]: the same settings as cli, also applied in Claude Desktop’s Code tab; besid",
     "zh": "向Claude应用程序网关的managed.policies []添加了一个代码键：与cli相同的设置，也适用于Claude Desktop的代码选项卡；在旁边"
   },
+  "2.1.299": {
+    "en": "Added CLAUDE_CODE_DISABLE_FILE_MENTIONS environment variable: Claude gets the paths of @ file mentions to read with its file tools, not the ",
+    "zh": "添加了CLAUDE_CODE_DISABLE_FILE_MENTIONS环境变量： CLAUDE使用其文件工具获取要读取的@ file提及的路径，而不是"
+  },
   "2.1.3": {
     "en": "Added release channel (stable or latest) toggle to /config",
     "zh": "已添加发布通道（稳定或最新）切换到/config"
