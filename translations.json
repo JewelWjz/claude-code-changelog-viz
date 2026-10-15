@@ -1439,6 +1439,10 @@
     "en": "Added pages parameter to the Read tool for PDFs, allowing specific page ranges to be read (e.g., pages: \"1-5\"). Large PDFs (>10 pages) now r",
     "zh": "向PDF的读取工具添加了页面参数，允许读取特定的页面范围（例如，页面： “1-5” ）。大型PDF （ > 10页）现在可以"
   },
+  "2.1.300": {
+    "en": "Added virtualText to a mod’s prompt decorations: text drawn in the prompt box that never enters the draft or the submitted prompt",
+    "zh": "将virtualText添加到mod的提示装饰：在提示框中绘制的文本从未进入草稿或提交的提示"
+  },
   "2.1.31": {
     "en": "Added session resume hint on exit, showing how to continue your conversation later",
     "zh": "添加了退出时的会话简历提示，展示了以后如何继续对话"
