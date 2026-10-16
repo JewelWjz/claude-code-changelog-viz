@@ -1443,6 +1443,10 @@
     "en": "Added virtualText to a mod’s prompt decorations: text drawn in the prompt box that never enters the draft or the submitted prompt",
     "zh": "将virtualText添加到mod的提示装饰：在提示框中绘制的文本从未进入草稿或提交的提示"
   },
+  "2.1.301": {
+    "en": "Added CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) ends a request at a usage lim",
+    "zh": "添加了CLAUDE_CODE_RETRY_WATCHDOG_MAX_USATION_LIMIT_WAIT_MS ，以便无人参与的重试模式（ CLAUDE_CODE_RETRY_WATCHDOG ）在使用LIM结束请求"
+  },
   "2.1.31": {
     "en": "Added session resume hint on exit, showing how to continue your conversation later",
     "zh": "添加了退出时的会话简历提示，展示了以后如何继续对话"
