@@ -1451,6 +1451,10 @@
     "en": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-sid",
     "zh": "添加CLAUDE_CODE_AUTO_MODE_MODEL选择客户端自动模式分类器使用的模型，不改变server-sid的模型"
   },
+  "2.1.303": {
+    "en": "Bug fixes and reliability improvements",
+    "zh": "错误修正和改善"
+  },
   "2.1.31": {
     "en": "Added session resume hint on exit, showing how to continue your conversation later",
     "zh": "添加了退出时的会话简历提示，展示了以后如何继续对话"
