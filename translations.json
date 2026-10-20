@@ -1455,6 +1455,10 @@
     "en": "Bug fixes and reliability improvements",
     "zh": "错误修正和改善"
   },
+  "2.1.304": {
+    "en": "Added a transcript line when a plugin that runs first skips one of your mod’s hooks, naming the event and the plugin",
+    "zh": "当首先运行的插件跳过您的mod的一个钩子时，添加了一个脚本行，命名事件和插件"
+  },
   "2.1.31": {
     "en": "Added session resume hint on exit, showing how to continue your conversation later",
     "zh": "添加了退出时的会话简历提示，展示了以后如何继续对话"
