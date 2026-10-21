@@ -1044,8 +1044,8 @@
     "zh": "添加了对组织默认模型的支持—管理员在组织控制台中设置它；它在/model wh中显示为“组织默认” （或“角色默认” ）"
   },
   "2.1.197": {
-    "en": "Introducing Claude Sonnet 5: now the default model in Claude Code, with a native 1M-token context window and promotional pricing of 2/2/2/10",
-    "zh": "介绍Claude Sonnet 5 ：现在是Claude Code中的默认模型，具有原生1M代币上下文窗口和2/2/2/10的促销定价"
+    "en": "Introducing Claude Sonnet 5: now the default model in Claude Code, with a native 1M-token context window and promotional pricing of $2/$10 p",
+    "zh": "介绍Claude Sonnet 5 ：现在是Claude Code中的默认模型，具有原生100万令牌上下文窗口和2美元/10美元的促销定价"
   },
   "2.1.198": {
     "en": "Added background agent notifications in claude agents — sessions that need input or finish now fire the Notification hook (agent_needs_input",
@@ -1140,8 +1140,8 @@
     "zh": "在--ax中添加了删除文字和行删除的屏幕阅读器公告（ Option + Delete、Ctrl + W、Cmd + Backspace、Ctrl + U、Ctrl + K ）"
   },
   "2.1.219": {
-    "en": "Added Claude Opus 5 (claude-opus-5), now the default Opus model — 1M context, fast mode at 10/10/10/50 per Mtok",
-    "zh": "添加了Claude Opus 5 （ claude-opus-5 ） ，现在是默认的Opus模型— 1M上下文，快速模式，每MTOK 10/10/10/50"
+    "en": "Added Claude Opus 5 (claude-opus-5), now the default Opus model — 1M context, fast mode at $10/$50 per Mtok",
+    "zh": "添加了Claude Opus 5 （ claude-opus-5 ） ，现在是默认的Opus模型— 100万上下文，快速模式，每Mtok 10美元/50美元"
   },
   "2.1.22": {
     "en": "Fixed structured outputs for non-interactive (-p) mode",
@@ -1272,8 +1272,8 @@
     "zh": "修复了Bash命令在某些Mac上因“任务输出交换被拒绝（任务目录移动或链接）”而失败的问题"
   },
   "2.1.257": {
-    "en": "Added Claude Fable 5.1 (claude-fable-5-1), now the default Fable model — 1M context, 10/10/10/50 per Mtok with $0.25/Mtok cache reads",
-    "zh": "添加了克劳德寓言5.1 （ claude-fable-5-1 ） ，现在是默认寓言模型— 100万上下文，每Mtok 10/10/10/50 ， $ 0.25/Mtok缓存读数"
+    "en": "Added Claude Fable 5.1 (claude-fable-5-1), now the default Fable model — 1M context, $10/$50 per Mtok with $0.25/Mtok cache reads",
+    "zh": "添加了Claude Fable 5.1 （ claude-fable-5-1 ） ，现在是默认的Fable模型— 100万上下文，每Mtok 10美元/50美元，每Mtok缓存读数0.25美元"
   },
   "2.1.258": {
     "en": "Fixed Claude Code failing to launch on macOS 12 (Monterey), a regression introduced in 2.1.255",
@@ -1356,8 +1356,8 @@
     "zh": "更改了Claude API和Enterprise用户的自动模式，以及在Bedrock、Vertex、Foundry和网关上的自动模式，默认为服务器端分类"
   },
   "2.1.280": {
-    "en": "Added Claude Opus 5.5 (claude-opus-5-5), now the default Opus model — 1M context, 4/4/4/20 per Mtok with $0.20/Mtok cache reads",
-    "zh": "添加了Claude Opus 5.5 （ claude-opus-5-5 ） ，现在是默认的Opus模型— 100万上下文，每Mtok 4/4/4/20 ， $ 0.20/Mtok缓存读数"
+    "en": "Added Claude Opus 5.5 (claude-opus-5-5), now the default Opus model — 1M context, $4/$20 per Mtok with $0.20/Mtok cache reads",
+    "zh": "添加了Claude Opus 5.5 （ claude-opus-5-5 ） ，现在是默认的Opus模型— 100万上下文，每Mtok 4美元/20美元，每Mtok缓存读数0.20美元"
   },
   "2.1.281": {
     "en": "Added Claude apps gateway support for newer Claude Desktop keys in desktop policy blocks, including blockReadsOutsideWorkingDirectories and ",
@@ -1372,8 +1372,8 @@
     "zh": "向网关提示标头添加了x-claude-code-prompt-id ，以便LLM网关可以对服务于一个用户提示的请求进行分组；选择加入CLA"
   },
   "2.1.284": {
-    "en": "Added Claude Sonnet 5.5 (claude-sonnet-5-5), now the default Sonnet model on the Anthropic API — 1M context, 2/2/2/10 per Mtok with $0.20/Mt",
-    "zh": "添加了Claude Sonnet 5.5 （ claude-sonnet-5-5 ） ，现在是Anthropic API上的默认Sonnet模型— 1M上下文，每Mtok 2/2/2/10 ， $ 0.20/Mt"
+    "en": "Added Claude Sonnet 5.5 (claude-sonnet-5-5), now the default Sonnet model on the Anthropic API — 1M context, $2/$10 per Mtok with $0.20/Mtok",
+    "zh": "添加了Claude Sonnet 5.5 （ claude-sonnet-5-5 ） ，现在是Anthropic API的默认Sonnet模型— 100万上下文，每Mtok 2美元/10美元，每Mtok 0.20美元"
   },
   "2.1.285": {
     "en": "Added CLAUDE_CODE_DISABLE_WEB_FETCH environment variable to turn off the WebFetch tool",
@@ -1412,8 +1412,8 @@
     "zh": "添加了<source>--marketplace到claude插件安装：根据与claude插件marketp相同的策略检查，根据需要添加市场"
   },
   "2.1.293": {
-    "en": "Added Claude Haiku 5.5 (claude-haiku-5-5), now the default Haiku model on the Anthropic API — 1M context, 0.10/0.10/0.10/0.50 per Mtok (0.50",
-    "zh": "添加了Claude Haiku 5.5 (claude-haiku-5-5) ，现在是Anthropic API的默认Haiku模型— 1M上下文， 0.10/0 .10/0 .10/0 .50 per Mtok (0.50"
+    "en": "Added Claude Haiku 5.5 (claude-haiku-5-5), now the default Haiku model on the Anthropic API — 1M context, $0.10/$0.50 per Mtok ($0.50/$2.50 ",
+    "zh": "添加了Claude Haiku 5.5 （ claude-haiku-5-5 ） ，现在是Anthropic API的默认Haiku模型— 100万上下文，每Mtok 0.10美元/0.50美元（ 0.50美元/2.50美元）"
   },
   "2.1.294": {
     "en": "Fixed prompt and agent hooks written as instructions (such as “Block commands that…”) allowing what they should block",
@@ -1458,6 +1458,14 @@
   "2.1.304": {
     "en": "Added a transcript line when a plugin that runs first skips one of your mod’s hooks, naming the event and the plugin",
     "zh": "当首先运行的插件跳过您的mod的一个钩子时，添加了一个脚本行，命名事件和插件"
+  },
+  "2.1.305": {
+    "en": "Added sandbox.allowNestedUserNamespaces so sandboxed commands on Linux can create user namespaces (Chromium, rootless podman); this lets the",
+    "zh": "添加了sandbox.allowNestedUserNamespaces ，以便Linux上的沙盒命令可以创建用户命名空间（ Chromium、无根podman ） ；这允许"
+  },
+  "2.1.306": {
+    "en": "Fixed claude -p inside cloud sessions reporting “Not logged in” when started without the session’s environment variables",
+    "zh": "修复了在没有会话环境变量的情况下启动时，云会话中的claude -p报告“未登录”的问题"
   },
   "2.1.31": {
     "en": "Added session resume hint on exit, showing how to continue your conversation later",
