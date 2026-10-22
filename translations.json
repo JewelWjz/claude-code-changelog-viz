@@ -1467,6 +1467,14 @@
     "en": "Fixed claude -p inside cloud sessions reporting “Not logged in” when started without the session’s environment variables",
     "zh": "修复了在没有会话环境变量的情况下启动时，云会话中的claude -p报告“未登录”的问题"
   },
+  "2.1.307": {
+    "en": "Added /claude-api api-version to move Claude API code to API version 2026-10-21",
+    "zh": "添加/claude-api api版本，将Claude API代码移至API版本2026-10-21"
+  },
+  "2.1.308": {
+    "en": "Bug fixes and reliability improvements",
+    "zh": "错误修正和改善"
+  },
   "2.1.31": {
     "en": "Added session resume hint on exit, showing how to continue your conversation later",
     "zh": "添加了退出时的会话简历提示，展示了以后如何继续对话"
