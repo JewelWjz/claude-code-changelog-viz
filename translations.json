@@ -1475,6 +1475,10 @@
     "en": "Bug fixes and reliability improvements",
     "zh": "错误修正和改善"
   },
+  "2.1.309": {
+    "en": "[VSCode] Added a log warning that says what to do when dictation or the extension’s own requests fail certificate verification, such as behi",
+    "zh": "[VSCode]添加了一个日志警告，说明当听写或扩展自己的请求未通过证书验证时该怎么做，例如"
+  },
   "2.1.31": {
     "en": "Added session resume hint on exit, showing how to continue your conversation later",
     "zh": "添加了退出时的会话简历提示，展示了以后如何继续对话"
