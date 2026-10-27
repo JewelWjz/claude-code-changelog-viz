@@ -1487,6 +1487,10 @@
     "en": "Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long for",
     "zh": "在Bedrock、Vertex和Foundry上添加了监视器工具和插件监视器，以及当遥测或非必要流量被禁用时；"
   },
+  "2.1.311": {
+    "en": "Added --hold-idle-file and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running",
+    "zh": "在自托管运行器中添加了--hold-idle-file和--max-hold-min ，以便在主机报告处理过程时保持空闲会话继续运行"
+  },
   "2.1.32": {
     "en": "Added research preview agent teams feature for multi-agent collaboration (token-intensive feature, requires setting CLAUDE_CODE_EXPERIMENTAL",
     "zh": "为多代理协作添加了研究预览代理团队功能（令牌密集型功能，需要设置CLAUDE_CODE_EXPERIMENTAL"
