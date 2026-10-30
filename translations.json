@@ -1495,6 +1495,10 @@
     "en": "Added oidc.user_id_claim to the Claude apps gateway, to identify people by an id_token claim other than sub, such as Microsoft Entra ID’s oi",
     "zh": "将oidc.user_id_claim添加到Claude应用程序网关，以通过sub以外的id_token声明识别人员，例如Microsoft Entra ID的oi"
   },
+  "2.1.314": {
+    "en": "Added permissions.blockWritesOutsideWorkingDirectories: Write, Edit and NotebookEdit refuse paths outside the working directories in every p",
+    "zh": "添加了permissions.blockWritesOutsideWorkingDirectories ：写入、编辑和笔记本编辑拒绝每个p中工作目录之外的路径"
+  },
   "2.1.32": {
     "en": "Added research preview agent teams feature for multi-agent collaboration (token-intensive feature, requires setting CLAUDE_CODE_EXPERIMENTAL",
     "zh": "为多代理协作添加了研究预览代理团队功能（令牌密集型功能，需要设置CLAUDE_CODE_EXPERIMENTAL"
