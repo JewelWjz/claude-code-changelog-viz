@@ -1499,6 +1499,10 @@
     "en": "Added permissions.blockWritesOutsideWorkingDirectories: Write, Edit and NotebookEdit refuse paths outside the working directories in every p",
     "zh": "添加了permissions.blockWritesOutsideWorkingDirectories ：写入、编辑和笔记本编辑拒绝每个p中工作目录之外的路径"
   },
+  "2.1.316": {
+    "en": "Added CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off",
+    "zh": "新增CLAUDE_CODE_DISABLE_ULTRATHINK ，关闭ultrathink关键字"
+  },
   "2.1.32": {
     "en": "Added research preview agent teams feature for multi-agent collaboration (token-intensive feature, requires setting CLAUDE_CODE_EXPERIMENTAL",
     "zh": "为多代理协作添加了研究预览代理团队功能（令牌密集型功能，需要设置CLAUDE_CODE_EXPERIMENTAL"
