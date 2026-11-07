@@ -1511,6 +1511,10 @@
     "en": "Added a record of your answer when Claude Code asks to turn on the mods it writes in a session",
     "zh": "当Claude Code要求打开其在会话中编写的mod时，添加了您的答案记录"
   },
+  "2.1.319": {
+    "en": "Added support for MCP tasks in the terminal: when an MCP server runs a tool call as a task, Claude Code moves it to the background right awa",
+    "zh": "添加了对终端中MCP任务的支持：当MCP服务器作为任务运行工具调用时， Claude Code会将其移动到后台"
+  },
   "2.1.32": {
     "en": "Added research preview agent teams feature for multi-agent collaboration (token-intensive feature, requires setting CLAUDE_CODE_EXPERIMENTAL",
     "zh": "为多代理协作添加了研究预览代理团队功能（令牌密集型功能，需要设置CLAUDE_CODE_EXPERIMENTAL"
