@@ -1519,6 +1519,14 @@
     "en": "Added research preview agent teams feature for multi-agent collaboration (token-intensive feature, requires setting CLAUDE_CODE_EXPERIMENTAL",
     "zh": "为多代理协作添加了研究预览代理团队功能（令牌密集型功能，需要设置CLAUDE_CODE_EXPERIMENTAL"
   },
+  "2.1.321": {
+    "en": "Added Claude Fable 5.2 (claude-fable-5-2), now the default Fable model — 1M context, $8/$40 per Mtok with $0.20/Mtok cache reads",
+    "zh": "添加了Claude Fable 5.2 （ claude-fable-5-2 ） ，现在是默认的Fable模型— 100万上下文，每Mtok 8美元/40美元，每Mtok缓存读数0.20美元"
+  },
+  "2.1.322": {
+    "en": "Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it",
+    "zh": "在全局、美国和欧盟区域的顶点上添加了快速模式，如果顶点拒绝，则回退到标准速度"
+  },
   "2.1.33": {
     "en": "Added TeammateIdle and TaskCompleted hook events for multi-agent workflows",
     "zh": "为多代理工作流添加了TeammateIdle和TaskCompleted挂钩事件"
