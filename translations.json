@@ -1527,6 +1527,10 @@
     "en": "Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it",
     "zh": "在全局、美国和欧盟区域的顶点上添加了快速模式，如果顶点拒绝，则回退到标准速度"
   },
+  "2.1.323": {
+    "en": "Added Code Mode, an experimental opt-in in which Claude writes JavaScript to call its tools; see https://code.claude.com/docs/en/code-mode t",
+    "zh": "新增了代码模式，这是一种实验性的选择加入功能，其中 Claude 会编写 JavaScript 来调用其工具；请参阅 https://code.claude.com/docs/en/code-mode t"
+  },
   "2.1.33": {
     "en": "Added TeammateIdle and TaskCompleted hook events for multi-agent workflows",
     "zh": "为多代理工作流添加了TeammateIdle和TaskCompleted挂钩事件"
