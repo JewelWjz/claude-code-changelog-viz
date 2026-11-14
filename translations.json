@@ -1531,6 +1531,10 @@
     "en": "Added Code Mode, an experimental opt-in in which Claude writes JavaScript to call its tools; see https://code.claude.com/docs/en/code-mode t",
     "zh": "新增了代码模式，这是一种实验性的选择加入功能，其中 Claude 会编写 JavaScript 来调用其工具；请参阅 https://code.claude.com/docs/en/code-mode t"
   },
+  "2.1.325": {
+    "en": "Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jup",
+    "zh": "在 VS Code 和类似的集成终端中添加了一个加载指示器提示，用于重新运行笔记本单元格，该提示会在 Claude 读取或编辑 Jupyter 笔记本后显示一次。"
+  },
   "2.1.33": {
     "en": "Added TeammateIdle and TaskCompleted hook events for multi-agent workflows",
     "zh": "为多代理工作流添加了TeammateIdle和TaskCompleted挂钩事件"
