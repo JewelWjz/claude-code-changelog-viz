@@ -1535,6 +1535,10 @@
     "en": "Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jup",
     "zh": "在 VS Code 和类似的集成终端中添加了一个加载指示器提示，用于重新运行笔记本单元格，该提示会在 Claude 读取或编辑 Jupyter 笔记本后显示一次。"
   },
+  "2.1.326": {
+    "en": "Added support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code ",
+    "zh": "新增了在启用代理团队时开启代码模式的支持；如果您已经开启了该模式，则现在启用团队的会话将以代码模式开始。"
+  },
   "2.1.33": {
     "en": "Added TeammateIdle and TaskCompleted hook events for multi-agent workflows",
     "zh": "为多代理工作流添加了TeammateIdle和TaskCompleted挂钩事件"
