@@ -1539,6 +1539,10 @@
     "en": "Added support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code ",
     "zh": "新增了在启用代理团队时开启代码模式的支持；如果您已经开启了该模式，则现在启用团队的会话将以代码模式开始。"
   },
+  "2.1.327": {
+    "en": "Added a confirmation before /install-github-app changes a repository",
+    "zh": "在 /install-github-app 更改代码仓库之前添加了确认步骤"
+  },
   "2.1.33": {
     "en": "Added TeammateIdle and TaskCompleted hook events for multi-agent workflows",
     "zh": "为多代理工作流添加了TeammateIdle和TaskCompleted挂钩事件"
