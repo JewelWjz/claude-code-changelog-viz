@@ -1543,6 +1543,10 @@
     "en": "Added a confirmation before /install-github-app changes a repository",
     "zh": "在 /install-github-app 更改代码仓库之前添加了确认步骤"
   },
+  "2.1.328": {
+    "en": "Added auto mode for Claude Opus 4.6 and Sonnet 4.6 on Amazon Bedrock, Google Cloud’s Agent Platform, Microsoft Foundry and Claude apps gatew",
+    "zh": "为 Amazon Bedrock、Google Cloud 的 Agent Platform、Microsoft Foundry 和 Claude 应用网关上的 Claude Opus 4.6 和 Sonnet 4.6 添加了自动模式"
+  },
   "2.1.33": {
     "en": "Added TeammateIdle and TaskCompleted hook events for multi-agent workflows",
     "zh": "为多代理工作流添加了TeammateIdle和TaskCompleted挂钩事件"
