@@ -1555,6 +1555,10 @@
     "en": "Added TeammateIdle and TaskCompleted hook events for multi-agent workflows",
     "zh": "为多代理工作流添加了TeammateIdle和TaskCompleted挂钩事件"
   },
+  "2.1.330": {
+    "en": "Added sign-in to organizations managed in Anthropic’s Enterprise Admin Console: after claude auth login, Claude Code applies the organizatio",
+    "zh": "已添加对在 Anthropic 企业管理控制台中管理的组织的登录功能：在完成 Claude 身份验证登录后，Claude Code 将应用该组织。"
+  },
   "2.1.34": {
     "en": "Fixed a crash when agent teams setting changed between renders",
     "zh": "修复了代理团队设置在渲染之间更改时的崩溃"
